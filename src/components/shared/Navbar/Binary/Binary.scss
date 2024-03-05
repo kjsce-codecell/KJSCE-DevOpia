@@ -1,0 +1,29 @@
+.binary-counter-container {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+}
+
+.binary-counter {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  animation: moveLeft 5s linear infinite;
+}
+span {
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'dunerise', sans-serif;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+@keyframes moveLeft {
+  100% {
+    right: 100%;
+  }
+}
