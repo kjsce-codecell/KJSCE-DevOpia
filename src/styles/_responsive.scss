@@ -5,8 +5,16 @@
     .background-image {
       background-position: center;
     }
+    .overlay {
+      background-position: center;
+      display: flex;
+      padding: 20px 0;
+      flex-direction: column;
+    }
+
     .banda {
-      position: relative;
+      aspect-ratio: inherit;
+      max-height: 100vh;
       bottom: 0;
       left: 50%;
     }
@@ -15,12 +23,23 @@
       font-size: 8px;
     }
     .title-img {
-      font-size: 1em;
-      top: -10%;
+      width: 100%;
+      // top: 0;
     }
     .tagline {
       font-size: 1em;
-      top: -10%;
+      translate: 0;
+      left: 0;
+      bottom: -20%;
+    }
+    .date {
+      bottom: -50%;
+    }
+  }
+
+  .about {
+    .content {
+      flex-direction: row;
     }
   }
 }
