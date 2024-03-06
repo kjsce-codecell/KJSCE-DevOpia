@@ -1,0 +1,216 @@
+.prizes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000512;
+  // height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  .content {
+    padding: 20% 20% 10% 20%;
+    text-align: center;
+    flex: 1;
+    z-index: 1;
+  }
+
+  .title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50%;
+    -webkit-text-stroke-width: 6.284524440765381;
+    -webkit-text-stroke-color: #000;
+    font-family: 'dunerise';
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 31.423px;
+    opacity: 0.05;
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 85.73%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .subtitle {
+    position: absolute;
+    color: #fff;
+    top: 20%;
+    transform: translateX(-50%);
+    font-family: 'agencyfb';
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .subtitle::before {
+    content: url('../../assets/prizes.svg');
+    margin-right: 10px;
+  }
+
+  .body-text {
+    position: relative;
+    color: #fff;
+    font-family: 'agencyfb';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    letter-spacing: 1.5px;
+  }
+  .three-containers {
+    position: relative;
+
+    padding-top: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    img {
+      width: 50%;
+      height: 70%;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .left-container {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      text-align: left;
+      h2 {
+        color: #fff;
+        font-family: 'agencyfb';
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4.2px;
+      }
+      h3 {
+        color: #fff;
+        font-family: 'agencyfb';
+        font-size: 30px;
+        max-width: 300px;
+        text-align: left;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      span {
+        color: #fff;
+        font-family: 'agencyfb';
+        font-size: 30px;
+        max-width: 300px;
+        text-align: left;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      p {
+        color: #fff;
+        text-align: center;
+        font-family: 'agencyfb';
+        font-size: 54.044px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+
+        width: min-content;
+        letter-spacing: 3.243px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    .right-containers {
+      img {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+      }
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      height: 100%;
+      .left-content {
+        h2 {
+          color: #fff;
+          font-family: 'agencyfb';
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 4.2px;
+        }
+        h3 {
+          color: #fff;
+          font-family: 'agencyfb';
+          font-size: 30px;
+          max-width: 300px;
+          text-align: left;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+        p {
+          color: #fff;
+          text-align: center;
+          font-family: 'agencyfb';
+          font-size: 54.044px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          position: relative;
+
+          width: min-content;
+          letter-spacing: 3.243px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: row;
+        align-items: stretch;
+      }
+    }
+    .top-right-container,
+    .bottom-right-container {
+      flex: 1;
+      padding: 20px;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      height: max-content;
+
+      @media screen and (max-width: 768px) {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+      }
+    }
+  }
+}

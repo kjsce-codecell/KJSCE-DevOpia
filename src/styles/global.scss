@@ -1,2 +1,8 @@
-@import "./_reset.scss";
-@import "./fonts";
+@import './_reset.scss';
+@import './fonts';
+
+body {
+  background-color: #000512;
+
+  overflow-x: hidden;
+}

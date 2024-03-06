@@ -1,10 +1,13 @@
 .navbar {
+  position: fixed;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba($color: #1a1a1d, $alpha: 0.85);
   color: #fff;
   padding: 8px;
+  z-index: 999;
   font-family: 'agencyfb', sans-serif;
 }
 
@@ -63,5 +66,6 @@
 }
 
 .logo {
+  padding-right: 5px;
   width: 30px;
 }
