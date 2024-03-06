@@ -19,7 +19,7 @@ const About = () => {
   ];
 
   return (
-    <div className="about">
+    <section id='about' className="about">
       <div className="background"></div>
       <div className="content">
         <h1 className="title">About</h1>
@@ -47,7 +47,7 @@ const About = () => {
       <div className="svg-container">
         <img src={Circle} alt="" />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,17 +5,20 @@ import Prizes from './pages/Prizes/Prizes'
 import Track from './pages/Track/Track'
 import FAQ from './pages/FAQ/FAQ'
 import Navbar from './components/shared/Navbar/Navbar'
+import Footer from './components/shared/Footer/Footer'
+import Sponsors from './pages/Sponsors/Sponsors'
 function App() {
 
   return (
     <>
       <Navbar />
-
       <Home />
       <About />
       <Prizes />
       <Track />
+      <Sponsors />
       <FAQ />
+      <Footer />
     </>
   )
 }

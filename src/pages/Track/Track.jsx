@@ -1,38 +1,52 @@
 import './Track.scss';
 import First from '../../assets/track.png';
-import PrizeItem from '../../components/Tracks/PrizeItem';
 
 const Track = () => {
   return (
-    <div className="track">
+    <section id='track' className="track">
       <div className="content">
         <h1 className="title">Track</h1>
+        <p className="subtitle">Track</p>
+      </div>
+      <div className="tracks">
+        <div className="prize">
+          <div className="img">
 
+            <h2>inr 10,000 for the best hack built on Ethereum<br /><br />
+              Continuity grant opportunity up to $5,000 for outstanding projects<br /><br />
+              inr 10,000 for the best project made using Arcana</h2>
+            <p> SPONSOR WINNER</p>
+          </div>
+          {/* <img src={First} alt="" /> */}
+          {/* <div className="description">
+          </div> */}
+        </div>
+        <div className="prize">
+          <div className="img">
+
+            <h2>inr 10,000 for the best hack built on Ethereum<br /><br />
+              Continuity grant opportunity up to $5,000 for outstanding projects<br /><br />
+              inr 10,000 for the best project made using Arcana</h2>
+            <p> SPONSOR WINNER</p>
+          </div>
+          {/* <img src={First} alt="" /> */}
+          {/* <div className="description">
+          </div> */}
+        </div>
+        <div className="prize">
+          <div className="img">
+
+            <h2>inr 10,000 for the best hack built on Ethereum<br /><br />
+              Continuity grant opportunity up to $5,000 for outstanding projects<br /><br />
+              inr 10,000 for the best project made using Arcana</h2>
+            <p> SPONSOR WINNER</p>
+          </div>
+          {/* <img src={First} alt="" /> */}
+          {/* <div className="description">
+          </div> */}
+        </div>
       </div>
-      <div className="prizes">
-        <PrizeItem
-          imageUrl={First}
-          description="inr 10,000 for the best hack built on Ethereum
-              Continuity grant opportunity up to $5,000 for outstanding projects
-              inr 10,000 for the best project made using Arcana"
-          winner="WINNER"
-        />
-        <PrizeItem
-          imageUrl={First}
-          description="inr 10,000 for the best hack built on Ethereum
-              Continuity grant opportunity up to $5,000 for outstanding projects
-              inr 10,000 for the best project made using Arcana"
-          winner="WINNER"
-        />
-        <PrizeItem
-          imageUrl={First}
-          description="inr 10,000 for the best hack built on Ethereum
-              Continuity grant opportunity up to $5,000 for outstanding projects
-              inr 10,000 for the best project made using Arcana"
-          winner="WINNER"
-        />
-      </div>
-    </div>
+    </section>
   );
 };
 

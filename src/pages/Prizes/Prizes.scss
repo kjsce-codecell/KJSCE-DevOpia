@@ -7,9 +7,14 @@
   // height: 100vh;
   width: 100vw;
   overflow: hidden;
+  background: linear-gradient(
+    108deg,
+    rgba(232, 186, 61, 0.4) 0%,
+    rgba(232, 186, 61, 0) 20.64%
+  );
 
   .content {
-    padding: 20% 20% 10% 20%;
+    padding: 20% 10% 10% 10%;
     text-align: center;
     flex: 1;
     z-index: 1;
@@ -39,6 +44,7 @@
     position: absolute;
     color: #fff;
     top: 20%;
+    left: 20%;
     transform: translateX(-50%);
     font-family: 'agencyfb';
     font-size: 100px;
@@ -66,151 +72,137 @@
     text-align: left;
     letter-spacing: 1.5px;
   }
-  .three-containers {
-    position: relative;
 
-    padding-top: 100px;
-    overflow: hidden;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px; /* Adjust as needed */
+    text-align: left;
+  }
+
+  .container-text {
+    .spacer {
+      height: 150px;
+    }
+    // height: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    color: #fff;
+    text-align: left;
+    font-family: AgencyFB;
+    font-size: 54.044px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    // justify-content: space-between;
+    letter-spacing: 4.193px;
+    h4 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
     }
-    img {
-      width: 50%;
-      height: 70%;
-      position: absolute;
-      z-index: -1;
-    }
-
-    .left-container {
-      flex: 1;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
+    p {
+      color: #fff;
+      text-align: center;
+      font-family: 'agencyfb';
       justify-content: center;
-      text-align: left;
-      h2 {
-        color: #fff;
-        font-family: 'agencyfb';
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 4.2px;
-      }
-      h3 {
-        color: #fff;
-        font-family: 'agencyfb';
-        font-size: 30px;
-        max-width: 300px;
-        text-align: left;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-transform: uppercase;
-      }
-      span {
-        color: #fff;
-        font-family: 'agencyfb';
-        font-size: 30px;
-        max-width: 300px;
-        text-align: left;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-transform: uppercase;
-      }
-      p {
-        color: #fff;
-        text-align: center;
-        font-family: 'agencyfb';
-        font-size: 54.044px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        position: relative;
-
-        width: min-content;
-        letter-spacing: 3.243px;
-      }
-
-      @media screen and (max-width: 768px) {
-        width: 100%;
-        margin-bottom: 20px;
-      }
+      align-items: center;
+      font-size: 53.95px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 3.237px;
     }
-
-    .right-containers {
-      img {
-        width: 100%;
-        height: 50%;
-        position: absolute;
-      }
-      gap: 20px;
+  }
+  .right-container .container-text {
+    padding: 10px 20px;
+    position: absolute;
+    color: #fff;
+    text-align: left;
+    font-family: AgencyFB;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    // justify-content: space-between;
+    letter-spacing: 4.193px;
+    .spacer {
+      height: 40px;
+    }
+    .row {
       display: flex;
-      flex-direction: column;
-      flex: 1;
-      height: 100%;
-      .left-content {
-        h2 {
-          color: #fff;
-          font-family: 'agencyfb';
-          font-size: 50px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          letter-spacing: 4.2px;
-        }
-        h3 {
-          color: #fff;
-          font-family: 'agencyfb';
-          font-size: 30px;
-          max-width: 300px;
-          text-align: left;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          text-transform: uppercase;
-        }
-        p {
-          color: #fff;
-          text-align: center;
-          font-family: 'agencyfb';
-          font-size: 54.044px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          position: relative;
-
-          width: min-content;
-          letter-spacing: 3.243px;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
-        flex-direction: row;
-        align-items: stretch;
-      }
-    }
-    .top-right-container,
-    .bottom-right-container {
-      flex: 1;
-      padding: 20px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       gap: 10px;
-      display: flex;
-      flex-direction: column;
-      height: max-content;
-
-      @media screen and (max-width: 768px) {
-        width: calc(50% - 10px);
-        margin-right: 20px;
-      }
     }
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: normal;
+
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      font-family: 'agencyfb';
+      // font-size: 53.95px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 3.237px;
+    }
+  }
+  .left-container {
+    aspect-ratio: 106/75;
+    height: 26.5rem;
+    // background-image: url('../../assets/first.png');
+    background-size: cover;
+    background-position: center;
+    // height: auto;
+    // width: auto;
+  }
+
+  .right-container {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-item {
+    height: auto;
+    width: auto;
+    margin-bottom: 10px; /* Spacing between the two items */
+  }
+
+  .left-container {
+    aspect-ratio: 106/75;
+    height: 26.5rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .right-container {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-item {
+    height: auto;
+    width: auto;
+    margin-bottom: 10px; /* Spacing between the two items */
   }
 }
