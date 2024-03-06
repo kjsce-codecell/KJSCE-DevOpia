@@ -13,7 +13,7 @@
     -webkit-text-stroke-width: 6.284524440765381;
     -webkit-text-stroke-color: #000;
     font-family: 'dunerise';
-    font-size: 180px;
+    font-size: 10rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -32,7 +32,7 @@
     left: 2%;
     // transform: translateX(-50%);
     font-family: 'agencyfb';
-    font-size: 100px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -44,6 +44,7 @@
   .subtitle::before {
     content: url('../../assets/settings.png');
     margin-right: 10px;
+    height: 2rem;
   }
 }
 
