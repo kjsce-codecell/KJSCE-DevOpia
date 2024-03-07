@@ -42,58 +42,61 @@
     background-size: cover;
     opacity: 0.6;
   }
-}
-
-.subheading {
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'agencyfb';
-  height: 100%;
-  min-height: 30vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  div {
+  .subheading {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'agencyfb';
+    height: 100%;
+    min-height: 30vh;
+    width: 100%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    .left {
-      transform: rotate(-90deg);
-    }
-    .right {
-      transform: rotate(90deg);
-    }
-    h3 {
-      font-size: 6rem;
-      position: relative;
-      margin: 0 1rem;
-      &::before,
-      &::after {
-        content: '';
+    z-index: 2;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      .left {
+        transform: rotate(-90deg);
+      }
+      .right {
+        transform: rotate(90deg);
+      }
+      h3 {
+        font-size: 6rem;
+        position: relative;
+        margin: 0 1rem;
+        &::before,
+        &::after {
+          content: '';
+        }
       }
     }
-  }
-  p {
-    position: absolute;
-    top: 0;
-    text-align: center;
-    width: 100%;
-    -webkit-text-stroke-width: 7.02435827255249;
-    -webkit-text-stroke-color: #000;
-    letter-spacing: 3rem;
-    font-size: clamp(1.5rem, 30vw, 20rem);
-    font-weight: normal;
-    opacity: 0.05;
-    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 95.73%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    p {
+      position: absolute;
+      top: 0;
+      text-align: center;
+      width: 100%;
+      -webkit-text-stroke-width: 7.02435827255249;
+      -webkit-text-stroke-color: #000;
+      letter-spacing: 3rem;
+      font-size: clamp(1.5rem, 30vw, 20rem);
+      font-weight: normal;
+      opacity: 0.05;
+      background: linear-gradient(
+        180deg,
+        #fff 0%,
+        rgba(255, 255, 255, 0) 95.73%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 
