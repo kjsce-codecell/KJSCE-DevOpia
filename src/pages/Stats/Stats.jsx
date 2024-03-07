@@ -1,7 +1,7 @@
 import './Stats.scss'
 function Stats() {
   return (
-    <section className="statsContainer">
+    <section className="statsContainer" id="stats">
       <div className="background"></div>
       <div className="subheading">
         <div>
