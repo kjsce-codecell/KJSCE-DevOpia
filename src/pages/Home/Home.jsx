@@ -11,7 +11,7 @@ const Home = () => {
             <p>d2Ugc3RhbmQ<br />gdW5pdGVk</p></div>
           <img src={Title} alt="" className='title-img' />
           <p className="tagline">WAR COMES TO EVERY WORLD</p>
-          <p className='date'>30TH - 31ST MARCH</p>
+          <p className='date'>29TH - 31ST MARCH</p>
           <img src={Banda} alt="" className='banda' />
           <img src={Ships} alt="" className='ships' />
         </div>

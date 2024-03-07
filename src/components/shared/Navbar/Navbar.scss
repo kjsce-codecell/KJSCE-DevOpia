@@ -18,7 +18,8 @@
   }
 
   .logo img {
-    // margin-right: 20px;
+    margin-top: 2px;
+    margin-right: 20px;
     width: 3rem;
     color: var(--white);
   }
@@ -35,7 +36,7 @@
   .active-link-name {
     font-family: 'agencyfb', sans-serif;
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     letter-spacing: 0.05em;
     text-shadow: 0px 5.99304px 20.9756px #8e8901;
     color: white;
@@ -74,19 +75,61 @@
   .nav-links {
     position: absolute;
     top: 0px;
-    right: 0;
-    width: 20%;
+    left: 0;
+    width: 40%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: #141414;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: AgencyFB;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 13.6px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(26, 26, 29, 0.75);
+    backdrop-filter: blur(7.5px);
+    clip-path: polygon(0% 0%, 80% 0%, 100% 150%, 0% 1000%);
     justify-content: space-evenly;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: all 0.5s;
     transform-origin: 0% 0%;
     padding: 0;
     z-index: 10;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: center;
+    width: 100%;
+    font-size: 3rem;
+    height: 80vh;
+  }
+
+  .links a:hover {
+    font-size: 3.3rem;
+  }
+
+  .logos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    img {
+      height: 2rem;
+      width: auto;
+    }
   }
 
   .nav-links.active {
@@ -96,7 +139,8 @@
   .nav-link {
     text-transform: capitalize;
     transition: all 0.3s;
-    font-size: 20px;
+    padding: 0 20px;
+    // font-size: 1rem;
     list-style: none;
     transition: all 0.3 ease-in-out;
   }

@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
 import './Navbar.scss';
 import Pronged from '../../../assets/pronged.png';
+import CodeCell from '../../../assets/CodeCell.png';
+import CSI from '../../../assets/CSI.png';
+import SVU from '../../../assets/svu.png';
+import Somaiya from '../../../assets/somaiya.png';
+
 function Navbar() {
   const [isOpen, setisOpen] = useState(false);
   const [binaryIndex, setBinaryIndex] = useState(0);
@@ -17,7 +22,7 @@ function Navbar() {
   useEffect(() => {
     const interval = setInterval(() => {
       setBinaryIndex((prevIndex) => (prevIndex + 1) % binaryArray.length);
-    }, 1000);
+    }, 500);
 
     return () => clearInterval(interval);
   }, [binaryArray.length]);
@@ -64,15 +69,23 @@ function Navbar() {
           <span></span>
           <span></span>
         </div>
+        <div className={`nav-links ${isOpen ? 'active' : ''}`}>
 
-        <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <li className="nav-link"></li>
-          <li className="nav-link"></li>
-          <li className="nav-link"></li>
-          <li className="nav-link"></li>
-          <li className="nav-link"></li>
-          <li className="nav-link"></li>
-        </ul>
+          <ul className='links' >
+            <li className="nav-link"><a onClick={handleClick} href="#home">Home</a></li>
+            <li className="nav-link"><a onClick={handleClick} href="#about">About</a></li>
+            <li className="nav-link"><a onClick={handleClick} href="#stats">Stats</a></li>
+            <li className="nav-link"><a onClick={handleClick} href="#prize">Prizes</a></li>
+            <li className="nav-link"><a onClick={handleClick} href="#sponsors">Sponsors</a></li>
+            <li className="nav-link"><a onClick={handleClick} href="#faqs">Faq</a></li>
+          </ul>
+          <div className="logos">
+            <img src={CodeCell} alt="" />
+            <img src={CSI} alt="" />
+            <img src={SVU} alt="" />
+            <img src={Somaiya} alt="" />
+          </div>
+        </div>
         <div className="active">
           <div className="active-link-name">{activeSection}</div>
           <div className="border">
