@@ -10,73 +10,64 @@
   align-items: center;
   font-weight: 800;
   letter-spacing: 3px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  backdrop-filter: blur(15px);
+  padding: 0 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(26, 26, 29, 0.75);
+  backdrop-filter: blur(8px);
   .logo {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .logo img {
-    margin-top: 2px;
-    margin-right: 20px;
-    width: 3rem;
-    color: var(--white);
+    width: 2.6rem;
   }
 
   .active {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     user-select: none;
-    margin-right: -35px;
   }
 
   .active-link-name {
     font-family: 'agencyfb', sans-serif;
-    font-weight: 200;
-    font-size: 2.3rem;
-    letter-spacing: 0.05em;
-    text-shadow: 0px 5.99304px 20.9756px #8e8901;
-    color: white;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 1.25px;
     text-transform: uppercase;
-  }
-
-  .border {
+    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    width: 140%;
-    margin-top: 6px;
-  }
-
-  .border .line1 {
-    width: 30%;
-    height: 4px;
-    background-color: var(--red);
-    border-radius: 10px;
-  }
-
-  .border .line2 {
-    width: 10%;
-    height: 4px;
-    background-color: var(--red);
-    border-radius: 10px;
-  }
-
-  .border .line3 {
-    width: 30%;
-    height: 4px;
-    background-color: var(--red);
-    border-radius: 10px;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      background-color: #fff;
+    }
+    &::before {
+      left: -1.4rem;
+    }
+    &::after {
+      right: -1.4rem;
+    }
   }
 
   .nav-links {
     position: absolute;
     top: 0px;
     left: 0;
-    width: 40%;
+    width: clamp(30rem, 40%, 40rem);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -85,15 +76,14 @@
     text-align: start;
     color: rgba(255, 255, 255, 0.7);
     font-family: AgencyFB;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 13.6px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     background: rgba(26, 26, 29, 0.75);
-    backdrop-filter: blur(7.5px);
-    clip-path: polygon(0% 0%, 80% 0%, 100% 150%, 0% 1000%);
+    backdrop-filter: blur(15px);
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
     justify-content: space-evenly;
     transform: translateX(-100%);
     transition: all 0.5s;
@@ -108,12 +98,44 @@
     justify-content: space-between;
     // align-items: center;
     width: 100%;
-    // font-size: 3rem;
-    height: 80vh;
-  }
-
-  .links a:hover {
-    font-size: 3.3rem;
+    font-size: 3rem;
+    height: 60vh;
+    a {
+      position: relative;
+      margin-left: 20%;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -3rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      &::before {
+        border: 4px solid white;
+        outline: 1px dashed white;
+        outline-offset: 0.4rem;
+      }
+      &:hover::before {
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.6) 0% 50%,
+          transparent 50% 100%
+        );
+      }
+      &.active::before {
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 1) 0% 50%,
+          transparent 50% 100%
+        );
+      }
+    }
   }
 
   .logos {
@@ -137,122 +159,17 @@
   }
 
   .nav-link {
-    text-transform: capitalize;
+    text-transform: uppercase;
     transition: all 0.3s;
     padding: 0 20px;
-    // font-size: 1rem;
     list-style: none;
     transition: all 0.3 ease-in-out;
   }
 
-  .nav-link:hover {
-    color: var(--red);
-    cursor: pointer;
-  }
-
-  .nav-icon-1 {
+  .nav-icon {
     z-index: 100;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    transition: 0.1s;
-    margin: 10px 10px;
     cursor: pointer;
-    display: inline-block;
-    margin-right: 20px;
-  }
-
-  .nav-icon-1 span {
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-  }
-
-  .nav-icon-1:hover span {
-    transform: scale(1.2);
-    transition: 350ms cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  }
-
-  .nav-icon-1 span:nth-child(1) {
-    left: 0;
-    top: 0;
-  }
-
-  .nav-icon-1 span:nth-child(2) {
-    left: 12px;
-    top: 0;
-  }
-
-  .nav-icon-1 span:nth-child(3) {
-    right: 0;
-    top: 0;
-  }
-
-  .nav-icon-1 span:nth-child(4) {
-    left: 0;
-    top: 12px;
-  }
-
-  .nav-icon-1 span:nth-child(5) {
-    position: absolute;
-    left: 12px;
-    top: 12px;
-  }
-
-  .nav-icon-1 span:nth-child(6) {
-    right: 0px;
-    top: 12px;
-  }
-
-  .nav-icon-1 span:nth-child(7) {
-    left: 0px;
-    bottom: 0px;
-  }
-
-  .nav-icon-1 span:nth-child(8) {
-    position: absolute;
-    left: 12px;
-    bottom: 0px;
-  }
-
-  .nav-icon-1 span:nth-child(9) {
-    right: 0px;
-    bottom: 0px;
-  }
-
-  .nav-icon-1.open {
-    transform: rotate(180deg);
-    cursor: pointer;
-    transition: 0.2s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  }
-
-  .nav-icon-1.open span {
-    border-radius: 50%;
-    transition-delay: 200ms;
-    transition: 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  }
-
-  .nav-icon-1.open span:nth-child(2) {
-    left: 6px;
-    top: 6px;
-  }
-
-  .nav-icon-1.open span:nth-child(4) {
-    left: 6px;
-    top: 18px;
-  }
-
-  .nav-icon-1.open span:nth-child(6) {
-    right: 6px;
-    top: 6px;
-  }
-
-  .nav-icon-1.open span:nth-child(8) {
-    left: 18px;
-    bottom: 6px;
+    transition: all 0.3s ease-in-out;
   }
 
   .binary {
