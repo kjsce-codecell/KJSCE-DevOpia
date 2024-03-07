@@ -8,6 +8,7 @@ import Footer from './components/shared/Footer/Footer'
 import Sponsors from './pages/Sponsors/Sponsors'
 import Stats from './pages/Stats/Stats'
 function App() {
+
   return (
     <>
       <Navbar />

@@ -7,8 +7,12 @@
   justify-content: space-between;
   background-size: contain;
   width: 100vw;
-  overflow-x: hidden;
+  background-color: #000512;
 
+  overflow-x: hidden;
+  .content {
+    background-color: #000512;
+  }
   .title {
     position: absolute;
     top: 0;
@@ -51,6 +55,8 @@
   }
 
   .accordion {
+    background-color: #000512;
+
     width: 80%;
     margin: 2rem auto;
     background-color: none;

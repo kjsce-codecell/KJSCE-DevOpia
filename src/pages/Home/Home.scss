@@ -25,6 +25,7 @@
     position: relative;
     background-blend-mode: multiply;
     bottom: 0;
+    // animation: parallax 1s linear infinite;
   }
 
   .code {
@@ -67,11 +68,11 @@
   .banda {
     aspect-ratio: 1727/1133;
     display: flex;
-    position: absolute;
+    position: fixed;
     max-height: 90vh;
-    bottom: 0;
-    translate: -50%;
-    left: 50%;
+    bottom: -3%;
+    left: 20%;
+    transform: translateX(-50%);
   }
 
   .ships {
@@ -89,13 +90,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 16.221px;
+    letter-spacing: 0.7rem;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    // align-items: center;
     translate: -50%;
-    bottom: -40%;
+    bottom: -50%;
     left: 50%;
     z-index: 99;
   }
