@@ -1,14 +1,18 @@
 .statsContainer {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
+  padding-bottom: 2rem;
+  z-index: 0;
   &::before,
   &::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    transform: rotateZ(180deg); // Rotate the gradients to match the background
+    z-index: 2;
+    bottom: 0;
+    transform: rotate(-180deg); // To rotate the gradient
   }
 
   &::before {
@@ -32,10 +36,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
 
     background: url('./statsBg.svg') #000512 no-repeat center center;
-    background-size: 100% 100vh;
+    background-size: cover;
     opacity: 0.6;
   }
 }
@@ -46,12 +50,14 @@
   text-align: center;
   text-transform: uppercase;
   font-family: 'agencyfb';
-  height: 40vh;
+  height: 100%;
+  min-height: 30vh;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
   div {
     display: flex;
     justify-content: center;
@@ -74,7 +80,6 @@
     }
   }
   p {
-    pointer-events: none;
     position: absolute;
     top: 0;
     text-align: center;
@@ -91,11 +96,118 @@
     -webkit-text-fill-color: transparent;
   }
 }
-// .imageContainer {
-//   border: 3px solid white;
-//   img {
-//     // width: 100%;
-//     border: 10px solid black;
-//     object-fit: contain;
-//   }
-// }
+
+.statsGrid {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+  padding: 1rem 6rem;
+  .sideWrapper {
+    display: flex;
+    align-items: start;
+  }
+  .column {
+    margin: 0.8rem;
+  }
+  @media (min-width: 880px) {
+    flex-wrap: wrap;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 6px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to bottom,
+      #fff 0% 10%,
+      transparent 10% 15%,
+      rgba(255, 255, 255, 0.4) 15% 85%,
+      transparent 85% 90%,
+      #fff 90% 100%
+    )
+    1;
+  z-index: 10;
+  position: relative;
+  padding: 6px;
+  transition: border-image 0.3s ease-in-out;
+  &:hover {
+    animation: animateOnHover 0.2s ease-in-out forwards 1;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.content {
+  margin: 0.8rem 0;
+  .highlightNum {
+    color: #fff;
+    font-family: AgencyFB;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+  }
+  p {
+    color: #fff;
+    font-family: AgencyFB;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes animateOnHover {
+  0% {
+    border-image: linear-gradient(
+        to bottom,
+        #fff 0% 10%,
+        transparent 10% 15%,
+        rgba(255, 255, 255, 0.4) 15% 85%,
+        transparent 85% 90%,
+        #fff 90% 100%
+      )
+      1;
+  }
+  25% {
+    border-image: linear-gradient(
+        to bottom,
+        #fff 0% 10%,
+        transparent 10% 15%,
+        rgba(255, 255, 255, 0.4) 15% 85%,
+        transparent 85% 90%,
+        #fff 90% 100%
+      )
+      1;
+  }
+  50% {
+    border-image: linear-gradient(
+        to bottom,
+        #fff 0% 50%,
+        rgba(255, 255, 255, 0.4) 50% 85%,
+        transparent 85% 90%,
+        #fff 90% 100%
+      )
+      1;
+  }
+  100% {
+    border-image: linear-gradient(
+        to bottom,
+        #fff 0% 85%,
+        transparent 85% 90%,
+        #fff 90% 100%
+      )
+      1;
+  }
+}
