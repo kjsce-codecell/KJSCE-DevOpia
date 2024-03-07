@@ -212,11 +212,13 @@
   }
 
   .binary {
+    overflow: hidden;
+    display: flex;
+    max-width: 100vw;
     color: gray;
     font-size: 10px;
     position: absolute;
     bottom: -20px;
-    // width: 100vw;
     white-space: nowrap;
     font-family: 'Roboto Mono', monospace;
     transition: all 0.3s ease-in-out;

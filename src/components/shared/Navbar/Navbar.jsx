@@ -66,12 +66,12 @@ function Navbar() {
         </div>
 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <li className="nav-link">Home</li>
-          <li className="nav-link">About</li>
-          <li className="nav-link">Stats</li>
-          <li className="nav-link">Prizes</li>
-          <li className="nav-link">Track Prizes</li>
-          <li className="nav-link">Sponsors</li>
+          <li className="nav-link"></li>
+          <li className="nav-link"></li>
+          <li className="nav-link"></li>
+          <li className="nav-link"></li>
+          <li className="nav-link"></li>
+          <li className="nav-link"></li>
         </ul>
         <div className="active">
           <div className="active-link-name">{activeSection}</div>

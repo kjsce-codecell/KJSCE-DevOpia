@@ -2,7 +2,10 @@
 @import './fonts';
 @import './_responsive.scss';
 * {
+}
+html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #000512;
