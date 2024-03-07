@@ -19,7 +19,7 @@
       left: 50%;
     }
     .code {
-      padding: 50px 20px;
+      padding: 80px 20px;
       font-size: 8px;
     }
     .title-img {
@@ -38,8 +38,61 @@
   }
 
   .about {
-    .content {
+    flex-direction: column;
+    .subtitle-container {
+      width: 100%;
+    }
+    .sub {
       flex-direction: row;
+      img {
+        height: 3.5rem;
+      }
+    }
+    // .subtitle::before {
+    //   position: absolute;
+    //   content: url('../assets/sword.png');
+    //   background-size: contain;
+    //   height: 36px;
+    //   width: 36px;
+    // }
+    .before {
+      display: block;
+    }
+  }
+
+  .prizes {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .title {
+      left: 0;
+    }
+    .content {
+      .container-text {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .container-text {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .track {
+    .tracks {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .footer {
+    .footer img {
+      max-width: 250px;
+    }
+    .footer-content {
+      flex-direction: column;
     }
   }
 }

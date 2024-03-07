@@ -12,7 +12,11 @@ const Prizes = () => {
           <p className="subtitle">Prizes</p>
           <div className="prize">
             <div className="grid-container">
-              <div className="left-container">
+              <div className="left-container" style={{
+                background: `url(${First})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}>
                 <div className="container-text">
                   <div className="sec">
                     <h2>INR 30,000</h2>
@@ -22,10 +26,13 @@ const Prizes = () => {
                   <div className="spacer"></div>
                   <p>WINNER</p>
                 </div>
-                <img src={First} alt="" />
               </div>
               <div className="right-container">
-                <div className="right-item"><div className="container-text"><div className="sec">
+                <div style={{
+                  background: `url(${Second})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }} className="right-item"><div className="container-text"><div className="sec">
                   <div className='row'>
                     <h2>INR 30,000</h2>
                     <h3>CASH PRIZE</h3>
@@ -34,7 +41,9 @@ const Prizes = () => {
                   <h4>Exciting Goodies worth<br /> inr 2l & More!</h4>
                   <div className="spacer"></div>
                 </div>
-                  <p>RUNNER UP</p></div><img src={Second} alt="" />
+                    <p>RUNNER UP</p>
+                  </div>
+                  <img src={Second} alt="" />
                 </div>
                 <div className="right-item"><div className="container-text"><div className="sec">
                   <div className='row'>

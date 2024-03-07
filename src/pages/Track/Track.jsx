@@ -10,40 +10,31 @@ const Track = () => {
       </div>
       <div className="tracks">
         <div className="prize">
-          <div className="img">
-
+          <div className="desc">
             <h2>inr 10,000 for the best hack built on Ethereum<br /><br />
               Continuity grant opportunity up to $5,000 for outstanding projects<br /><br />
               inr 10,000 for the best project made using Arcana</h2>
             <p> SPONSOR WINNER</p>
           </div>
-          {/* <img src={First} alt="" /> */}
-          {/* <div className="description">
-          </div> */}
+          <img src={First} alt="" />
         </div>
         <div className="prize">
-          <div className="img">
-
+          <div className="desc">
             <h2>inr 10,000 for the best hack built on Ethereum<br /><br />
               Continuity grant opportunity up to $5,000 for outstanding projects<br /><br />
               inr 10,000 for the best project made using Arcana</h2>
             <p> SPONSOR WINNER</p>
           </div>
-          {/* <img src={First} alt="" /> */}
-          {/* <div className="description">
-          </div> */}
+          <img src={First} alt="" />
         </div>
         <div className="prize">
-          <div className="img">
-
+          <div className="desc">
             <h2>inr 10,000 for the best hack built on Ethereum<br /><br />
               Continuity grant opportunity up to $5,000 for outstanding projects<br /><br />
               inr 10,000 for the best project made using Arcana</h2>
             <p> SPONSOR WINNER</p>
           </div>
-          {/* <img src={First} alt="" /> */}
-          {/* <div className="description">
-          </div> */}
+          <img src={First} alt="" />
         </div>
       </div>
     </section>

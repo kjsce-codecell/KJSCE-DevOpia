@@ -42,9 +42,17 @@
   }
 
   .subtitle::before {
+    // display: block;
+    // content: url('../../assets/major.png');
+
     content: url('../../assets/settings.png');
     margin-right: 10px;
-    height: 2rem;
+
+    // background-size: contain; /* Adjust the size of the icon */
+    // background-repeat: no-repeat; /* Ensure the icon is not repeated */
+    // background-position: center; /* Center the icon */
+    width: 20px; /* Set the width of the icon */
+    height: 20px;
   }
 }
 
@@ -61,6 +69,7 @@
 
 .sponsor-buttons {
   display: flex;
+  flex-direction: row;
   width: 100%;
   margin: 0 auto;
   margin-top: 1vw;
@@ -106,7 +115,7 @@
 .sponsor-box {
   display: flex;
   height: 100%;
-  border: 1px solid white;
+  // border: 1px solid white;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -119,9 +128,9 @@
   align-items: center;
 }
 
-#current-sponsor {
-  height: 100%;
-}
+// #current-sponsor {
+//   height: 100%;
+// }
 
 .sponsor-img {
   width: 25%;
@@ -177,6 +186,7 @@
 
 @media (max-width: 720px) {
   .sponsor-buttons {
+    width: 100%;
     flex-direction: column;
   }
 

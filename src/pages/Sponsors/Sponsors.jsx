@@ -34,7 +34,7 @@ function Sponsors() {
         <div className="sponsor-wrapper">
           <div className="sponsor-wrapper-in">
             <div className="previous-sponsor" id="previous-sponsor" style={{ display: 'none' }}>
-              <div className="sponsor-box">
+              <div className="sponsor-box" >
 
                 <div className="sponsor-img">
                   <a href="https://devfolio.co/" target="_blank">
@@ -73,12 +73,12 @@ function Sponsors() {
               <div className="sponsor-box">
                 <div className="sponsor-img">
                   <a href="https://devfolio.co/" target="_blank">
-                    <img src={Devfolio} alt="Devfolio" />
+                    <img src={Polygon} alt="Devfolio" />
                   </a>
                 </div>
                 <div className="sponsor-img">
                   <a href="https://devfolio.co/" target="_blank">
-                    <img src={Riidl} alt="Devfolio" />
+                    <img src={Polygon} alt="Devfolio" />
                   </a>
                 </div>
                 <div className="sponsor-img">
