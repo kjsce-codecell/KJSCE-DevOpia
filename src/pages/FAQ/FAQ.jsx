@@ -35,10 +35,9 @@ const FAQ = () => {
   }, []);
   return (
     <section id="faqs" className="faq">
-      <div className="content">
-        <h1 className="title">FAQ</h1>
-        <p className="subtitle">FAQ</p>
-        {/* <img src={Sword} alt="Sword" className="sword" /> */}
+      <div className="">
+        <h1 className="title">Frequently<br />Asked<br /> Questions</h1>
+        <p className="subtitle">FAQs</p>
 
       </div>
       <div className="accordion">

@@ -93,9 +93,11 @@
     letter-spacing: 0.7rem;
     text-transform: uppercase;
     display: flex;
+    text-align: center;
+    align-items: center;
     justify-content: center;
     translate: -50%;
-    bottom: -50%;
+    bottom: -55%;
     left: 50%;
     z-index: 99;
   }

@@ -47,7 +47,7 @@ const Home = () => {
           <motion.p animate={{
             opacity: [0, 1],
             transition: { duration: 3, ease: 'easeIn' }
-          }} className='date' > 29TH - 31ST MARCH</motion.p>
+          }} className='date' >29TH-31ST MARCH</motion.p>
           <motion.img
             src={Banda}
             alt=""
