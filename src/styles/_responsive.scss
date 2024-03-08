@@ -91,17 +91,19 @@
   }
 
   .prizes {
-    // .left-container {
-    //   aspect-ratio: inherit;
-    // }
-    // .grid-container {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
+    .prize-item {
+      position: relative;
+      text-align: start;
+    }
+    .prize-section .prize-item {
+      width: 100%;
+      height: 100%;
+    }
     .prizes .prize-section .prize-container {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      width: 100%;
     }
     .prize-container {
       display: flex;

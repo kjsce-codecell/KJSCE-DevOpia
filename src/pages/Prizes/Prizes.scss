@@ -1,6 +1,5 @@
 .prizes {
   min-height: 100vh;
-
   position: relative;
   display: flex;
   flex-direction: column;
@@ -100,20 +99,88 @@
     color: #fff;
     font-family: 'agencyfb';
     width: 100%;
+    h1 {
+      padding-top: 2rem;
+    }
     .column {
       width: 100%;
       .prize-item {
+        h2 {
+          font-size: 3rem;
+        }
         width: 100%;
+        height: 50%;
       }
     }
     .prize-item {
       width: 50%;
       position: relative;
+      text-align: start;
+
+      .prize-text {
+        padding: 20px;
+      }
+      h2 {
+        font-size: clamp(2rem, 5vw, 5rem);
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+      h3 {
+        padding-top: 1%;
+        font-size: clamp(0.5rem, 5vw, 1.5rem);
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+      }
+      h4 {
+        padding-top: 1%;
+        font-size: 1rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+      }
+
+      p {
+        position: absolute;
+        text-align: center;
+        font-size: 2rem;
+        font-size: clamp(1rem, 5vw, 2rem);
+        font-weight: 300;
+        margin-bottom: 10px;
+        translate: -50%;
+        left: 50%;
+        bottom: 0;
+      }
+
+      p::before,
+      p::after {
+        content: '';
+        position: absolute;
+        width: 5px;
+        border-radius: 1px;
+        height: 5px;
+        background-color: #fff;
+        top: 50%;
+      }
+
+      p::before {
+        left: -20px;
+      }
+      p::after {
+        right: -20px;
+      }
     }
     .prize-image {
+      object-fit: cover;
       position: absolute;
       width: 100%;
       height: 100%;
+      z-index: -1;
       img {
         width: 100%;
         height: 100%;
@@ -128,147 +195,10 @@
     }
   }
   .prize-container {
+    gap: 20px;
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 50vh;
   }
-  // .body-text {
-  //   position: relative;
-  //   color: #fff;
-  //   font-family: 'agencyfb';
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   line-height: normal;
-  //   text-align: left;
-  //   letter-spacing: 1.5px;
-  // }
-
-  // .grid-container {
-  //   display: grid;
-  //   grid-template-columns: 1fr 2fr;
-  //   grid-gap: 10px;
-  //   text-align: left;
-  // }
-
-  // .container-text {
-  //   .spacer {
-  //     display: flex;
-  //     flex-grow: 1;
-  //     height: max-content;
-  //   }
-  //   padding: 10px 20px;
-  //   position: absolute;
-  //   color: #fff;
-  //   text-align: left;
-  //   font-family: AgencyFB;
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   line-height: normal;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   letter-spacing: 4.193px;
-  //   font-size: 4rem;
-  //   h4 {
-  //     font-size: 2rem;
-  //     font-weight: 400;
-  //     line-height: normal;
-  //     letter-spacing: 2.5px;
-  //     text-transform: uppercase;
-  //   }
-  //   p {
-  //     color: #fff;
-  //     text-align: center;
-  //     font-family: 'agencyfb';
-  //     justify-content: center;
-  //     align-items: center;
-  //     font-size: 3rem;
-  //     font-style: normal;
-  //     font-weight: 700;
-  //     line-height: normal;
-  //     letter-spacing: 3.237px;
-  //   }
-  // }
-  // .right-container .container-text {
-  //   padding: 10px 20px;
-  //   position: absolute;
-  //   // color: #fff;
-  //   text-align: left;
-  //   font-family: 'agencyfb';
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   line-height: normal;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   font-size: 2rem;
-  //   letter-spacing: 4.193px;
-  //   .spacer {
-  //     height: 40px;
-  //   }
-  //   .row {
-  //     display: flex;
-  //     flex-direction: row;
-  //     justify-content: space-between;
-  //     align-items: center;
-  //     gap: 10px;
-  //   }
-  //   h4 {
-  //     font-size: 1.5rem;
-  //     font-weight: 400;
-  //     line-height: normal;
-
-  //     letter-spacing: 2.5px;
-  //     text-transform: uppercase;
-  //   }
-  //   p {
-  //     color: #fff;
-  //     text-align: left;
-  //     font-family: 'agencyfb';
-  //     font-style: normal;
-  //     font-weight: 700;
-  //     line-height: normal;
-  //     letter-spacing: 3.237px;
-  //   }
-  // }
-  // .left-container {
-  //   aspect-ratio: 106/75;
-  //   // height: 26.5rem;
-  //   background-size: cover;
-  //   background-position: center;
-  // }
-
-  // .right-container {
-  //   background-size: cover;
-  //   background-position: center;
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
-  // .right-item {
-  //   height: auto;
-  //   width: auto;
-  //   margin-bottom: 10px; /* Spacing between the two items */
-  // }
-
-  // .left-container {
-  //   aspect-ratio: 106/75;
-  //   // height: 20v  h;
-  //   width: 100%;
-  //   background-size: cover;
-  //   background-position: center;
-  // }
-
-  // .right-container {
-  //   background-size: cover;
-  //   background-position: center;
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
-  // .right-item {
-  //   height: auto;
-  //   width: auto;
-  //   margin-bottom: 10px; /* Spacing between the two items */
-  // }
 }

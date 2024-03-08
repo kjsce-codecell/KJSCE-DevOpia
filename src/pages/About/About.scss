@@ -1,23 +1,24 @@
 .about {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-image: url('../../assets/aboutbg.png');
   height: fit-content;
-  width: 100vw;
+  min-height: 80vh;
   overflow-x: hidden;
+  padding:3rem 4rem;
 
   .content {
-    // padding: 2rem;
-    text-align: center;
     flex: 1;
     z-index: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    .left{
+      flex:1.2
+    }
   }
 
   .title {
@@ -37,15 +38,29 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .subtitle {
-    padding-left: 4rem;
+  .subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:1rem;
+    font-size: 6rem;
+    @media (max-width: 768px) {
+      font-size: 3rem;
+      text-align: center;
+      justify-content: center;
+    }
+    img {
+      width: 5rem;
+      @media (max-width: 720px) {
+        width: 3rem;
+      }
+    }
   }
+  
   .subtitle-container {
-    padding-top: 50px;
     width: 50%;
     display: flex;
     flex-direction: column;
-    position: absolute;
     color: #fff;
     font-family: 'agencyfb';
     font-style: normal;
@@ -54,9 +69,11 @@
     line-height: normal;
     letter-spacing: 13px;
     text-transform: uppercase;
-    top: 30%;
-    align-items: start;
-    padding-left: 4rem;
+    align-items: flex-start;
+    @media (max-width: 768px) {
+      width: 100%;
+      align-items: center;
+    }
   }
 
   .before {
@@ -64,20 +81,17 @@
   }
   .buttons {
     padding-bottom: 10px;
-    position: absolute;
     display: flex;
     gap: 10px;
     flex-direction: row;
     letter-spacing: 3px;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .sub {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     color: #fff;
-    top: 20%;
     font-family: 'agencyfb';
     font-size: 1.5rem;
     font-style: normal;
@@ -113,25 +127,14 @@
     line-height: normal;
     text-align: left;
     letter-spacing: 1.5px;
-    margin-top: 20px;
     p {
       font-size: 1.2rem;
     }
   }
-
-  .svg-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .svg-container svg {
-    width: 100px;
-    height: 100px;
-  }
 }
-
+.svg-container{
+  flex:0.8;
+}
 .about::before {
   content: '';
   position: absolute;
