@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 
 const SubheadingButton = ({ label, isActive, onClick }) => {
   return (
-    <button
+    <div
       className={`subheading-button ${isActive ? 'active' : ''}`}
       onClick={() => onClick(label)}
     >
       {label}
-    </button>
+    </div>
   );
 };
 

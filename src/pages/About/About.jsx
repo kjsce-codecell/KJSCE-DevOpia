@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import './About.scss'
 import Sword from '../../assets/sword.png'
 import Circle from '../../assets/circle.png'
@@ -7,37 +7,8 @@ import SubheadingContent from '../../components/About/SubheadingContent'
 import { motion } from 'framer-motion'
 
 const About = () => {
-  const [activeSubheading, setActiveSubheading] = useState('DEVOPIA')
-  const [isVisible, setIsVisible] = useState(false)
+  const [activeSubheading, setActiveSubheading] = useState(0)
   const aboutRef = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.disconnect()
-        }
-      },
-      {
-        rootMargin: '-100px',
-      }
-    )
-
-    if (aboutRef.current) {
-      observer.observe(aboutRef.current)
-    }
-
-    return () => {
-      if (aboutRef.current) {
-        observer.unobserve(aboutRef.current)
-      }
-    }
-  }, [])
-
-  const handleSubheadingClick = (subheading) => {
-    setActiveSubheading(subheading)
-  }
 
   const subheadings = [
     {
@@ -62,23 +33,23 @@ const About = () => {
       <div className="background"></div>
       <h1 className="title">About</h1>
       <div className="content">
-        <motion.div
-          className="sub"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.8, ease: 'easeIn' },
-          }}
-        >
-          <img src={Sword} className="before" alt="" />
-          <p className="subtitle" data-aos="fade-up" data-aos-duration="1000">
-            About
-          </p>
-          <img src={Sword} alt="" />
-        </motion.div>
+        <div className="left">
+          <motion.div
+            className="subtitle"
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { duration: 0.8, ease: 'easeIn' },
+            }}
+          >
+            <img src={Sword} className="before" alt="" />
+            <p className="subtitle" data-aos="fade-up" data-aos-duration="1000">
+              About
+            </p>
+            <img src={Sword} alt="" />
+          </motion.div>
 
-        <div className="subtitle-container">
-          {isVisible && (
+          <div className="subtitle-container">
             <motion.div
               className="buttons"
               animate={{
@@ -87,17 +58,15 @@ const About = () => {
                 transition: { duration: 1.5, ease: 'easeIn' },
               }}
             >
-              {subheadings.map((subheading) => (
+              {subheadings.map((subheading, index) => (
                 <SubheadingButton
                   key={subheading.label}
                   label={subheading.label}
-                  isActive={activeSubheading === subheading.label}
-                  onClick={handleSubheadingClick}
+                  isActive={index === activeSubheading}
+                  onClick={() => setActiveSubheading(index)}
                 />
               ))}
             </motion.div>
-          )}
-          {isVisible && (
             <motion.div
               className="body-text"
               animate={{
@@ -107,27 +76,17 @@ const About = () => {
               }}
             >
               <SubheadingContent
-                content={
-                  subheadings.find(
-                    (subheading) => subheading.label === activeSubheading
-                  )?.content
-                }
+                content={subheadings[activeSubheading].content}
               />
             </motion.div>
-          )}
+          </div>
+        </div>
+        <div
+        className="svg-container"
+        >
+          <motion.img animate={{}} src={Circle} alt="" />
         </div>
       </div>
-      {isVisible && (
-        <motion.div
-          animate={{
-            opacity: [0, 1],
-            transition: { duration: 3, ease: 'easeIn' },
-          }}
-          className="svg-container"
-        >
-          {isVisible && <motion.img animate={{}} src={Circle} alt="" />}
-        </motion.div>
-      )}
     </section>
   )
 }
