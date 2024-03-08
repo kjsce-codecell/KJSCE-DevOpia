@@ -95,7 +95,8 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.6rem;
-    font-size: 0.9rem;
+    font-size: 1.7rem;
+    gap: 5px;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -103,11 +104,17 @@
     align-items: center;
     justify-content: center;
     // translate: -50%;
-    bottom: -85%;
+    bottom: -75%;
     left: 0%;
-    // backdrop-filter: blur(10px);
     z-index: 99;
     width: fit-content;
+
+    #apply-button {
+      display: flex;
+      align-self: center;
+      height: 44px;
+      width: fit-content;
+    }
     h2 {
       font-size: 0.8rem;
       opacity: 0.8;

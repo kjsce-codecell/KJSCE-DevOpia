@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-content">
 
           <div className="codecell">
-            <a href="https://www.kjscecodecell.com/"><img src={CodeCell} alt="" /></a>
+            <a target='_blank' href="https://www.kjscecodecell.com/"><img src={CodeCell} alt="" /></a>
             <div className="socials">
               <a href="https://x.com/kjsce_codecell?s=21&t=rtV8iuTtUui3L-x4mv4w1A" target="_blank" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 36 36" fill="none">
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
           <div className="devopia"><img src={Logo} alt="" /></div>
           <div className="csi">
-            <a href="https://csikjsce.org/"><img src={CSI} alt="" /></a>
+            <a target='_blank' href="https://csikjsce.org/"><img src={CSI} alt="" /></a>
             <div className="socials">
               <a href="https://x.com/csi_kjsce?s=21&t=rtV8iuTtUui3L-x4mv4w1A" target="_blank" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 36 36" fill="none">

@@ -11,6 +11,18 @@ const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
+
+  useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
     window.addEventListener('resize', handleResize);
     handleResize();
@@ -49,6 +61,11 @@ const Home = () => {
             opacity: [0, 1],
             transition: { duration: 3, ease: 'easeIn' }
           }} className='date'>
+            <div
+              className="apply-button"
+              data-hackathon-slug="devopia"
+              data-button-theme="dark-inverted"
+            ></div>
             <p>29TH-31ST MARCH</p>
             <h2>scroll down</h2>
             <img src={Scroll} alt="" />
