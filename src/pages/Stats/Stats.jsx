@@ -35,20 +35,20 @@ function Stats() {
               <p>colleges</p>
             </div>
             <div className="imageContainer">
-              <img src="./Stats/Image4.png" alt="" />
+              <img src="./Stats/Image4.JPG" alt="" />
             </div>
           </div>
         </div>
         <div className="middle">
           <div className="imageContainer">
-            <img src="./Stats/Image5.png" alt="" />
+            <img src="./Stats/Image9.jpg" alt="" />
           </div>
           <div className="content">
             <h4 className="highlightNum">2000+</h4>
             <p>Registrations</p>
           </div>
           <div className="imageContainer">
-            <img src="./Stats/Image6.png" alt="" />
+            <img src="./Stats/Image6.JPG" alt="" />
           </div>
         </div>
         <div className="sideWrapper">

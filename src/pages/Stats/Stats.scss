@@ -106,6 +106,10 @@
   .sideWrapper {
     display: flex;
     align-items: start;
+    flex: 1.5;
+  }
+  .middle {
+    flex: 1;
   }
   .column {
     margin: 0.8rem;
@@ -147,12 +151,15 @@
     object-fit: cover;
   }
 }
-
+.column {
+  // display: flex;
+  flex: 1;
+}
 .content {
   margin: 0.8rem 0;
   .highlightNum {
     color: #fff;
-    font-family: AgencyFB;
+    font-family: 'agencyfb';
     font-size: 3.8rem;
     font-style: normal;
     font-weight: 700;
