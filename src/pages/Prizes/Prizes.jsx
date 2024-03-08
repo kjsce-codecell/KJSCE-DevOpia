@@ -2,20 +2,28 @@ import './Prizes.scss'
 import First from '../../assets/first.png'
 import Second from '../../assets/second.png'
 import Third from '../../assets/third.png'
+import { motion } from 'framer-motion'
+
 const Prizes = () => {
   return (
     <section className="prize" id="prizes">
       <div className="prizes">
         <div className="background"></div>
         <div className="subheading">
-          <div>
+          <motion.div
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { duration: 0.8, ease: 'easeIn' },
+            }}
+          >
             <h3>Prizes</h3>
             <img
               src="./prizes/PrizesSubHeadIcon.svg"
               className="right"
               alt=""
             />
-          </div>
+          </motion.div>
           <p>Prizes</p>
         </div>
         <div className="content">

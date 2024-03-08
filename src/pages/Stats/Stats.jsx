@@ -1,14 +1,22 @@
 import './Stats.scss'
+import { motion } from 'framer-motion'
+
 function Stats() {
   return (
     <section className="statsContainer" id="stats">
       <div className="background"></div>
       <div className="subheading">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
+        <motion.div
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.8, ease: 'easeIn' },
+          }}
+        >
           <img src="./Emblem.svg" className="left" alt="" />
           <h3>Stats</h3>
           <img src="./Emblem.svg" className="right" alt="" />
-        </div>
+        </motion.div>
         <p>Stats</p>
       </div>
 

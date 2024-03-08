@@ -61,6 +61,8 @@
       justify-content: center;
       align-items: center;
       flex-direction: row;
+      position: relative;
+
       .left {
         transform: rotate(-90deg);
       }
