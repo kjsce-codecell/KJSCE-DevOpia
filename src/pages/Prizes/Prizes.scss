@@ -89,147 +89,180 @@
     z-index: 1;
     align-items: center;
     margin-top: -6%;
+    width: 100%;
   }
-
-  .body-text {
-    position: relative;
-    color: #fff;
-    font-family: 'agencyfb';
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: left;
-    letter-spacing: 1.5px;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 10px;
-    text-align: left;
-  }
-
-  .container-text {
-    .spacer {
-      display: flex;
-      flex-grow: 1;
-      height: max-content;
-    }
-    padding: 10px 20px;
-    position: absolute;
-    color: #fff;
-    text-align: left;
-    font-family: AgencyFB;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  .prize-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    letter-spacing: 4.193px;
-    font-size: 4rem;
-    h4 {
-      font-size: 2rem;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
+    align-items: center;
+    justify-content: stretch;
+    gap: 2rem;
+    color: #fff;
+    font-family: 'agencyfb';
+    // width: 100vw;
+    .prize-item {
+      // width: 50%;
+      position: relative;
     }
-    p {
-      color: #fff;
-      text-align: center;
-      font-family: 'agencyfb';
-      justify-content: center;
-      align-items: center;
+    .prize-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h1 {
       font-size: 3rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 3.237px;
-    }
-  }
-  .right-container .container-text {
-    padding: 10px 20px;
-    position: absolute;
-    // color: #fff;
-    text-align: left;
-    font-family: 'agencyfb';
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 2rem;
-    letter-spacing: 4.193px;
-    .spacer {
-      height: 40px;
-    }
-    .row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-    }
-    h4 {
-      font-size: 1.5rem;
-      font-weight: 400;
-      line-height: normal;
-
-      letter-spacing: 2.5px;
+      font-weight: 300;
       text-transform: uppercase;
-    }
-    p {
-      color: #fff;
-      text-align: left;
-      font-family: 'agencyfb';
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 3.237px;
+      letter-spacing: 2px;
+      margin-bottom: 0;
     }
   }
-  .left-container {
-    aspect-ratio: 106/75;
-    height: 26.5rem;
-    // background-image: url('../../assets/first.png');
-    background-size: cover;
-    background-position: center;
-    // height: auto;
-    // width: auto;
-  }
-
-  .right-container {
-    background-size: cover;
-    background-position: center;
+  .prize-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    // width: 100vw;
   }
+  // .body-text {
+  //   position: relative;
+  //   color: #fff;
+  //   font-family: 'agencyfb';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   line-height: normal;
+  //   text-align: left;
+  //   letter-spacing: 1.5px;
+  // }
 
-  .right-item {
-    height: auto;
-    width: auto;
-    margin-bottom: 10px; /* Spacing between the two items */
-  }
+  // .grid-container {
+  //   display: grid;
+  //   grid-template-columns: 1fr 2fr;
+  //   grid-gap: 10px;
+  //   text-align: left;
+  // }
 
-  .left-container {
-    aspect-ratio: 106/75;
-    height: 26.5rem;
-    background-size: cover;
-    background-position: center;
-  }
+  // .container-text {
+  //   .spacer {
+  //     display: flex;
+  //     flex-grow: 1;
+  //     height: max-content;
+  //   }
+  //   padding: 10px 20px;
+  //   position: absolute;
+  //   color: #fff;
+  //   text-align: left;
+  //   font-family: AgencyFB;
+  //   font-style: normal;
+  //   font-weight: 700;
+  //   line-height: normal;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   letter-spacing: 4.193px;
+  //   font-size: 4rem;
+  //   h4 {
+  //     font-size: 2rem;
+  //     font-weight: 400;
+  //     line-height: normal;
+  //     letter-spacing: 2.5px;
+  //     text-transform: uppercase;
+  //   }
+  //   p {
+  //     color: #fff;
+  //     text-align: center;
+  //     font-family: 'agencyfb';
+  //     justify-content: center;
+  //     align-items: center;
+  //     font-size: 3rem;
+  //     font-style: normal;
+  //     font-weight: 700;
+  //     line-height: normal;
+  //     letter-spacing: 3.237px;
+  //   }
+  // }
+  // .right-container .container-text {
+  //   padding: 10px 20px;
+  //   position: absolute;
+  //   // color: #fff;
+  //   text-align: left;
+  //   font-family: 'agencyfb';
+  //   font-style: normal;
+  //   font-weight: 700;
+  //   line-height: normal;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   font-size: 2rem;
+  //   letter-spacing: 4.193px;
+  //   .spacer {
+  //     height: 40px;
+  //   }
+  //   .row {
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     gap: 10px;
+  //   }
+  //   h4 {
+  //     font-size: 1.5rem;
+  //     font-weight: 400;
+  //     line-height: normal;
 
-  .right-container {
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-  }
+  //     letter-spacing: 2.5px;
+  //     text-transform: uppercase;
+  //   }
+  //   p {
+  //     color: #fff;
+  //     text-align: left;
+  //     font-family: 'agencyfb';
+  //     font-style: normal;
+  //     font-weight: 700;
+  //     line-height: normal;
+  //     letter-spacing: 3.237px;
+  //   }
+  // }
+  // .left-container {
+  //   aspect-ratio: 106/75;
+  //   // height: 26.5rem;
+  //   background-size: cover;
+  //   background-position: center;
+  // }
 
-  .right-item {
-    height: auto;
-    width: auto;
-    margin-bottom: 10px; /* Spacing between the two items */
-  }
+  // .right-container {
+  //   background-size: cover;
+  //   background-position: center;
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  // .right-item {
+  //   height: auto;
+  //   width: auto;
+  //   margin-bottom: 10px; /* Spacing between the two items */
+  // }
+
+  // .left-container {
+  //   aspect-ratio: 106/75;
+  //   // height: 20v  h;
+  //   width: 100%;
+  //   background-size: cover;
+  //   background-position: center;
+  // }
+
+  // .right-container {
+  //   background-size: cover;
+  //   background-position: center;
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  // .right-item {
+  //   height: auto;
+  //   width: auto;
+  //   margin-bottom: 10px; /* Spacing between the two items */
+  // }
 }

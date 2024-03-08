@@ -19,7 +19,55 @@ const Prizes = () => {
           <p>Prizes</p>
         </div>
         <div className="content">
-          <div className="prize">
+          <div className="prize-section">
+            <h1>Software</h1>
+            <div className="prize-container">
+              <div className="prize-item">
+                <div className="prize-image">
+                  <img src={First} alt="" />
+                </div>
+                <div className="prize-text">
+                  <h2>INR 30,000</h2>
+                  <h3>CASH PRIZE</h3>
+                  <h4>
+                    Exciting Goodies worth
+                    <br /> inr 2l & More!
+                  </h4>
+                  <p>WINNER</p>
+                </div>
+              </div>
+              <div>
+                <div className="prize-item">
+                  <div className="prize-image">
+                    <img src={Second} alt="" />
+                  </div>
+                  <div className="prize-text">
+                    <h2>INR 30,000</h2>
+                    <h3>CASH PRIZE</h3>
+                    <h4>
+                      Exciting Goodies worth
+                      <br /> inr 2l & More!
+                    </h4>
+                    <p>RUNNER UP</p>
+                  </div>
+                </div>
+                <div className="prize-item">
+                  <div className="prize-image">
+                    <img src={Third} alt="" />
+                  </div>
+                  <div className="prize-text">
+                    <h2>INR 30,000</h2>
+                    <h3>CASH PRIZE</h3>
+                    <h4>
+                      Exciting Goodies worth
+                      <br /> inr 2l & More!
+                    </h4>
+                    <p>2ND RUNN ER UP</p>
+                  </div>
+                </div></div>
+            </div>
+          </div>
+          {/* <div className="prize">
             <div className="grid-container">
               <div
                 className="left-container"
@@ -88,38 +136,11 @@ const Prizes = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="three-containers">
-            <div className="left-container">
-              <img src={First} alt="" />
-              <div className="left-content">
-                <h2>INR 30,000<span>Cash Prize</span></h2>
-                <h3>Exciting Goodies worth inr 2l & More!</h3>
-                <p>WINNER</p>
-              </div>
-            </div>
-            <div className=" right-containers">
-              <div className="top-right-container">
-                <img src={Second} alt="" />
-                <div className="left-content">
-                  <h2>INR 30,000</h2>
-                  <h3>Exciting Goodies worth inr 2l & More!</h3>
-                  <p>WINNER</p>
-                </div>
-              </div>
-              <div className="bottom-right-container">
-                <img src={First} alt="" />
-                <div className="left-content">
-                  <h2>INR 30,000</h2>
-                  <h3>Exciting Goodies worth inr 2l & More!</h3>
-                  <p>WINNER</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          </div>
+           
+        </div> */}
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 

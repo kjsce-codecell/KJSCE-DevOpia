@@ -91,12 +91,22 @@
   }
 
   .prizes {
-    .prizes .left-container {
-      aspect-ratio: inherit;
-    }
-    .grid-container {
+    // .left-container {
+    //   aspect-ratio: inherit;
+    // }
+    // .grid-container {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+    .prizes .prize-section .prize-container {
       display: flex;
       flex-direction: column;
+      gap: 20px;
+    }
+    .prize-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
     .title {
       left: 0;
