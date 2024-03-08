@@ -41,8 +41,13 @@
     }
   }
   .navbar {
-    .logo img {
+    .logos {
+      padding-right: 0;
+      align-items: center;
+    }
+    .logos img {
       margin-right: 10px;
+      height: 1.5rem;
     }
     .nav-links {
       width: 100vw;
