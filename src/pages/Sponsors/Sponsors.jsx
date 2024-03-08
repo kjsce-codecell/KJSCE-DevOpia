@@ -108,37 +108,63 @@ function Sponsors() {
 
               <div id="current-sponsor" style={{ display: 'block' }}>
                 <div className="sponsor-box">
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
+                  <h1>Our Partners</h1>
+                  <div className="sponsor-grp">
 
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                  </div>
+                  <h1>Gold Sponsors</h1>
+
+                  <div className="sponsor-grp">
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                  </div>
+                  <h1>Silver Sponsors</h1>
+
+                  <div className="sponsor-grp">
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -15,7 +15,7 @@ const FAQ = () => {
         }
       },
       {
-        rootMargin: '-100px',
+        rootMargin: '-150px',
       }
     );
 
