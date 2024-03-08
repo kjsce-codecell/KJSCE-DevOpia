@@ -2,6 +2,7 @@ import './Home.scss';
 import Title from '../../assets/Logo.png';
 import Banda from '../../assets/Banda.png';
 import Ships from '../../assets/Ships.png';
+import Scroll from '../../assets/scroll.png'
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -47,7 +48,11 @@ const Home = () => {
           <motion.p animate={{
             opacity: [0, 1],
             transition: { duration: 3, ease: 'easeIn' }
-          }} className='date' >29TH-31ST MARCH</motion.p>
+          }} className='date'>
+            <p>29TH-31ST MARCH</p>
+            <h2>scroll down</h2>
+            <img src={Scroll} alt="" />
+          </motion.p>
           <motion.img
             src={Banda}
             alt=""

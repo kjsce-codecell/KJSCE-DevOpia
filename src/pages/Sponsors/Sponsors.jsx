@@ -1,6 +1,6 @@
 import './Sponsors.scss'; // Import your stylesheet here
 import Devfolio from '../../assets/devfolio.png';
-import Riidl from '../../assets/riidl.png';
+// import Riidl from '../../assets/riidl.png';
 import Polygon from '../../assets/polygon.png';
 
 function Sponsors() {
