@@ -11,7 +11,6 @@
   overflow-x: hidden;
 
   .content {
-    padding: 2rem;
     text-align: center;
     flex: 1;
     z-index: 1;
@@ -38,7 +37,7 @@
     -webkit-text-fill-color: transparent;
   }
   .subtitle {
-    padding-left: 20px;
+    padding-left: 4rem;
   }
   .subtitle-container {
     padding-top: 50px;
@@ -56,6 +55,7 @@
     text-transform: uppercase;
     top: 30%;
     align-items: start;
+    padding-left: 4rem;
   }
 
   .before {
