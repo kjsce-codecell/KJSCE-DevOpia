@@ -8,14 +8,13 @@ const PrizeItem = ({ imageUrl, description, winner }) => {
         <p>{winner}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
 PrizeItem.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   winner: PropTypes.string.isRequired,
-};
+}
 
-
-export default PrizeItem;
+export default PrizeItem

@@ -81,9 +81,7 @@ const About = () => {
             </motion.div>
           </div>
         </div>
-        <div
-        className="svg-container"
-        >
+        <div className="svg-container">
           <motion.img animate={{}} src={Circle} alt="" />
         </div>
       </div>

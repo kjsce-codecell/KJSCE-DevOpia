@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 const SubheadingButton = ({ label, isActive, onClick }) => {
   return (
@@ -8,13 +8,13 @@ const SubheadingButton = ({ label, isActive, onClick }) => {
     >
       {label}
     </div>
-  );
-};
+  )
+}
 
 SubheadingButton.propTypes = {
   label: PropTypes.string.isRequired,
   isActive: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
-};
+}
 
-export default SubheadingButton;
+export default SubheadingButton

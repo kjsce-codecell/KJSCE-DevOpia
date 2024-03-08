@@ -52,8 +52,8 @@
     text-align: center;
 
     gap: 1rem;
-    
-    .first{
+
+    .first {
       display: none;
     }
 
@@ -61,7 +61,7 @@
       font-size: 3rem;
       letter-spacing: 5px;
       justify-content: center;
-      .first{
+      .first {
         display: block;
       }
     }
@@ -74,18 +74,17 @@
     }
   }
 
-  @media (max-width: 720px){
+  @media (max-width: 720px) {
     background: linear-gradient(
-      105deg,
-      rgba(171, 85, 255, 0.4) 0%,
-      rgba(171, 85, 255, 0) 30.49%
-    ),
-    linear-gradient(
-      -105deg,
-      rgba(171, 85, 255, 0.4) 0%,
-      rgba(171, 85, 255, 0) 30.49%
-    );
-    
+        105deg,
+        rgba(171, 85, 255, 0.4) 0%,
+        rgba(171, 85, 255, 0) 30.49%
+      ),
+      linear-gradient(
+        -105deg,
+        rgba(171, 85, 255, 0.4) 0%,
+        rgba(171, 85, 255, 0) 30.49%
+      );
   }
 }
 
