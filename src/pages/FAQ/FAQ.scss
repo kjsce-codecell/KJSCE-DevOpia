@@ -82,7 +82,7 @@
     padding: 0.5rem 3rem 0.5rem 1rem;
     min-height: 3.5rem;
     display: flex;
-    font-size: 2rem;
+    font-size: 2.5rem;
     align-items: center;
     position: relative;
     cursor: pointer;
@@ -94,7 +94,7 @@
     justify-content: left;
     flex-direction: row;
     margin: auto;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .accordion-item-header::after {
@@ -130,16 +130,6 @@
   .accordion-item-body-content {
     padding: 1.5rem;
     padding-top: 0.8rem;
-    font-size: 17px;
-  }
-
-  @media (max-width: 720px) {
-    .accordion-item-body-content {
-      font-size: 13px;
-    }
-
-    .accordion-item-header.active {
-      font-size: 15px;
-    }
+    font-size: 1.6rem;
   }
 }
