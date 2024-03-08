@@ -72,7 +72,9 @@ const About = () => {
             }}
           >
             <img src={Sword} className="before" alt="" />
-            <p className="subtitle">About</p>
+            <p className="subtitle" data-aos="fade-up" data-aos-duration="1000">
+              About
+            </p>
             <img src={Sword} alt="" />
           </motion.div>
         )}

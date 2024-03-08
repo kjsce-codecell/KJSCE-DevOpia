@@ -36,7 +36,7 @@ const Prizes = () => {
                   <p>WINNER</p>
                 </div>
               </div>
-              <div>
+              <div className="column">
                 <div className="prize-item">
                   <div className="prize-image">
                     <img src={Second} alt="" />
@@ -64,7 +64,8 @@ const Prizes = () => {
                     </h4>
                     <p>2ND RUNN ER UP</p>
                   </div>
-                </div></div>
+                </div>
+              </div>
             </div>
           </div>
           {/* <div className="prize">
@@ -140,7 +141,7 @@ const Prizes = () => {
         </div> */}
         </div>
       </div>
-    </section >
+    </section>
   )
 }
 

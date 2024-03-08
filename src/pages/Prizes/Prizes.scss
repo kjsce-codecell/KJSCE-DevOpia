@@ -99,9 +99,15 @@
     gap: 2rem;
     color: #fff;
     font-family: 'agencyfb';
-    // width: 100vw;
+    width: 100%;
+    .column {
+      width: 100%;
+      .prize-item {
+        width: 100%;
+      }
+    }
     .prize-item {
-      // width: 50%;
+      width: 50%;
       position: relative;
     }
     .prize-image {
@@ -124,7 +130,7 @@
   .prize-container {
     display: flex;
     flex-direction: row;
-    // width: 100vw;
+    width: 100%;
   }
   // .body-text {
   //   position: relative;

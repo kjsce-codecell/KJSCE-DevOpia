@@ -4,7 +4,7 @@ function Stats() {
     <section className="statsContainer" id="stats">
       <div className="background"></div>
       <div className="subheading">
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
           <img src="./Emblem.svg" className="left" alt="" />
           <h3>Stats</h3>
           <img src="./Emblem.svg" className="right" alt="" />
