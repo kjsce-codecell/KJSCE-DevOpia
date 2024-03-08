@@ -62,22 +62,21 @@ const About = () => {
       <div className="background"></div>
       <h1 className="title">About</h1>
       <div className="content">
-        {isVisible && (
-          <motion.div
-            className="sub"
-            animate={{
-              opacity: [0, 1],
-              y: [50, 0],
-              transition: { duration: 1.5, ease: 'easeIn' },
-            }}
-          >
-            <img src={Sword} className="before" alt="" />
-            <p className="subtitle" data-aos="fade-up" data-aos-duration="1000">
-              About
-            </p>
-            <img src={Sword} alt="" />
-          </motion.div>
-        )}
+        <motion.div
+          className="sub"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.8, ease: 'easeIn' },
+          }}
+        >
+          <img src={Sword} className="before" alt="" />
+          <p className="subtitle" data-aos="fade-up" data-aos-duration="1000">
+            About
+          </p>
+          <img src={Sword} alt="" />
+        </motion.div>
+
         <div className="subtitle-container">
           {isVisible && (
             <motion.div

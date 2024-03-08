@@ -11,12 +11,17 @@ import Stats from './pages/Stats/Stats'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import React from 'react'
+import Loader from './components/Loader'
 function App() {
+  const [loading, setLoading] = React.useState(true)
   React.useEffect(() => {
     AOS.init()
     AOS.refresh()
+    setInterval(() => setLoading(false), 4000)
   }, [])
-
+  if (loading) {
+    return <Loader />
+  }
   return (
     <>
       <Navbar />
