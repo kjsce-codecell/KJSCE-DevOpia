@@ -7,9 +7,18 @@ const Prizes = () => {
     <section className="prize" id="prizes">
       <div className="prizes">
         <div className="background"></div>
+        <div className="subheading">
+          <div>
+            <h3>Prizes</h3>
+            <img
+              src="./prizes/PrizesSubHeadIcon.svg"
+              className="right"
+              alt=""
+            />
+          </div>
+          <p>Prizes</p>
+        </div>
         <div className="content">
-          <h1 className="title">Prizes</h1>
-          <p className="subtitle">Prizes</p>
           <div className="prize">
             <div className="grid-container">
               <div

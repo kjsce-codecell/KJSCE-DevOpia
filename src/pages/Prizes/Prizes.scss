@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #000512;
+  padding-bottom: 2rem;
   width: 100%;
   overflow: hidden;
   background: linear-gradient(
@@ -14,6 +15,71 @@
     rgba(232, 186, 61, 0.4) 0%,
     rgba(232, 186, 61, 0) 20.64%
   );
+  .subheading {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'agencyfb';
+    height: 100%;
+    min-height: 10vmin;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 3rem;
+    padding-top: 3rem;
+    z-index: 2;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      h3 {
+        font-size: 6rem;
+        position: relative;
+        margin: 0 1rem;
+        &::before,
+        &::after {
+          content: '';
+        }
+      }
+    }
+    p {
+      position: absolute;
+      top: 0;
+      text-align: center;
+      width: 100%;
+      -webkit-text-stroke-width: 7.02435827255249;
+      -webkit-text-stroke-color: #000;
+      letter-spacing: 3rem;
+      font-size: clamp(1.5rem, 30vw, 20rem);
+      font-weight: normal;
+      opacity: 0.05;
+      background: linear-gradient(
+        180deg,
+        #fff 0%,
+        rgba(255, 255, 255, 0) 95.73%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    background: url('./prizes/prizesBg.svg') #000512 no-repeat center center;
+    background-size: cover;
+    opacity: 0.3;
+  }
 
   .content {
     padding: 10%;
@@ -21,45 +87,7 @@
     flex: 1;
     z-index: 1;
     align-items: center;
-  }
-
-  .title {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    translate: -50%;
-    font-family: 'dunerise';
-    font-size: 15rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 31.423px;
-    opacity: 0.05;
-    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 85.73%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .subtitle {
-    position: relative;
-    color: #fff;
-    top: 20%;
-    left: 20%;
-    transform: translateX(-50%);
-    font-family: 'agencyfb';
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 13px;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  .subtitle::before {
-    content: url('../../assets/prizes.svg');
-    margin-right: 10px;
+    margin-top: -6%;
   }
 
   .body-text {
