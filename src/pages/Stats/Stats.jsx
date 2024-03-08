@@ -54,26 +54,26 @@ function Stats() {
         <div className="sideWrapper">
           <div className="column">
             <div className="imageContainer">
-              <img src="./Stats/Image7.png" alt="" />
+              <img src="./Stats/Image7.jpg" alt="" />
             </div>
             <div className="content">
               <h4 className="highlightNum">150+</h4>
               <p>Hackers</p>
             </div>
             <div className="imageContainer">
-              <img src="./Stats/Image8.png" alt="" />
+              <img src="./Stats/Image8.jpg" alt="" />
             </div>
           </div>
           <div className="column">
             <div className="imageContainer">
-              <img src="./Stats/Image9.png" alt="" />
+              <img src="./Stats/Image9.jpg" alt="" />
             </div>
             <div className="content">
               <h4 className="highlightNum">40+</h4>
               <p>Projects</p>
             </div>
-            <div className="imageContainer">
-              <img src="./Stats/Image10.png" alt="" />
+            <div className="imageContainer ten">
+              <img src="./Stats/Image10.jpg" alt="" />
             </div>
           </div>
         </div>
