@@ -5,8 +5,9 @@
     rgba(171, 85, 255, 0.4) 0%,
     rgba(171, 85, 255, 0) 22.49%
   );
+  position: relative;
   .title {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 50%;
     translate: -50%;
@@ -30,29 +31,30 @@
     color: #fff;
     top: 4%;
     left: 2%;
-    // transform: translateX(-50%);
     font-family: 'agencyfb';
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 13px;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
     margin: 0;
+    margin-bottom: 2rem;
+    padding: 3rem 0;
   }
 
-  .subtitle::before {
+  .subtitle::after {
     // display: block;
     // content: url('../../assets/major.png');
 
     content: url('../../assets/settings.png');
     margin-right: 10px;
 
-    // background-size: contain; /* Adjust the size of the icon */
-    // background-repeat: no-repeat; /* Ensure the icon is not repeated */
-    // background-position: center; /* Center the icon */
-    width: 20px; /* Set the width of the icon */
-    height: 20px;
+    background-size: contain; /* Adjust the size of the icon */
+    background-repeat: no-repeat; /* Ensure the icon is not repeated */
+    background-position: center; /* Center the icon */
   }
 }
 
@@ -65,6 +67,7 @@
   float: left;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .sponsor-buttons {
