@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: center;
   background-image: url('../../assets/aboutbg.png');
-  min-height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow-x: hidden;
 
@@ -37,10 +37,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .subtitle {
+    padding-left: 20px;
+  }
   .subtitle-container {
+    padding-top: 50px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     color: #fff;
     font-family: 'agencyfb';
     font-style: normal;
@@ -57,6 +62,8 @@
     display: none;
   }
   .buttons {
+    padding-bottom: 10px;
+    position: absolute;
     display: flex;
     gap: 10px;
     flex-direction: row;
@@ -64,7 +71,7 @@
   }
 
   .sub {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;

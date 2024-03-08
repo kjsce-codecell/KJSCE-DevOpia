@@ -57,7 +57,11 @@
   }
   .about {
     flex-direction: column;
+    padding: 1rem;
+    height: 120vh;
+    overflow: hidden;
     .subtitle-container {
+      left: 0;
       width: 100%;
     }
     .sub {
@@ -65,6 +69,10 @@
       img {
         height: 3.5rem;
       }
+    }
+    .body-text,
+    .buttons {
+      padding: 10px;
     }
     // .subtitle::before {
     //   position: absolute;
@@ -76,9 +84,16 @@
     .before {
       display: block;
     }
+    .svg-container {
+      position: absolute;
+      bottom: -10%;
+    }
   }
 
   .prizes {
+    .prizes .left-container {
+      aspect-ratio: inherit;
+    }
     .grid-container {
       display: flex;
       flex-direction: column;
@@ -87,6 +102,7 @@
       left: 0;
     }
     .content {
+      padding: 10px;
       .container-text {
         width: 100%;
         text-align: center;
