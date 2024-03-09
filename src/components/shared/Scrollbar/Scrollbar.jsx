@@ -27,13 +27,12 @@ const ScrollBar = () => {
     const clampedY = Math.max(0, Math.min(adjustedY, trackHeightPixels))
     const scrollValue =
       (clampedY / trackHeightPixels) * (docHeight - windowHeight)
-    window.scrollTo({ top: scrollValue })
+    window.scrollTo({ top: scrollValue, behavior: 'smooth' })
 
-    // Update the progress based on the drag position.
     setProgress((clampedY / trackHeightPixels) * 100)
   }
 
-  const thumbTop = (progress / 100) * trackHeightPixels // Corrected to calculate thumbTop based on progress
+  const thumbTop = (progress / 100) * trackHeightPixels
 
   // Hide the component on mobile devices
   if (window.innerWidth <= 768) {
@@ -62,12 +61,15 @@ const ScrollBar = () => {
           height: `${thumbHeight}px`,
           backgroundColor: '#fff',
           position: 'absolute',
-          top: `${thumbTop}px`,
+          transform: `translateY(${thumbTop}px)`,
           cursor: 'grab',
         }}
         drag="y"
         dragConstraints={{ top: 0, bottom: trackHeightPixels }}
         onDrag={handleDrag}
+        whileTap={{
+          cursor: 'grabbing',
+        }}
       />
     </motion.div>
   )
