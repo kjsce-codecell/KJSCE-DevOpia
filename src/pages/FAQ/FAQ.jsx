@@ -70,7 +70,7 @@ const FAQ = () => {
   }, [])
   return (
     <section ref={aboutRef} id="faqs" className="faq">
-      <div className="">
+      <div className="faq">
         <h1 className="title">
           Frequently
           <br />
@@ -86,7 +86,17 @@ const FAQ = () => {
           }}
           className="subtitle"
         >
-          FAQs
+         <img
+              src="src/assets/Question.svg"
+              className="faqs-img-left"
+              alt=""
+          />
+          <h3 className='h3-center-faqs'>FAQs</h3>
+          <img
+            src="src/assets/Question.svg"
+            className="faqs-img-right"
+            alt=""
+          />
         </motion.p>
       </div>
 
