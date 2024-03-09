@@ -12,6 +12,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import React from 'react'
 import Loader from './components/Loader'
+import ScrollBar from './components/shared/Scrollbar/Scrollbar'
 function App() {
   const [loading, setLoading] = React.useState(true)
   React.useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
   }
   return (
     <>
+      <ScrollBar />
       <Navbar />
       <Home />
       <About />
