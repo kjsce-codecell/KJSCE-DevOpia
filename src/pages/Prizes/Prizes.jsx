@@ -33,8 +33,24 @@ const Prizes = () => {
         </div>
         <div className="prizes-content">
           <div className="prize-section">
-            <h1>Software</h1>
-            <div className="prize-container">
+            <motion.h1
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
+              Software
+            </motion.h1>
+            <motion.div
+              className="prize-container"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+              viewport={{ once: true }}
+            >
               <div className="prize-item">
                 <div className="prize-image">
                   <img src={First} alt="" />
@@ -79,11 +95,26 @@ const Prizes = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="prize-section">
-            <h1>Hardware</h1>
-            <div className="prize-container">
+            <motion.h1
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
+              Hardware
+            </motion.h1>
+            <motion.div
+              className="prize-container"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <div className="prize-item">
                 <div className="prize-image">
                   <img src={First} alt="" />
@@ -110,7 +141,7 @@ const Prizes = () => {
                   <p>RUNNER UP</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
           {/* <div className="prize">
             <div className="grid-container">

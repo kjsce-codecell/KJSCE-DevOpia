@@ -39,7 +39,7 @@ const About = () => {
             whileInView={{
               opacity: [0, 1],
               y: [50, 0],
-              transition: { duration: 0.8, ease: 'easeIn' },
+              transition: { duration: 0.5, ease: 'easeIn' },
             }}
           >
             <img src={Sword} className="before" alt="" />
@@ -52,10 +52,10 @@ const About = () => {
           <div className="subtitle-container">
             <motion.div
               className="buttons"
-              animate={{
+              whileInView={{
                 opacity: [0, 1],
                 y: [50, 0],
-                transition: { duration: 1.5, ease: 'easeIn' },
+                transition: { duration: 0.5, ease: 'easeIn' },
               }}
             >
               {subheadings.map((subheading, index) => (
@@ -69,10 +69,10 @@ const About = () => {
             </motion.div>
             <motion.div
               className="body-text"
-              animate={{
+              whileInView={{
                 opacity: [0, 1],
                 y: [50, 0],
-                transition: { duration: 1.5, ease: 'easeIn' },
+                transition: { duration: 0.5, ease: 'easeIn' },
               }}
             >
               <SubheadingContent

@@ -86,11 +86,11 @@
     z-index: 0;
     background: url('/prizes/prizesBg.svg') #000512 no-repeat center center;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.1;
   }
 
   .prizes-content {
-    padding: 10%;
+    padding: 0 10%;
     padding-top: 5%;
     text-align: center;
     flex: 1;
@@ -98,6 +98,8 @@
     align-items: center;
     margin-top: -6%;
     width: 100%;
+    scale: 0.8;
+    transform: translateY(-10%);
   }
   .prize-section {
     display: flex;

@@ -7,207 +7,208 @@ import { motion } from 'framer-motion'
 import SettingsIcon from '../../assets/settings.png'
 
 function Sponsors() {
-  const [isVisible, setIsVisible] = useState(false)
   const [option, setOption] = useState('current')
   const sponsorRef = useRef(null)
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.disconnect()
-        }
-      },
-      {
-        rootMargin: '-100px',
-      }
-    )
-
-    if (sponsorRef.current) {
-      observer.observe(sponsorRef.current)
-    }
-
-    return () => {
-      if (sponsorRef.current) {
-        observer.unobserve(sponsorRef.current)
-      }
-    }
-  }, [])
-
   return (
     <section ref={sponsorRef} className="sponsors" id="sponsors">
+      <div className="background"></div>
       <h1 className="title">Sponsors</h1>
-      {isVisible && (
-        <motion.p
-          animate={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          className="subtitle"
-        >
-          <img src={SettingsIcon} alt="settings" className="first" />
-          Sponsors
-          <img src={SettingsIcon} alt="settings" />
-        </motion.p>
-      )}
-      {isVisible && (
+      <motion.p
+        whileInView={{
+          opacity: [0, 1],
+          y: [50, 0],
+          transition: { duration: 0.5, ease: 'easeIn' },
+        }}
+        className="subtitle"
+      >
+        <img src={SettingsIcon} alt="settings" className="first" />
+        Sponsors
+        <img src={SettingsIcon} alt="settings" />
+      </motion.p>
+      <div className="sponsor-container">
+        <div className="sponsor-buttons">
+          <motion.div
+            className="sponsor-btn"
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { duration: 0.5, ease: 'easeIn' },
+            }}
+          >
+            <button
+              className={`cybr-btn ${option === 'current' && 'active-btn'}`}
+              onClick={() => setOption('previous')}
+            >
+              Previous Sponsors
+            </button>
+          </motion.div>
+          <motion.div
+            className="sponsor-btn"
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { duration: 0.5, ease: 'easeIn' },
+            }}
+          >
+            <button
+              className={`cybr-btn ${option === 'previous' && 'active-btn'}`}
+              onClick={() => setOption('current')}
+            >
+              Current Sponsors
+            </button>
+          </motion.div>
+        </div>
         <motion.div
-          animate={{
+          className="sponsor-wrapper"
+          whileInView={{
             opacity: [0, 1],
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
-          className="sponsor-container"
         >
-          <div className="sponsor-buttons">
-            <div className="sponsor-btn">
-              <button
-                className={`cybr-btn ${option === 'previous' && 'active-btn'}`}
-                onClick={() => setOption('previous')}
-              >
-                Previous Sponsors
-              </button>
-            </div>
-            <div className="sponsor-btn">
-              <button
-                className={`cybr-btn ${option === 'current' && 'active-btn'}`}
-                onClick={() => setOption('current')}
-              >
-                Current Sponsors
-              </button>
-            </div>
-          </div>
-          <div className="sponsor-wrapper">
-            {option === 'previous' && (
-              <div className="current-sponsor" id="previous-sponsor">
-                <div className="sponsor-box">
-                  <h1>Previous Partners</h1>
-                  <div className="sponsor-grp">
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
+          {option === 'previous' && (
+            <motion.div
+              className="current-sponsor"
+              id="previous-sponsor"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
+              <div className="sponsor-box">
+                <h1>Previous Partners</h1>
+                <div className="sponsor-grp">
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
                   </div>
-                  <h1>Previous Gold Sponsors</h1>
-
-                  <div className="sponsor-grp">
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
                   </div>
-                  <h1>Previous Silver Sponsors</h1>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                </div>
+                <h1>Previous Gold Sponsors</h1>
 
-                  <div className="sponsor-grp">
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
+                <div className="sponsor-grp">
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                </div>
+                <h1>Previous Silver Sponsors</h1>
+
+                <div className="sponsor-grp">
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
                   </div>
                 </div>
               </div>
-            )}
+            </motion.div>
+          )}
 
-            {option === 'current' && (
-              <div id="current-sponsor">
-                <div className="sponsor-box">
-                  <h1>Our Partners</h1>
-                  <div className="sponsor-grp">
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
+          {option === 'current' && (
+            <motion.div
+              id="current-sponsor"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
+              <div className="sponsor-box">
+                <h1>Our Partners</h1>
+                <div className="sponsor-grp">
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
                   </div>
-                  <h1>Gold Sponsors</h1>
-
-                  <div className="sponsor-grp">
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
                   </div>
-                  <h1>Silver Sponsors</h1>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                </div>
+                <h1>Gold Sponsors</h1>
 
-                  <div className="sponsor-grp">
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
-                    <div className="sponsor-img">
-                      <a href="https://devfolio.co/" target="_blank">
-                        <img src={Polygon} alt="Devfolio" />
-                      </a>
-                    </div>
+                <div className="sponsor-grp">
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                </div>
+                <h1>Silver Sponsors</h1>
+
+                <div className="sponsor-grp">
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
+                  </div>
+                  <div className="sponsor-img">
+                    <a href="https://devfolio.co/" target="_blank">
+                      <img src={Polygon} alt="Devfolio" />
+                    </a>
                   </div>
                 </div>
               </div>
-            )}
-          </div>
+            </motion.div>
+          )}
         </motion.div>
-      )}
+      </div>
     </section>
   )
 }

@@ -23,68 +23,174 @@ function Stats() {
       <div className="statsGrid">
         <div className="sideWrapper">
           <div className="column">
-            <div className="imageContainer">
+            <motion.div
+              className="imageContainer"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <img src="./Stats/Image1.png" alt="" />
-            </div>
-            <div className="content">
+            </motion.div>
+            <motion.div
+              className="content"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <h4 className="highlightNum">24</h4>
               <p>hack hours</p>
-            </div>
-            <div className="imageContainer">
+            </motion.div>
+            <motion.div
+              className="imageContainer"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <img src="./Stats/Image2.png" alt="" />
-            </div>
+            </motion.div>
           </div>
           <div className="column">
-            <div className="imageContainer">
+            <motion.div
+              className="imageContainer"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <img src="./Stats/Image3.jpg" alt="" />
-            </div>
-            <div className="content">
+            </motion.div>
+            <motion.div
+              className="content"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <h4 className="highlightNum">100+</h4>
               <p>colleges</p>
-            </div>
-            <div className="imageContainer">
+            </motion.div>
+            <motion.div
+              className="imageContainer"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <img src="./Stats/Image4.jpg" alt="" />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="middle">
-          <div className="imageContainer">
+          <motion.div
+            className="imageContainer"
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { duration: 0.5, ease: 'easeIn' },
+            }}
+          >
             <img src="./Stats/Image9.jpg" alt="" />
-          </div>
-          <div className="content" style={{
-            textAlign:"center"
-          }}>
+          </motion.div>
+          <motion.div
+            className="content"
+            style={{
+              textAlign: 'center',
+            }}
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { duration: 0.5, ease: 'easeIn' },
+            }}
+          >
             <h4 className="highlightNum">2000+</h4>
             <p>Registrations</p>
-          </div>
-          <div className="imageContainer">
+          </motion.div>
+          <motion.div
+            className="imageContainer"
+            whileInView={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: { duration: 0.5, ease: 'easeIn' },
+            }}
+          >
             <img src="./Stats/Image6.JPG" alt="" />
-          </div>
+          </motion.div>
         </div>
         <div className="sideWrapper">
           <div className="column">
-            <div className="imageContainer">
+            <motion.div
+              className="imageContainer"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <img src="./Stats/Image7.jpg" alt="" />
-            </div>
-            <div className="content">
+            </motion.div>
+            <motion.div
+              className="content"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <h4 className="highlightNum">150+</h4>
               <p>Hackers</p>
-            </div>
-            <div className="imageContainer">
+            </motion.div>
+            <motion.div
+              className="imageContainer"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <img src="./Stats/Image8.jpg" alt="" />
-            </div>
+            </motion.div>
           </div>
           <div className="column">
-            <div className="imageContainer">
+            <motion.div
+              className="imageContainer"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <img src="./Stats/Image9.jpg" alt="" />
-            </div>
-            <div className="content">
+            </motion.div>
+            <motion.div
+              className="content"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <h4 className="highlightNum">40+</h4>
               <p>Projects</p>
-            </div>
-            <div className="imageContainer ten">
+            </motion.div>
+            <motion.div
+              className="imageContainer ten"
+              whileInView={{
+                opacity: [0, 1],
+                y: [50, 0],
+                transition: { duration: 0.5, ease: 'easeIn' },
+              }}
+            >
               <img src="./Stats/Image10.jpg" alt="" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

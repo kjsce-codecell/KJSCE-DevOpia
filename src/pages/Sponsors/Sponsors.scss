@@ -1,5 +1,6 @@
 .sponsors {
   background-size: cover;
+
   background: linear-gradient(
       135deg,
       rgba(171, 85, 255, 0.4) 0%,
@@ -12,6 +13,19 @@
     );
   position: relative;
   padding: 3rem 4rem;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('/faqBg.png') #000512 no-repeat center center;
+    background-size: cover;
+    opacity: 1;
+  }
+
   .title {
     position: absolute;
     top: 0;

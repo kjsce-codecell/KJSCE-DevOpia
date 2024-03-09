@@ -1,34 +1,9 @@
 import { useEffect } from 'react'
 import './FAQ.scss'
 import { motion } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 const FAQ = () => {
-  const [isVisible, setIsVisible] = useState(false)
   const aboutRef = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.disconnect()
-        }
-      },
-      {
-        rootMargin: '-150px',
-      }
-    )
-
-    if (aboutRef.current) {
-      observer.observe(aboutRef.current)
-    }
-
-    return () => {
-      if (aboutRef.current) {
-        observer.unobserve(aboutRef.current)
-      }
-    }
-  }, [])
 
   useEffect(() => {
     const handleClick = (event) => {
@@ -86,12 +61,8 @@ const FAQ = () => {
           }}
           className="subtitle"
         >
-         <img
-              src="src/assets/Question.svg"
-              className="faqs-img-left"
-              alt=""
-          />
-          <h3 className='h3-center-faqs'>FAQs</h3>
+          <img src="src/assets/Question.svg" className="faqs-img-left" alt="" />
+          <h3 className="h3-center-faqs">FAQs</h3>
           <img
             src="src/assets/Question.svg"
             className="faqs-img-right"
@@ -108,7 +79,14 @@ const FAQ = () => {
           transition: { duration: 0.6, ease: 'easeIn' },
         }}
       >
-        <div className="accordion-item">
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">
             What happens at a Hackathon?
           </div>
@@ -123,8 +101,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">What do I need to bring?</div>
           <div className="accordion-item-body">
             <div className="accordion-item-body-content">
@@ -133,8 +118,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">
             What are the topics for the Hackathon?
           </div>
@@ -146,8 +138,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">
             What do people normally make?
           </div>
@@ -160,8 +159,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">
             Where will the hackathon be held?
           </div>
@@ -172,8 +178,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">
             Will parts be provided for the hardware hackathon?
           </div>
@@ -183,8 +196,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">
             What if I have never been to a hackathon before?
           </div>
@@ -198,8 +218,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">
             What is the required team size?
           </div>
@@ -209,8 +236,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">What is Bid-by-Bit?</div>
           <div className="accordion-item-body">
             <div className="accordion-item-body-content">
@@ -222,8 +256,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">What is a CTF?</div>
           <div className="accordion-item-body">
             <div className="accordion-item-body-content">
@@ -237,8 +278,15 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
-        <div className="accordion-item">
+        </motion.div>
+        <motion.div
+          className="accordion-item"
+          whileInView={{
+            opacity: [0, 1],
+            y: [50, 0],
+            transition: { duration: 0.5, ease: 'easeIn' },
+          }}
+        >
           <div className="accordion-item-header">
             What is the Code of Conduct?
           </div>
@@ -257,7 +305,7 @@ const FAQ = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   )
