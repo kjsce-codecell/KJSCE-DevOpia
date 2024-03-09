@@ -2,7 +2,6 @@ import './Prizes.scss'
 import First from '../../assets/first.png'
 import Second from '../../assets/second.png'
 import Third from '../../assets/third.png'
-import { motion } from 'framer-motion'
 
 const Prizes = () => {
   return (
@@ -10,13 +9,9 @@ const Prizes = () => {
       <div className="prizes">
         <div className="background"></div>
         <div className="subheading">
-          <motion.div
-            whileInView={{
-              opacity: [0, 1],
-              y: [50, 0],
-              transition: { duration: 0.8, ease: 'easeIn' },
-            }}
-            viewport={{ once: true }}
+          <div
+          data-aos="fade-up" data-aos-duration="1000"
+           
           >
             <img
               src="./prizes/PrizesSubHeadIcon.svg"
@@ -29,32 +24,23 @@ const Prizes = () => {
               className="prize-img-right"
               alt=""
             />
-          </motion.div>
+          </div>
           <p>Prizes</p>
         </div>
         <div className="prizes-content">
           <div className="prize-section">
-            <motion.h1
-              whileInView={{
-                opacity: [0, 1],
-                y: [50, 0],
-                transition: { duration: 0.5, ease: 'easeIn' },
-              }}
-              viewport={{ once: true }}
+            <h1
+            data-aos="fade-up" data-aos-duration="1000"
+          
             >
               Software
-            </motion.h1>
-            <motion.div
+            </h1>
+            <div
               className="prize-container"
-              whileInView={{
-                opacity: [0, 1],
-                y: [50, 0],
-                transition: { duration: 0.5, ease: 'easeIn' },
-              }}
-              viewport={{ once: true }}
+              data-aos="fade-up" data-aos-duration="1000"
             >
-              <div className="prize-item">
-                <div className="prize-image">
+              <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
+                <div className="prize-image" >
                   <img src={First} alt="" />
                 </div>
                 <div className="prize-text">
@@ -68,7 +54,7 @@ const Prizes = () => {
                 </div>
               </div>
               <div className="column">
-                <div className="prize-item">
+                <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
                   <div className="prize-image">
                     <img src={Second} alt="" />
                   </div>
@@ -82,7 +68,7 @@ const Prizes = () => {
                     <p>RUNNER UP</p>
                   </div>
                 </div>
-                <div className="prize-item">
+                <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
                   <div className="prize-image">
                     <img src={Third} alt="" />
                   </div>
@@ -97,29 +83,19 @@ const Prizes = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
           <div className="prize-section">
-            <motion.h1
-              whileInView={{
-                opacity: [0, 1],
-                y: [50, 0],
-                transition: { duration: 0.5, ease: 'easeIn' },
-              }}
-              viewport={{ once: true }}
+            <h1
+            data-aos="fade-up" data-aos-duration="1000"
             >
               Hardware
-            </motion.h1>
-            <motion.div
+            </h1>
+            <div
               className="prize-container"
-              whileInView={{
-                opacity: [0, 1],
-                y: [50, 0],
-                transition: { duration: 0.5, ease: 'easeIn' },
-              }}
-              viewport={{ once: true }}
+              data-aos="fade-up" data-aos-duration="1000"
             >
-              <div className="prize-item">
+              <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
                 <div className="prize-image">
                   <img src={First} alt="" />
                 </div>
@@ -131,7 +107,7 @@ const Prizes = () => {
                 </div>
               </div>
 
-              <div className="prize-item">
+              <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
                 <div className="prize-image">
                   <img src={First} alt="" />
                 </div>
@@ -145,7 +121,7 @@ const Prizes = () => {
                   <p>RUNNER UP</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
           {/* <div className="prize">
             <div className="grid-container">

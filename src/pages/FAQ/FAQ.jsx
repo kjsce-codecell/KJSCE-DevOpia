@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react'
 import './FAQ.scss'
-import { motion } from 'framer-motion'
 
 const Faq = () => {
   const aboutRef = useRef(null)
@@ -52,39 +51,25 @@ const Faq = () => {
           Asked
           <br /> Questions
         </h1>
-        
-        <motion.p
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.8, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+
+        <p
+        data-aos="fade-up" data-aos-duration="1000"
+
           className="subtitle"
         >
           <img src="./Question.svg" className="faqs-img-left" alt="" />
           <h3 className="h3-center-faqs">FAQs</h3>
           <img src="./Question.svg" className="faqs-img-right" alt="" />
-        </motion.p>
+        </p>
       </div>
 
-      <motion.div
+      <div
         className="accordion"
-        animate={{
-          y: [50, 0],
-          opacity: [0, 1],
-          transition: { duration: 0.6, ease: 'easeIn' },
-        }}
-        viewport={{ once: true }}
+        data-aos="fade-up" data-aos-duration="1000"
       >
-        <motion.div
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">
             What happens at a Hackathon?
@@ -100,15 +85,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">What do I need to bring?</div>
           <div className="accordion-item-body">
@@ -118,15 +98,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">
             What are the topics for the Hackathon?
@@ -139,15 +114,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">
             What do people normally make?
@@ -161,15 +131,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">
             Where will the hackathon be held?
@@ -181,15 +146,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">
             Will parts be provided for the hardware hackathon?
@@ -200,15 +160,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">
             What if I have never been to a hackathon before?
@@ -223,15 +178,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">
             What is the required team size?
@@ -242,15 +192,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">What is Bid-by-Bit?</div>
           <div className="accordion-item-body">
@@ -263,15 +208,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">What is a CTF?</div>
           <div className="accordion-item-body">
@@ -287,15 +227,10 @@ const Faq = () => {
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="accordion-item"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           <div className="accordion-item-header">
             What is the Code of Conduct?
@@ -315,8 +250,8 @@ const Faq = () => {
             </div>
           </div>
           <img src="/bottomLineFaq.svg" alt="" />
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   )
 }

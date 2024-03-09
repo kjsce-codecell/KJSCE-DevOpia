@@ -33,32 +33,20 @@ const About = () => {
       <div className="background"></div>
       <h1 className="title">About</h1>
       <div className="content">
-        <div className="left">
-          <motion.div
+        <div className="left" data-aos="fade-up" data-aos-duration="1000">
+          <div
             className="subtitle"
-            whileInView={{
-              opacity: [0, 1],
-              y: [50, 0],
-              transition: { duration: 0.5, ease: 'easeIn' },
-            }}
-            viewport={{ once: true }}
           >
             <img src={Sword} className="before" alt="" />
             <p className="subtitle">
               About
             </p>
             <img src={Sword} alt="" />
-          </motion.div>
+          </div>
 
-          <div className="subtitle-container">
-            <motion.div
+          <div className="subtitle-container" data-aos="fade-up" data-aos-duration="500">
+            <div
               className="buttons"
-              whileInView={{
-                opacity: [0, 1],
-                y: [50, 0],
-                transition: { duration: 0.5, ease: 'easeIn' },
-              }}
-              viewport={{ once: true }}
             >
               {subheadings.map((subheading, index) => (
                 <SubheadingButton
@@ -68,24 +56,19 @@ const About = () => {
                   onClick={() => setActiveSubheading(index)}
                 />
               ))}
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               className="body-text"
-              whileInView={{
-                opacity: [0, 1],
-                y: [50, 0],
-                transition: { duration: 0.5, ease: 'easeIn' },
-              }}
-              viewport={{ once: true }}
+              data-aos="fade-up" data-aos-duration="500"
             >
               <SubheadingContent
                 content={subheadings[activeSubheading].content}
               />
-            </motion.div>
+            </div>
           </div>
         </div>
-        <div className="svg-container">
-          <motion.img animate={{}} src={Circle} alt="" viewport={{ once: true }} />
+        <div className="svg-container" data-aos="fade-up" data-aos-duration="1000">
+          <img animate={{}} src={Circle} alt="" />
         </div>
       </div>
     </section>

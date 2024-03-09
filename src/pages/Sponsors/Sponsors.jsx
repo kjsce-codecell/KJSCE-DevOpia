@@ -3,7 +3,6 @@ import './Sponsors.scss' // Import your stylesheet here
 // import Riidl from '../../assets/riidl.png';
 import Polygon from '../../assets/polygon.png'
 import { useRef, useState } from 'react'
-import { motion } from 'framer-motion'
 import SettingsIcon from '../../assets/settings.png'
 
 function Sponsors() {
@@ -14,29 +13,20 @@ function Sponsors() {
     <section ref={sponsorRef} className="sponsors" id="sponsors">
       <div className="background"></div>
       <h1 className="title">Sponsors</h1>
-      <motion.p
-        whileInView={{
-          opacity: [0, 1],
-          y: [50, 0],
-          transition: { duration: 0.5, ease: 'easeIn' },
-        }}
-        viewport={{ once: true }}
+      <p
+      data-aos="fade-up" data-aos-duration="1000"
+        
         className="subtitle"
       >
         <img src={SettingsIcon} alt="settings" className="first" />
         Sponsors
         <img src={SettingsIcon} alt="settings" />
-      </motion.p>
+      </p>
       <div className="sponsor-container">
         <div className="sponsor-buttons">
-          <motion.div
+          <div
             className="sponsor-btn"
-            whileInView={{
-              opacity: [0, 1],
-              y: [50, 0],
-              transition: { duration: 0.5, ease: 'easeIn' },
-            }}
-            viewport={{ once: true }}
+            data-aos="fade-up" data-aos-duration="1000"
           >
             <button
               className={`cybr-btn ${option === 'current' && 'active-btn'}`}
@@ -44,15 +34,10 @@ function Sponsors() {
             >
               Previous Sponsors
             </button>
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className="sponsor-btn"
-            whileInView={{
-              opacity: [0, 1],
-              y: [50, 0],
-              transition: { duration: 0.5, ease: 'easeIn' },
-            }}
-            viewport={{ once: true }}
+            data-aos="fade-up" data-aos-duration="1000"
           >
             <button
               className={`cybr-btn ${option === 'previous' && 'active-btn'}`}
@@ -60,27 +45,17 @@ function Sponsors() {
             >
               Current Sponsors
             </button>
-          </motion.div>
+          </div>
         </div>
-        <motion.div
+        <div
           className="sponsor-wrapper"
-          whileInView={{
-            opacity: [0, 1],
-            y: [50, 0],
-            transition: { duration: 0.5, ease: 'easeIn' },
-          }}
-          viewport={{ once: true }}
+          data-aos="fade-up" data-aos-duration="1000"
         >
           {option === 'previous' && (
-            <motion.div
+            <div
               className="current-sponsor"
               id="previous-sponsor"
-              whileInView={{
-                opacity: [0, 1],
-                y: [50, 0],
-                transition: { duration: 0.5, ease: 'easeIn' },
-              }}
-              viewport={{ once: true }}
+              data-aos="fade-up" data-aos-duration="1000"
             >
               <div className="sponsor-box">
                 <h1>Previous Partners</h1>
@@ -140,18 +115,13 @@ function Sponsors() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           )}
 
           {option === 'current' && (
-            <motion.div
+            <div
               id="current-sponsor"
-              whileInView={{
-                opacity: [0, 1],
-                y: [50, 0],
-                transition: { duration: 0.5, ease: 'easeIn' },
-              }}
-              viewport={{ once: true }}
+              data-aos="fade-up" data-aos-duration="1000"
             >
               <div className="sponsor-box">
                 <h1>Our Partners</h1>
@@ -211,9 +181,9 @@ function Sponsors() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           )}
-        </motion.div>
+        </div>
       </div>
     </section>
   )
