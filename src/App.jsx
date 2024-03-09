@@ -21,7 +21,7 @@ function App() {
 
   const [loading, setLoading] = React.useState(true)
   React.useEffect(() => {
-    AOS.init()
+    AOS.init({ once: true})
     AOS.refresh()
     setInterval(() => setLoading(false), 4000)
   }, [])
