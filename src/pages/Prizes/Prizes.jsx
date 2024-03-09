@@ -16,6 +16,7 @@ const Prizes = () => {
               y: [50, 0],
               transition: { duration: 0.8, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
           >
             <img
               src="./prizes/PrizesSubHeadIcon.svg"
@@ -39,6 +40,7 @@ const Prizes = () => {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               Software
             </motion.h1>
@@ -104,6 +106,7 @@ const Prizes = () => {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               Hardware
             </motion.h1>
@@ -114,6 +117,7 @@ const Prizes = () => {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <div className="prize-item">
                 <div className="prize-image">
