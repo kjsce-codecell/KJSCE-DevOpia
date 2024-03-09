@@ -112,6 +112,7 @@ const FAQ = () => {
               they need to make their ideas come to life.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">What do I need to bring?</div>
@@ -121,6 +122,7 @@ const FAQ = () => {
               college identity cards.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">
@@ -133,6 +135,7 @@ const FAQ = () => {
               specific problem statements or tracks provided.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">
@@ -146,6 +149,7 @@ const FAQ = () => {
               open innovation hackathon.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">
@@ -157,6 +161,7 @@ const FAQ = () => {
               Vidyavihar, Mumbai.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">
@@ -167,6 +172,7 @@ const FAQ = () => {
               To receive parts, teams are required to submit a prior request.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">
@@ -181,6 +187,7 @@ const FAQ = () => {
               lots of awesome people.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">
@@ -191,6 +198,7 @@ const FAQ = () => {
               Teams of 1 - 4 members are allowed.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">What is Bid-by-Bit?</div>
@@ -203,6 +211,7 @@ const FAQ = () => {
               easier problems or take a risk and go for the harder ones.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">What is a CTF?</div>
@@ -217,6 +226,7 @@ const FAQ = () => {
               foster collaboration within the cybersecurity community.
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
         <div className="accordion-item">
           <div className="accordion-item-header">
@@ -236,6 +246,7 @@ const FAQ = () => {
               .
             </div>
           </div>
+          <img src={'/bottomLineFaq.svg'} alt="" />
         </div>
       </motion.div>
     </section>

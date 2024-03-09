@@ -84,8 +84,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-
-    background: url('./prizes/prizesBg.svg') #000512 no-repeat center center;
+    background: url('/prizes/prizesBg.svg') #000512 no-repeat center center;
     background-size: cover;
     opacity: 0.3;
   }
@@ -213,7 +212,8 @@
   }
 }
 
-.prize-img-right, .prize-img-left {
+.prize-img-right,
+.prize-img-left {
   width: 5rem;
   height: 5rem;
   @media (max-width: 720px) {
