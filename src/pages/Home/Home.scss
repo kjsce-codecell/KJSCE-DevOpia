@@ -76,6 +76,8 @@
   }
   .banda {
     aspect-ratio: 1727/1133;
+    // width: 100%;
+    object-fit: cover;
     // display: flex;
     position: absolute;
     height: 90vh;

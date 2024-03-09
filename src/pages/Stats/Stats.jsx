@@ -12,6 +12,7 @@ function Stats() {
             y: [50, 0],
             transition: { duration: 0.8, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <img src="./Emblem.svg" className="left" alt="" />
           <h3>Stats</h3>
@@ -30,6 +31,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <img src="./Stats/Image1.png" alt="" />
             </motion.div>
@@ -40,6 +42,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <h4 className="highlightNum">24</h4>
               <p>hack hours</p>
@@ -51,6 +54,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <img src="./Stats/Image2.png" alt="" />
             </motion.div>
@@ -63,6 +67,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <img src="./Stats/Image3.jpg" alt="" />
             </motion.div>
@@ -73,6 +78,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <h4 className="highlightNum">100+</h4>
               <p>colleges</p>
@@ -84,6 +90,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <img src="./Stats/Image4.jpg" alt="" />
             </motion.div>
@@ -97,6 +104,7 @@ function Stats() {
               y: [50, 0],
               transition: { duration: 0.5, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
           >
             <img src="./Stats/Image9.jpg" alt="" />
           </motion.div>
@@ -110,6 +118,7 @@ function Stats() {
               y: [50, 0],
               transition: { duration: 0.5, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
           >
             <h4 className="highlightNum">2000+</h4>
             <p>Registrations</p>
@@ -121,6 +130,7 @@ function Stats() {
               y: [50, 0],
               transition: { duration: 0.5, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
           >
             <img src="./Stats/Image6.JPG" alt="" />
           </motion.div>
@@ -134,6 +144,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <img src="./Stats/Image7.jpg" alt="" />
             </motion.div>
@@ -144,6 +155,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <h4 className="highlightNum">150+</h4>
               <p>Hackers</p>
@@ -155,6 +167,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <img src="./Stats/Image8.jpg" alt="" />
             </motion.div>
@@ -167,6 +180,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <img src="./Stats/Image9.jpg" alt="" />
             </motion.div>
@@ -177,6 +191,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <h4 className="highlightNum">40+</h4>
               <p>Projects</p>
@@ -188,6 +203,7 @@ function Stats() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <img src="./Stats/Image10.jpg" alt="" />
             </motion.div>

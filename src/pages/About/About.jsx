@@ -41,9 +41,10 @@ const About = () => {
               y: [50, 0],
               transition: { duration: 0.5, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
           >
             <img src={Sword} className="before" alt="" />
-            <p className="subtitle" data-aos="fade-up" data-aos-duration="1000">
+            <p className="subtitle">
               About
             </p>
             <img src={Sword} alt="" />
@@ -57,6 +58,7 @@ const About = () => {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               {subheadings.map((subheading, index) => (
                 <SubheadingButton
@@ -74,6 +76,7 @@ const About = () => {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <SubheadingContent
                 content={subheadings[activeSubheading].content}
@@ -82,7 +85,7 @@ const About = () => {
           </div>
         </div>
         <div className="svg-container">
-          <motion.img animate={{}} src={Circle} alt="" />
+          <motion.img animate={{}} src={Circle} alt="" viewport={{ once: true }} />
         </div>
       </div>
     </section>

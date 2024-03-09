@@ -100,6 +100,7 @@
     font-family: 'agencyfb', sans-serif;
     font-weight: 400;
     font-size: 0.5rem;
+    margin-bottom: 4.5rem;
   }
 
   .accordion-item {
@@ -133,26 +134,29 @@
   }
 
   .accordion-item-header::after {
-    content: '\002B';
+    content: url('src/assets/Polygon13FAQdrop.svg');
     position: absolute;
     right: 1rem;
-    animation: rotateleft 0.3s;
+    animation: rotateleft 0.4s;
   }
 
   .accordion-item-header.active::after {
-    content: '\2212';
+    content: url('src/assets/Polygon13FAQdrop.svg');
+    transform: rotate(180deg);
+    position: absolute;
+    right: 1rem;
     animation: rotateright 0.3s;
   }
 
   @keyframes rotateright {
     100% {
-      transform: rotate(180deg);
+      transform: rotate(540deg);
     }
   }
 
   @keyframes rotateleft {
     100% {
-      transform: rotate(-180deg);
+      transform: rotate(-360deg);
     }
   }
 

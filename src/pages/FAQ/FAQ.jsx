@@ -52,13 +52,14 @@ const Faq = () => {
           Asked
           <br /> Questions
         </h1>
-
+        
         <motion.p
           whileInView={{
             opacity: [0, 1],
             y: [50, 0],
             transition: { duration: 0.8, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
           className="subtitle"
         >
           <img src="./Question.svg" className="faqs-img-left" alt="" />
@@ -74,6 +75,7 @@ const Faq = () => {
           opacity: [0, 1],
           transition: { duration: 0.6, ease: 'easeIn' },
         }}
+        viewport={{ once: true }}
       >
         <motion.div
           className="accordion-item"
@@ -82,6 +84,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">
             What happens at a Hackathon?
@@ -105,6 +108,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">What do I need to bring?</div>
           <div className="accordion-item-body">
@@ -122,6 +126,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">
             What are the topics for the Hackathon?
@@ -142,6 +147,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">
             What do people normally make?
@@ -163,6 +169,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">
             Where will the hackathon be held?
@@ -182,6 +189,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">
             Will parts be provided for the hardware hackathon?
@@ -200,6 +208,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">
             What if I have never been to a hackathon before?
@@ -222,6 +231,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">
             What is the required team size?
@@ -240,6 +250,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">What is Bid-by-Bit?</div>
           <div className="accordion-item-body">
@@ -260,6 +271,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">What is a CTF?</div>
           <div className="accordion-item-body">
@@ -283,6 +295,7 @@ const Faq = () => {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           <div className="accordion-item-header">
             What is the Code of Conduct?

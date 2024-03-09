@@ -73,6 +73,7 @@ const Home = () => {
               opacity: [0, 1],
               transition: { duration: 2.5, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
           />
           <motion.p
             className="tagline"
@@ -80,6 +81,7 @@ const Home = () => {
               opacity: [0, 1],
               transition: { duration: 3, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
           >
             WAR COMES TO EVERY WORLD
           </motion.p>
@@ -88,6 +90,7 @@ const Home = () => {
               opacity: [0, 1],
               transition: { duration: 3, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
             className="date"
           >
             <div
@@ -106,6 +109,7 @@ const Home = () => {
             initial={{ opacity: 0, translateY: '100%' }}
             animate={{ opacity: 1, translateY: '-2%' }}
             transition={{ duration: 3, ease: 'easeInOut' }}
+            viewport={{ once: true }}
           />
           <motion.img
             src={Ships}

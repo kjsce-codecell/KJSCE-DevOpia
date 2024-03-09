@@ -20,6 +20,7 @@ function Sponsors() {
           y: [50, 0],
           transition: { duration: 0.5, ease: 'easeIn' },
         }}
+        viewport={{ once: true }}
         className="subtitle"
       >
         <img src={SettingsIcon} alt="settings" className="first" />
@@ -35,6 +36,7 @@ function Sponsors() {
               y: [50, 0],
               transition: { duration: 0.5, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
           >
             <button
               className={`cybr-btn ${option === 'current' && 'active-btn'}`}
@@ -50,6 +52,7 @@ function Sponsors() {
               y: [50, 0],
               transition: { duration: 0.5, ease: 'easeIn' },
             }}
+            viewport={{ once: true }}
           >
             <button
               className={`cybr-btn ${option === 'previous' && 'active-btn'}`}
@@ -66,6 +69,7 @@ function Sponsors() {
             y: [50, 0],
             transition: { duration: 0.5, ease: 'easeIn' },
           }}
+          viewport={{ once: true }}
         >
           {option === 'previous' && (
             <motion.div
@@ -76,6 +80,7 @@ function Sponsors() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <div className="sponsor-box">
                 <h1>Previous Partners</h1>
@@ -146,6 +151,7 @@ function Sponsors() {
                 y: [50, 0],
                 transition: { duration: 0.5, ease: 'easeIn' },
               }}
+              viewport={{ once: true }}
             >
               <div className="sponsor-box">
                 <h1>Our Partners</h1>
