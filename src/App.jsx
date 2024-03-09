@@ -13,13 +13,19 @@ import 'aos/dist/aos.css'
 import React from 'react'
 import Loader from './components/Loader'
 import ScrollBar from './components/shared/Scrollbar/Scrollbar'
+
+import { logEvent } from 'firebase/analytics'
+import { analytics } from './pages/config/firebase'
 function App() {
+  logEvent(analytics, 'visit_count')
+
   const [loading, setLoading] = React.useState(true)
   React.useEffect(() => {
     AOS.init()
     AOS.refresh()
     setInterval(() => setLoading(false), 4000)
   }, [])
+
   if (loading) {
     return <Loader />
   }
