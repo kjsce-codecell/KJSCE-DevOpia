@@ -58,7 +58,7 @@
   .about {
     flex-direction: column;
     padding: 1rem;
-    height: 130vh;
+    height: 100vh;
     // overflow:;
     .subtitle-container {
       left: 0;
@@ -85,7 +85,7 @@
       display: block;
     }
     .svg-container {
-      position: absolute;
+      // position: absolute;
       bottom: -10%;
     }
   }
