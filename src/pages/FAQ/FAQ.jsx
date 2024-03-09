@@ -61,7 +61,7 @@ const Faq = () => {
           }}
           className="subtitle"
         >
-          <img src="src./Question.svg" className="faqs-img-left" alt="" />
+          <img src="./Question.svg" className="faqs-img-left" alt="" />
           <h3 className="h3-center-faqs">FAQs</h3>
           <img src="./Question.svg" className="faqs-img-right" alt="" />
         </motion.p>
@@ -301,7 +301,7 @@ const Faq = () => {
               .
             </div>
           </div>
-          <img src={'/bottomLineFaq.svg'} alt="" />
+          <img src="/bottomLineFaq.svg" alt="" />
         </motion.div>
       </motion.div>
     </section>

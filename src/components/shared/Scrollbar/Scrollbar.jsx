@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import './Scrollbar.scss'
 
 const ScrollBar = () => {
   const [progress, setProgress] = useState(0)
