@@ -113,10 +113,13 @@
   .sideWrapper {
     display: flex;
     align-items: start;
-    flex: 1.5;
+    flex: 1.8;
+    margin: 0.8rem;
+
   }
   .middle {
-    flex: 1;
+    flex: 1.6;
+    margin-top:1.6rem
   }
   .column {
     margin: 0.8rem;

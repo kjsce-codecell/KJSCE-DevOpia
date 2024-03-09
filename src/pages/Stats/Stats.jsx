@@ -36,14 +36,14 @@ function Stats() {
           </div>
           <div className="column">
             <div className="imageContainer">
-              <img src="./Stats/Image3.png" alt="" />
+              <img src="./Stats/Image3.jpg" alt="" />
             </div>
             <div className="content">
               <h4 className="highlightNum">100+</h4>
               <p>colleges</p>
             </div>
             <div className="imageContainer">
-              <img src="./Stats/Image4.JPG" alt="" />
+              <img src="./Stats/Image4.jpg" alt="" />
             </div>
           </div>
         </div>
