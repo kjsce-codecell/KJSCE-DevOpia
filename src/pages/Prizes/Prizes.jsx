@@ -17,16 +17,21 @@ const Prizes = () => {
               transition: { duration: 0.8, ease: 'easeIn' },
             }}
           >
+            <img
+              src="./prizes/PrizesSubHeadIcon.svg"
+              className="prize-img-left"
+              alt=""
+            />
             <h3>Prizes</h3>
             <img
               src="./prizes/PrizesSubHeadIcon.svg"
-              className="right"
+              className="prize-img-right"
               alt=""
             />
           </motion.div>
           <p>Prizes</p>
         </div>
-        <div className="content">
+        <div className="prizes-content">
           <div className="prize-section">
             <h1>Software</h1>
             <div className="prize-container">
