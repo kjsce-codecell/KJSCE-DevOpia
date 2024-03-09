@@ -1,8 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import './FAQ.scss'
 import { motion } from 'framer-motion'
-import { useRef } from 'react'
-const FAQ = () => {
+
+const Faq = () => {
   const aboutRef = useRef(null)
 
   useEffect(() => {
@@ -61,13 +61,9 @@ const FAQ = () => {
           }}
           className="subtitle"
         >
-          <img src="src/assets/Question.svg" className="faqs-img-left" alt="" />
+          <img src="src./Question.svg" className="faqs-img-left" alt="" />
           <h3 className="h3-center-faqs">FAQs</h3>
-          <img
-            src="src/assets/Question.svg"
-            className="faqs-img-right"
-            alt=""
-          />
+          <img src="./Question.svg" className="faqs-img-right" alt="" />
         </motion.p>
       </div>
 
@@ -210,11 +206,11 @@ const FAQ = () => {
           </div>
           <div className="accordion-item-body">
             <div className="accordion-item-body-content">
-              Don't worry, we're open to students of all skill levels. We offer
-              talks, and mentors to help you with your project. Hackathons are
-              an excellent opportunity to learn new skills in a short amount of
-              time. Just come with an eagerness to learn and enthusiasm to meet
-              lots of awesome people.
+              Don&#39;t worry, we&#39;re open to students of all skill levels.
+              We offer talks, and mentors to help you with your project.
+              Hackathons are an excellent opportunity to learn new skills in a
+              short amount of time. Just come with an eagerness to learn and
+              enthusiasm to meet lots of awesome people.
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
@@ -269,12 +265,13 @@ const FAQ = () => {
           <div className="accordion-item-body">
             <div className="accordion-item-body-content">
               CTF competitions are cybersecurity challenges where teams solve
-              puzzles and exploit vulnerabilities to find hidden "flags". These
-              flags are submitted for points on a scoring server. CTFs cover
-              areas like computer security, cryptography, and reverse
-              engineering, and come in different formats, catering to different
-              difficulty levels. They provide valuable hands-on experience and
-              foster collaboration within the cybersecurity community.
+              puzzles and exploit vulnerabilities to find hidden
+              &quot;flags&quot;. These flags are submitted for points on a
+              scoring server. CTFs cover areas like computer security,
+              cryptography, and reverse engineering, and come in different
+              formats, catering to different difficulty levels. They provide
+              valuable hands-on experience and foster collaboration within the
+              cybersecurity community.
             </div>
           </div>
           <img src={'/bottomLineFaq.svg'} alt="" />
@@ -311,4 +308,4 @@ const FAQ = () => {
   )
 }
 
-export default FAQ
+export default Faq

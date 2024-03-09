@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import './Track.scss'
 import First from '../../assets/track.png'
 import { motion } from 'framer-motion'

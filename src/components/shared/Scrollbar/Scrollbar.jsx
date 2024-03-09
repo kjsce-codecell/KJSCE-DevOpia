@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const ScrollBar = () => {
@@ -36,7 +36,7 @@ const ScrollBar = () => {
 
   // Hide the component on mobile devices
   if (window.innerWidth <= 768) {
-    return null;
+    return null
   }
 
   return (

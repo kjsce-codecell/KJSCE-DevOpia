@@ -1,8 +1,8 @@
 import './Sponsors.scss' // Import your stylesheet here
-import Devfolio from '../../assets/devfolio.png'
+// import Devfolio from '../../assets/devfolio.png'
 // import Riidl from '../../assets/riidl.png';
 import Polygon from '../../assets/polygon.png'
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import SettingsIcon from '../../assets/settings.png'
 
