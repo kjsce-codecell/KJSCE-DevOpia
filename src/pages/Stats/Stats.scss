@@ -113,19 +113,30 @@
   .sideWrapper {
     display: flex;
     align-items: start;
-    flex: 1.8;
+    flex: 2;
     margin: 0.8rem;
-
+    gap:1rem;
   }
   .middle {
     flex: 1.6;
-    margin-top:1.6rem
+    margin: 0.8rem 0;
+    width:100%
   }
   .column {
-    margin: 0.8rem;
+    // margin: 0.8rem;
+    flex:1;
+    height:100%;
+    width:50%
   }
-  @media (max-width: 880px) {
-    flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding:10%;
+    .column{
+      margin:0;
+    }
+    .sideWrapper{
+      margin:0;
+    }
   }
 }
 
@@ -167,6 +178,7 @@
 }
 .content {
   margin: 0.8rem 0;
+
   .highlightNum {
     color: #fff;
     font-family: 'agencyfb';
@@ -186,6 +198,15 @@
     line-height: normal;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+    
+  }
+  @media screen and (max-width: 768px) {
+    p{
+      font-size: 1.5rem;
+    }
+    .highlightNum{
+      font-size: 2.5rem;
+    }
   }
 }
 

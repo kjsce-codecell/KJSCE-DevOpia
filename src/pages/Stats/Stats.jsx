@@ -51,7 +51,9 @@ function Stats() {
           <div className="imageContainer">
             <img src="./Stats/Image9.jpg" alt="" />
           </div>
-          <div className="content">
+          <div className="content" style={{
+            textAlign:"center"
+          }}>
             <h4 className="highlightNum">2000+</h4>
             <p>Registrations</p>
           </div>
