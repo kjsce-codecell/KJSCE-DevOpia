@@ -81,37 +81,63 @@ function Sponsors() {
           </div>
           <div className="sponsor-wrapper">
             {option === 'previous' && (
-              <div className="previous-sponsor" id="previous-sponsor">
+              <div className="current-sponsor" id="previous-sponsor">
                 <div className="sponsor-box">
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Devfolio} alt="Devfolio" />
-                    </a>
+                  <h1>Previous Partners</h1>
+                  <div className="sponsor-grp">
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
                   </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Devfolio} alt="Devfolio" />
-                    </a>
+                  <h1>Previous Gold Sponsors</h1>
+
+                  <div className="sponsor-grp">
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
                   </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Devfolio} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Devfolio} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Devfolio} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Devfolio} alt="Devfolio" />
-                    </a>
+                  <h1>Previous Silver Sponsors</h1>
+
+                  <div className="sponsor-grp">
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
+                    <div className="sponsor-img">
+                      <a href="https://devfolio.co/" target="_blank">
+                        <img src={Polygon} alt="Devfolio" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
