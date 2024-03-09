@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
 import './Navbar.scss'
-import Pronged from '../../../assets/pronged.png'
-import CodeCell from '../../../assets/CodeCell.png'
-import CSI from '../../../assets/CSI.png'
-import SVU from '../../../assets/svu.png'
-import Somaiya from '../../../assets/somaiya.png'
+import Pronged from '/pronged.svg'
+import CodeCell from '/CodeCell.png'
+import CSI from '/CSI.png'
+import SVU from '/svu.png'
+import Somaiya from '/somaiya.png'
 
 const menuList = [
   {

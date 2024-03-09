@@ -23,7 +23,7 @@
       margin: 0;
       &::before,
       &::after {
-        content: url('src/assets/major.png');
+        content: url('/major.svg');
       }
       &::after {
         margin-left: 10px;

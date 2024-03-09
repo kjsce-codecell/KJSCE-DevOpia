@@ -23,7 +23,7 @@ function App() {
   React.useEffect(() => {
     AOS.init({ once: true})
     AOS.refresh()
-    setInterval(() => setLoading(false), 4000)
+    setInterval(() => setLoading(false), 5000)
   }, [])
 
   if (loading) {

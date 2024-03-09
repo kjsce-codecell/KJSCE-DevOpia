@@ -1,8 +1,8 @@
 import './Home.scss'
-import Title from '../../assets/Logo.png'
-import Banda from '../../assets/Banda.png'
-import Ships from '../../assets/Ships.png'
-import Scroll from '../../assets/scroll.png'
+import Title from '/Logo.gif'
+import Banda from '/Banda.png'
+import Ships from '/Ships.png'
+import Scroll from '/scroll.png'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
@@ -73,7 +73,10 @@ const Home = () => {
               opacity: [0, 1],
               transition: { duration: 2.5, ease: 'easeIn' },
             }}
-            viewport={{ once: true }}
+            style={{
+              mixBlendMode: 'plus-lighter',
+              width: '100%',
+            }}
           />
           <motion.p
             className="tagline"

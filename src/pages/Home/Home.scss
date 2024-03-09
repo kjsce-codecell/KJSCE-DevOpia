@@ -7,30 +7,20 @@
 
   .background-image {
     height: 100vh;
-    background-image: url('../../assets/background.png');
+    background-image: url('/background.png');
     background-size: cover;
     background-position: bottom;
-  }
-  .background-image::before {
-    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 93%);
-  }
-  .background-image::after {
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
   }
   .overlay {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-image: url('../../assets/Stars.png');
+    background-image: url('/Stars.png');
     background-size: cover;
     background-position: center;
     align-items: center;
-    background-blend-mode: multiply;
+    background-blend-mode: darken;
     bottom: 0;
     // animation: parallax 1s linear infinite;
   }
@@ -50,7 +40,7 @@
     position: absolute;
     font-weight: 200;
     max-width: 700px;
-    transform: scale(0.8);
+    // transform: scale(0.8);
     translate: -50%;
     left: 50%;
     top: 20%;

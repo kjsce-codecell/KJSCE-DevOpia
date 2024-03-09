@@ -1,7 +1,7 @@
-import Logo from '../../../assets/Logo.png'
+import Logo from '/Logo.png'
 import './Footer.scss'
-import CodeCell from '../../../assets/CodeCell.png'
-import CSI from '../../../assets/CSI.png'
+import CodeCell from '/CodeCell.png'
+import CSI from '/CSI.png'
 
 export default function Footer() {
   return (

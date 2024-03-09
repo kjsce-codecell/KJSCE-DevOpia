@@ -1,7 +1,8 @@
 import './Prizes.scss'
-import First from '../../assets/first.png'
-import Second from '../../assets/second.png'
-import Third from '../../assets/third.png'
+import First from '/first.png'
+import Second from '/second.png'
+import Third from '/third.png'
+import { motion } from 'framer-motion'
 
 const Prizes = () => {
   return (

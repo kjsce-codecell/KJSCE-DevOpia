@@ -1,9 +1,10 @@
 import './Sponsors.scss' // Import your stylesheet here
-// import Devfolio from '../../assets/devfolio.png'
-// import Riidl from '../../assets/riidl.png';
-import Polygon from '../../assets/polygon.png'
+// import Devfolio from '/devfolio.png'
+// import Riidl from '/riidl.png';
+import Polygon from '/polygon.png'
 import { useRef, useState } from 'react'
-import SettingsIcon from '../../assets/settings.png'
+import { motion } from 'framer-motion'
+import SettingsIcon from '/settings.svg'
 
 function Sponsors() {
   const [option, setOption] = useState('current')

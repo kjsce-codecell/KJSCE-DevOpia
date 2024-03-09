@@ -16,7 +16,7 @@ function Loader() {
         }}
         className="loader"
         transition={{
-          duration: 0.5,
+          duration: 1,
           ease: 'easeInOut',
         }}
       >
