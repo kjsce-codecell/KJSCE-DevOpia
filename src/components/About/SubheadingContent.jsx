@@ -3,7 +3,12 @@ import PropTypes from 'prop-types'
 const SubheadingContent = ({ content }) => {
   return (
     <div className="body-text">
-      <p>{content}</p>
+      {content.split('\n').map((line, index) => (
+        <p key={index}>
+          {line}
+          <br />
+        </p>
+      ))}
     </div>
   )
 }

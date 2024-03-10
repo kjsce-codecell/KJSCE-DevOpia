@@ -13,18 +13,27 @@ const About = () => {
   const subheadings = [
     {
       label: 'DEVOPIA',
-      content:
-        'Devopia is an exciting 24-hour offline hackathon that offers open innovation in both the hardware and software domains. Participants can enjoy free food, comfortable accommodations, and engaging games throughout the event. Plus, there are cool swags to take home as well!',
+      content: `KJSCE Devopia is an exciting event that promises to bring together the brightest minds in the country. It's a national-level offline Hackathon where you can showcase your skills in both hardware and software domains.
+        
+        Apart from the Hackathon, the event offers a wide range of entertaining games, unique and trendy gifts, and stylish swag items that you can get your hands on.
+        
+        What's more, you can stay comfortably on campus for the entire 24 hours, in cozy accommodations that cater to your needs. You'll have access to all the amenities you need to stay focused and energized throughout the event.`,
     },
     {
       label: 'KJSCE-CTF',
-      content:
-        "KJSCE CTF is a cybersecurity competition where participants solve puzzles, exploit vulnerabilities and uncover hidden 'flags' within systems, fostering teamwork in real-world cybersecurity scenarios. Challenges are based on categories like Reverse Engineering, Web Applications, Steganography, Mobile Applications, Cryptography, etc.",
+      content: `KJSCE CTF is a competition that takes place as a pre-event to Devopia. The competition is structured as a Capture the Flag game, where teams of two compete against each other. The objective of the game is to hack into machines and extract specific digital tokens, referred to as "Flags", in order to earn points.
+        
+        To hack into the machines, participants will need to use a variety of techniques, ranging from cryptography puzzles to network exploitation scenarios. This competition tests the participants' skills in coding, reverse engineering, and system administration. 
+        
+        The team with the most points at the end of the competition is declared the winner.`,
     },
     {
       label: 'BID-BY-BIT',
-      content:
-        'Bid-by-Bit is a pre-event to Devopia and it introduces a unique concept of auctioning in the Competitive Programming arena. Contestants bid on problem statements to decide which ones they get to solve!',
+      content: `Bid by Bit where competitive programming meets auctioning! Teams compete to earn points, then strategically bid on a diverse range of problems, including arrays, strings, search, sort, greedy, dynamic programming, and more. 
+      
+      Will YOU go for easier problems or take the risk for higher rewards? It's a game of strategy and skill as teams navigate the auction, solve their chosen problems, and accumulate reward points. 
+
+      The team with the most points in their wallet at the end claims victory. Join us for an exhilarating experience where every bid counts, every solution matters, and only the strongest emerge triumphant!`,
     },
   ]
 
