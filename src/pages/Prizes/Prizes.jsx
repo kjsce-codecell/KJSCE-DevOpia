@@ -1,8 +1,8 @@
+import Scrambler from '../../components/shared/Scrambler/Scrambler'
 import './Prizes.scss'
 import First from '/first.png'
 import Second from '/second.png'
 import Third from '/third.png'
-import { motion } from 'framer-motion'
 
 const Prizes = () => {
   return (
@@ -10,10 +10,7 @@ const Prizes = () => {
       <div className="prizes">
         <div className="background"></div>
         <div className="subheading">
-          <div
-          data-aos="fade-up" data-aos-duration="1000"
-           
-          >
+          <div data-aos="fade-up" data-aos-duration="1000">
             <img
               src="./prizes/PrizesSubHeadIcon.svg"
               className="prize-img-left"
@@ -30,38 +27,54 @@ const Prizes = () => {
         </div>
         <div className="prizes-content">
           <div className="prize-section">
-            <h1
-            data-aos="fade-up" data-aos-duration="1000"
-          
-            >
+            <h1 data-aos="fade-up" data-aos-duration="1000">
               Software
             </h1>
             <div
               className="prize-container"
-              data-aos="fade-up" data-aos-duration="1000"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
-              <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
-                <div className="prize-image" >
+              <div
+                className="prize-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div className="prize-image">
                   <img src={First} alt="" />
                 </div>
                 <div className="prize-text">
-                  <h2>INR 30,000</h2>
-                  <h3>CASH PRIZE</h3>
+                  <h2>
+                    <Scrambler text={'INR 30,000'}></Scrambler>
+                  </h2>
+                  <h3>
+                    <Scrambler text={'CASH PRIZE'}></Scrambler>
+                  </h3>
                   {/* <h4>
                     Exciting Goodies worth
                     <br /> inr 2l & More!
                   </h4> */}
-                  <p>WINNER</p>
+                  <p>
+                    <Scrambler text={'WINNER'}></Scrambler>
+                  </p>
                 </div>
               </div>
               <div className="column">
-                <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
+                <div
+                  className="prize-item"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <div className="prize-image">
                     <img src={Second} alt="" />
                   </div>
                   <div className="prize-text">
-                    <h2>INR 20,000</h2>
-                    <h3>CASH PRIZE</h3>
+                    <h2>
+                      <Scrambler text={'INR 20,000'}></Scrambler>
+                    </h2>
+                    <h3>
+                      <Scrambler text={'CASH PRIZE'}></Scrambler>
+                    </h3>
                     {/* <h4>
                       Exciting Goodies worth
                       <br /> inr 2l & More!
@@ -69,57 +82,86 @@ const Prizes = () => {
                     <p>RUNNER UP</p>
                   </div>
                 </div>
-                <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
+                <div
+                  className="prize-item"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <div className="prize-image">
                     <img src={Third} alt="" />
                   </div>
                   <div className="prize-text">
-                    <h2>INR 10,000</h2>
-                    <h3>CASH PRIZE</h3>
+                    <h2>
+                      <Scrambler text={'INR 10,000'}></Scrambler>
+                    </h2>
+                    <h3>
+                      <Scrambler text={'CASH PRIZE'}></Scrambler>
+                    </h3>
                     {/* <h4>
                       Exciting Goodies worth
                       <br /> inr 2l & More!
                     </h4> */}
-                    <p>2ND RUNNER UP</p>
+                    <p>
+                      <Scrambler text={'2ND RUNNER UP'}></Scrambler>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="prize-section">
-            <h1
-            data-aos="fade-up" data-aos-duration="1000"
-            >
+            <h1 data-aos="fade-up" data-aos-duration="1000">
               Hardware
             </h1>
             <div
               className="prize-container"
-              data-aos="fade-up" data-aos-duration="1000"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
-              <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
+              <div
+                className="prize-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className="prize-image">
                   <img src={First} alt="" />
                 </div>
                 <div className="prize-text">
-                  <h2>INR 10,000</h2>
-                  <h3>CASH PRIZE</h3>
+                  <h2>
+                    <Scrambler text={'INR 10,000'}></Scrambler>
+                  </h2>
+                  <h3>
+                    <Scrambler text={'CASH PRIZE'}></Scrambler>
+                  </h3>
 
-                  <p>WINNER</p>
+                  <p>
+                    <Scrambler text={'WINNER'}></Scrambler>
+                  </p>
                 </div>
               </div>
 
-              <div className="prize-item" data-aos="fade-up" data-aos-duration="1000">
+              <div
+                className="prize-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className="prize-image">
                   <img src={First} alt="" />
                 </div>
                 <div className="prize-text">
-                  <h2>INR 5,000</h2>
-                  <h3>CASH PRIZE</h3>
+                  <h2>
+                    <Scrambler text={'INR 5,000'}></Scrambler>
+                  </h2>
+                  <h3>
+                    <Scrambler text={'CASH PRIZE'}></Scrambler>
+                  </h3>
                   {/* <h4>
                       Exciting Goodies worth
                       <br /> inr 2l & More!
                     </h4> */}
-                  <p>RUNNER UP</p>
+                  <p>
+                    <Scrambler text={'RUNNER UP'}></Scrambler>
+                  </p>
                 </div>
               </div>
             </div>
