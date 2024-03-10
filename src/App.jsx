@@ -21,17 +21,18 @@ function App() {
   logEvent(analytics, 'visit_count')
 
   const [loading, setLoading] = React.useState(true)
+
   React.useEffect(() => {
     AOS.init({ once: true })
     AOS.refresh()
-    window.onload = function () {
-      setInterval(() => setLoading(false), 4000)
-    }
+
+    const intervalId = setInterval(() => {
+      setLoading(false)
+    }, 5000)
+
+    return () => clearInterval(intervalId)
   }, [])
 
-  // if (loading) {
-  //   return <Loader />
-  // }
   console.log(`
                                                .
      ######æ▄_      ▄▄######   █        ╓▌  _╓«m▌≈╓    ¥#######æ▄   █       ,▄
