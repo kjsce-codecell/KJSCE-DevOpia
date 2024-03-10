@@ -164,7 +164,7 @@
   }
 
   .accordion-item-header::after {
-    content: url('src/assets/Polygon13FAQdrop.svg');
+    content: url('/Polygon13FAQdrop.svg');
     position: absolute;
     right: 1rem;
     animation: rotateleft 0.4s;
@@ -176,7 +176,7 @@
   }
 
   .accordion-item-header.active::after {
-    content: url('src/assets/Polygon13FAQdrop.svg');
+    content: url('/Polygon13FAQdrop.svg');
     transform: rotate(180deg);
     position: absolute;
     right: 1rem;
