@@ -1,5 +1,5 @@
 import './Stats.scss'
-
+ 
 function Stats() {
   return (
     <section className="statsContainer" id="stats">

@@ -3,7 +3,7 @@ import './Prizes.scss'
 import First from '/first.png'
 import Second from '/second.png'
 import Third from '/third.png'
-
+ 
 const Prizes = () => {
   return (
     <section className="prize" id="prizes">
