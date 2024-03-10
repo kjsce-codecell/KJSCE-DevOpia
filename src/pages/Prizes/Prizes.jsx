@@ -3,6 +3,8 @@ import './Prizes.scss'
 import First from '/first.png'
 import Second from '/second.png'
 import Third from '/third.png'
+import HardwareFirst from '/hardwareFirst.png'
+import HardwareSecond from '/hardwareSecond.png'
  
 const Prizes = () => {
   return (
@@ -127,7 +129,7 @@ const Prizes = () => {
                 data-aos-duration="1000"
               >
                 <div className="prize-image">
-                  <img src={First} alt="" />
+                  <img src={HardwareFirst} alt="" />
                 </div>
                 <div className="prize-text">
                   <h2>
@@ -149,7 +151,7 @@ const Prizes = () => {
                 data-aos-duration="1000"
               >
                 <div className="prize-image">
-                  <img src={First} alt="" />
+                  <img src={HardwareSecond} alt="" />
                 </div>
                 <div className="prize-text">
                   <h2>

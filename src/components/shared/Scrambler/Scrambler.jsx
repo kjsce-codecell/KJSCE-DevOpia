@@ -1,13 +1,9 @@
-
 import Scramble from 'react-scramble'
 
 const Scrambler = (
   // eslint-disable-next-line react/prop-types
-  {text}
+  { text }
 ) => {
-
-  
-
   return (
     <Scramble
       text={text}
