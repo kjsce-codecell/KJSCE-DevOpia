@@ -78,4 +78,22 @@
   img {
     max-width: 300px;
   }
+  .twitter {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #1da1f2;
+    }
+  }
+  .instagram {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #c13584;
+    }
+  }
+  .facebook {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #1877f2;
+    }
+  }
 }
