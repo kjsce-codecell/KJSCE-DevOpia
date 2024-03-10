@@ -115,7 +115,7 @@ const Prizes = () => {
             </div>
           </div>
           <div className="prize-section">
-            <h1 data-aos="fade-up" data-aos-duration="1000" >
+            <h1 className='hardware-title' data-aos="fade-up" data-aos-duration="1000" >
               Hardware
             </h1>
             <div
