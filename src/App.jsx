@@ -16,12 +16,13 @@ import ScrollBar from './components/shared/Scrollbar/Scrollbar'
 
 import { logEvent } from 'firebase/analytics'
 import { analytics } from './pages/config/firebase'
+
 function App() {
   logEvent(analytics, 'visit_count')
 
   const [loading, setLoading] = React.useState(true)
   React.useEffect(() => {
-    AOS.init({ once: true})
+    AOS.init({ once: true })
     AOS.refresh()
     setInterval(() => setLoading(false), 5000)
   }, [])

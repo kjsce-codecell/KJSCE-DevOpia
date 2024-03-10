@@ -22,65 +22,43 @@ const ScrollBar = () => {
     handleResize()
     window.addEventListener('resize', handleResize)
 
-    const trackHeightPixels = () => (windowHeight * 70) / 100 - thumbHeight
-    let scrollTween, draggable, scrollTrigger
+    // Calculating track height outside of the gsap.to call
+    const trackHeightPixels = (windowHeight * 70) / 100 - thumbHeight
 
     if (thumbRef.current && containerRef.current) {
-      scrollTween = gsap.to(thumbRef.current, {
-        y: () => trackHeightPixels(),
-        ease: 'none',
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: 0,
-          end: () => docHeight - windowHeight,
-          scrub: true,
-        },
-      })
-
-      scrollTrigger = ScrollTrigger.create({
+      const scrollTrigger = ScrollTrigger.create({
         trigger: containerRef.current,
         start: 0,
         end: () => docHeight - windowHeight,
         scrub: true,
       })
 
-      draggable = Draggable.create(thumbRef.current, {
+      const draggable = Draggable.create(thumbRef.current, {
         type: 'y',
         bounds: containerRef.current,
         inertia: true,
         onPress() {
-          scrollTween.scrollTrigger.disable()
+          scrollTrigger.disable()
         },
         onDrag() {
-          const progress = gsap.utils.mapRange(
-            0,
-            trackHeightPixels(),
-            0,
-            1,
-            this.y
-          )
+          const progress = this.y / trackHeightPixels
           const to = progress * (docHeight - windowHeight)
-          window.scrollTo(0, to, { behavior: 'smooth' })
+          window.scrollTo(0, to)
         },
         onRelease() {
-          // scrollTween.scrollTrigger.enable()
           scrollTrigger.enable()
         },
       })
-    }
 
-    return () => {
-      draggable?.[0].kill()
-      window.removeEventListener('resize', handleResize)
-      if (scrollTween && scrollTween.scrollTrigger) {
-        scrollTween.scrollTrigger.kill()
-      }
-      if (scrollTrigger) {
+      // Ensure to kill the ScrollTrigger and Draggable instances on cleanup
+      return () => {
+        draggable[0].kill()
         scrollTrigger.kill()
+        window.removeEventListener('resize', handleResize)
+        ScrollTrigger.killAll()
       }
-      ScrollTrigger.killAll()
     }
-  }, [docHeight, windowHeight])
+  }, [docHeight, windowHeight, thumbHeight])
 
   if (window.innerWidth <= 768) {
     return null
