@@ -1,14 +1,15 @@
 .loader {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   background-color: #000;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 99999;
   img {
     width: 70%;
     height: 70%;
