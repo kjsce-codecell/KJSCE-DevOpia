@@ -9,6 +9,8 @@ const Prizes = () => {
     <section className="prize" id="prizes">
       <div className="prizes">
         <div className="background"></div>
+        <h1 className="title">Prizes</h1>
+
         <div className="subheading">
           <div data-aos="fade-up" data-aos-duration="1000">
             <img
@@ -23,7 +25,6 @@ const Prizes = () => {
               alt=""
             />
           </div>
-          <p>Prizes</p>
         </div>
         <div className="prizes-content">
           <div className="prize-section">
@@ -112,7 +113,7 @@ const Prizes = () => {
             </div>
           </div>
           <div className="prize-section">
-            <h1 data-aos="fade-up" data-aos-duration="1000">
+            <h1 data-aos="fade-up" data-aos-duration="1000" >
               Hardware
             </h1>
             <div
