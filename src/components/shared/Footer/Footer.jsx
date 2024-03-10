@@ -22,7 +22,7 @@ export default function Footer() {
                   width="24"
                   height="24"
                   viewBox="0 0 36 36"
-                  fill="none"
+                  className="twitter"
                 >
                   <path
                     fillRule="evenodd"
@@ -42,6 +42,7 @@ export default function Footer() {
                   height="24"
                   viewBox="0 0 36 36"
                   fill="none"
+                  className="instagram"
                 >
                   <path
                     fillRule="evenodd"
@@ -58,6 +59,7 @@ export default function Footer() {
                   height="24"
                   viewBox="0 0 36 36"
                   fill="none"
+                  className="facebook"
                 >
                   <path
                     fillRule="evenodd"
@@ -87,6 +89,7 @@ export default function Footer() {
                   height="24"
                   viewBox="0 0 36 36"
                   fill="none"
+                  className="twitter"
                 >
                   <path
                     fillRule="evenodd"
@@ -106,6 +109,7 @@ export default function Footer() {
                   height="24"
                   viewBox="0 0 36 36"
                   fill="none"
+                  className="instagram"
                 >
                   <path
                     fillRule="evenodd"
@@ -122,6 +126,7 @@ export default function Footer() {
                   height="24"
                   viewBox="0 0 36 36"
                   fill="none"
+                  className="facebook"
                 >
                   <path
                     fillRule="evenodd"

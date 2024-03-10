@@ -173,13 +173,15 @@
   z-index: 10;
   position: relative;
   padding: 6px;
-  transition: border-image 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
   .ten {
     height: 349px;
     width: 198px;
   }
   &:hover {
     animation: animateOnHover 0.2s ease-in-out forwards 1;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
   }
   img {
     width: 100%;
@@ -193,6 +195,13 @@
 }
 .content {
   margin: 0.8rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    .highlightNum {
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    }
+  }
 
   .highlightNum {
     color: #fff;
@@ -236,27 +245,27 @@
       )
       1;
   }
-  25% {
-    border-image: linear-gradient(
-        to bottom,
-        #fff 0% 10%,
-        transparent 10% 15%,
-        rgba(255, 255, 255, 0.4) 15% 85%,
-        transparent 85% 90%,
-        #fff 90% 100%
-      )
-      1;
-  }
-  50% {
-    border-image: linear-gradient(
-        to bottom,
-        #fff 0% 50%,
-        rgba(255, 255, 255, 0.4) 50% 85%,
-        transparent 85% 90%,
-        #fff 90% 100%
-      )
-      1;
-  }
+  // 25% {
+  //   border-image: linear-gradient(
+  //       to bottom,
+  //       #fff 0% 10%,
+  //       transparent 10% 15%,
+  //       rgba(255, 255, 255, 0.4) 15% 85%,
+  //       transparent 85% 90%,
+  //       #fff 90% 100%
+  //     )
+  //     1;
+  // }
+  // 50% {
+  //   border-image: linear-gradient(
+  //       to bottom,
+  //       #fff 0% 50%,
+  //       rgba(255, 255, 255, 0.4) 50% 85%,
+  //       transparent 85% 90%,
+  //       #fff 90% 100%
+  //     )
+  //     1;
+  // }
   100% {
     border-image: linear-gradient(
         to bottom,
