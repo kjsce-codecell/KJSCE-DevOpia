@@ -29,11 +29,13 @@
     padding: 100px 20px;
     display: flex;
     font-family: 'dunerise', sans-serif;
-    color: #929292;
+    font-size: 0.5rem;
+    line-height: 180%;
+    letter-spacing: 0.1875rem;
+    color: #a2a4aa;
     left: 0;
     position: absolute;
-    font-size: clamp(4px, 5vw, 10px);
-    flex-direction: row;
+    opacity: 0.5;
   }
 
   .title-img {
