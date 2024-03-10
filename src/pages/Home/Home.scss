@@ -5,26 +5,25 @@
   overflow: hidden;
   position: relative;
 
-  .background-image {
-    height: 100vh;
-    background-image: url('/background.png');
-    background-size: cover;
-    background-position: bottom;
-  }
-  .overlay {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('/Stars.png');
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    background-blend-mode: darken;
-    bottom: 0;
-    // animation: parallax 1s linear infinite;
-  }
-
+  // .background-image {
+  //   height: 100vh;
+  //   background-image: url('/background.png');
+  //   background-size: cover;
+  //   background-position: bottom;
+  // }
+  // .overlay {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   background-image: url('/Stars.png');
+  //   background-size: cover;
+  //   background-position: center;
+  //   align-items: center;
+  //   background-blend-mode: darken;
+  //   bottom: 0;
+  //   // animation: parallax 1s linear infinite;
+  // }
   .code {
     padding: 100px 20px;
     display: flex;
@@ -33,81 +32,53 @@
     line-height: 180%;
     letter-spacing: 0.1875rem;
     color: #a2a4aa;
-    left: 0;
     position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0.5;
+    z-index: 99;
   }
 
   .title-img {
     position: absolute;
-    font-weight: 200;
-    max-width: 700px;
-    // transform: scale(0.8);
-    translate: -50%;
+    top: 30%;
     left: 50%;
-    top: 20%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    overlay: hidden;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    mix-blend-mode: screen;
   }
 
-  .tagline {
-    position: relative;
+  .info {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1.5rem;
     font-weight: 200;
-    // translate: -50%;
-    bottom: -50%;
-    // left: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000;
-    font-family: 'dunerise', sans-serif;
-  }
-  .banda {
-    aspect-ratio: 1727/1133;
-    // width: 100%;
-    object-fit: cover;
-    // display: flex;
-    position: absolute;
-    height: 90vh;
-    bottom: -3%;
-    background-position: center;
-    // left: 25vw;
-    transform: translateX(-50%);
-  }
-
-  .ships {
-    position: absolute;
-    scale: 0.8;
-    top: 0%;
-    right: 0;
-  }
-
-  .date {
-    position: relative;
-    color: #fff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.342);
-    font-family: 'agencyfb';
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6rem;
-    font-size: 1.7rem;
-    gap: 5px;
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-    // translate: -50%;
-    bottom: -75%;
-    left: 0%;
-    z-index: 99;
-    width: fit-content;
+    align-items: center;
+    color: #fff;
+    font-family: 'AgencyFB', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    gap: 1rem;
+    width: max-content;
+
+    .tagline {
+      color: #fff;
+      font-family: 'Dune Rise';
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.36088rem;
+      width: 100%;
+      text-shadow: 0px 4px 4.6px rgba(0, 0, 0, 0.76);
+    }
+    .date{
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 
     #apply-button {
       display: flex;
@@ -115,10 +86,53 @@
       height: 44px;
       width: fit-content;
     }
-    h2 {
-      font-size: 0.8rem;
-      opacity: 0.8;
-      margin: 0;
-    }
   }
+  .banda {
+    position: absolute;
+    // aspect-ratio: 1727/1133;
+    // width: 100%;
+    // object-fit: cover;
+    // display: flex;
+    // height: 90vh;
+    // bottom: -3%;
+    // background-position: center;
+    // left: 25vw;
+    // transform: translateX(-50%);
+  }
+
+  .ships {
+    position: absolute;
+    // scale: 0.8;
+    top: 0%;
+    // right: 0;
+  }
+
+  // .date {
+  //   position: relative;
+  //   color: #fff;
+  //   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.342);
+  //   font-family: 'agencyfb';
+  //   font-style: normal;
+  //   font-weight: 700;
+  //   line-height: normal;
+  //   letter-spacing: 0.6rem;
+  //   font-size: 1.7rem;
+  //   gap: 5px;
+  //   text-transform: uppercase;
+  //   display: flex;
+  //   flex-direction: column;
+  //   text-align: center;
+  //   align-items: center;
+  //   justify-content: center;
+  //   // translate: -50%;
+  //   bottom: -75%;
+  //   left: 0%;
+  //   z-index: 99;
+  //   width: fit-content;
+  //   h2 {
+  //     font-size: 0.8rem;
+  //     opacity: 0.8;
+  //     margin: 0;
+  //   }
+  // }
 }
