@@ -90,7 +90,7 @@
   }
 
   .prizes-content {
-    padding: 0 10%;
+    // padding: 0 10%;
     padding-top: 5%;
     text-align: center;
     flex: 1;
@@ -118,6 +118,9 @@
       .prize-item {
         h2 {
           font-size: 3rem;
+          @media (max-width:720px) {
+            font-size:2rem;
+          }
         }
         width: 100%;
         height: 50%;
@@ -218,14 +221,19 @@
 .prize-img-left {
   width: 5rem;
   height: 5rem;
-  @media (max-width: 720px) {
+  @media (max-width: 900) {
     width: 3.5rem;
     height: 3.5rem;
   }
 }
 
 .prize-img-left {
-  @media (min-width: 720px) {
+  @media (min-width: 991) {
     display: none;
   }
 }
+// @media (max-width: 991px) {
+//   .prize-image {
+//     // styles for screens smaller than 800px
+//   }
+// }
