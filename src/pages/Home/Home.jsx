@@ -8,8 +8,6 @@ import {
 } from 'react-parallax-mouse'
 
 const Home = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
   useEffect(() => {
     const script = document.createElement('script')
     script.src = 'https://apply.devfolio.co/v2/sdk.js'

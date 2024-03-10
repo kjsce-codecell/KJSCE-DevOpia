@@ -32,6 +32,7 @@ function App() {
   }
   return (
     <>
+      {/* <Suspense fallback={<Loader />}> */}
       <ScrollBar />
       <Navbar />
       <Home />
@@ -42,6 +43,7 @@ function App() {
       <Sponsors />
       <FAQ />
       <Footer />
+      {/* </Suspense> */}
     </>
   )
 }
