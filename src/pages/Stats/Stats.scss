@@ -83,7 +83,7 @@
         font-size: 6rem;
         position: relative;
         display: block;
-        margin: 0 1rem;
+        margin: 3rem auto 1rem;
         font-weight: 700;
         &::before,
         &::after {
@@ -92,6 +92,8 @@
       }
     }
     p {
+      user-select: none;
+      font-family: 'dunerise', sans-serif;
       position: absolute;
       top: 0;
       text-align: center;
