@@ -79,7 +79,9 @@ const Prizes = () => {
                       Exciting Goodies worth
                       <br /> inr 2l & More!
                     </h4> */}
-                    <p>RUNNER UP</p>
+                    <p>
+                      <Scrambler text={'RUNNER UP'}></Scrambler>
+                    </p>
                   </div>
                 </div>
                 <div
