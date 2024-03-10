@@ -36,8 +36,8 @@ const menuList = [
 function Navbar() {
   const [binaryIndex, setBinaryIndex] = useState(0)
   const binaryArray = [
-    '01001001 00100111 01101101 00100000 01000010 01100001 01110100 01101101 01100001 01101110 01001001 00100111 01101101 00100000 01000010 01100001 01110100 01101101 01100001 01101110 01001001 00100111 01101101 00100000 01000010 01100001 01110100 01101101 01100001 01101110',
-    '01010100 01101000 01100101 00100000 01001010 01110101 01110011 01110100 01101001 01100011 01100101 00100000 01001100 01100101 01100001 01100111 01110101 01100101 00100000 01001110 01100101 01100101 01100100 01110011 00100000 01011001 01101111 01110101 00100001',
+    '1010100 1101000 1101001 1110011 100000 1101001 1110011 1101110 11100010 10000000 10011001 1110100 100000 1101010 1110101 1110011 1110100 100000 1010100 1101000 1101001 1110011 100000 1101001 1110011 1101110 11100010 10000000 10011001 1110100 100000 1101010 1110101 1110011 1110100 100000',
+    '1110000 1110101 1110010 1110011 1110101 1101001 1110100 100000 1101111 1100110 100000 1110010 1100101 1110110 1101111 1101100 1110101 1110100 1101001 1101111 1101110 1110000 1110101 1110010 1110011 1110101 1101001 1110100 100000 1101111 1100110 100000 1110010 1100101 1110110 1101111 1101100 1110101 1110100 1101001 1101111 1101110',
   ]
   const [activeSection, setActiveSection] = useState('Home')
   const [isOpen, setIsOpen] = useState(false)
@@ -92,10 +92,10 @@ function Navbar() {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId)
     if (section) {
-      const offset = 10000 // Adjust this value to add desired offset
+      const offset = 50 // Adjust this value to add desired offset
       const top = section.offsetTop - offset
       window.scrollTo({
-        top,
+        top: top,
         behavior: 'smooth',
       })
     }
@@ -114,8 +114,9 @@ function Navbar() {
         >
           <img
             src={isOpen ? './BurgerClose.svg' : './BurgerSquare.svg'}
-            alt=""
+            alt=" ̿"
           />
+          <span className="menu-title">{isOpen ? 'CLOSE' : 'MENU'}</span>
         </div>
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
           <ul className="links">
@@ -126,7 +127,6 @@ function Navbar() {
                     handleClick()
                     scrollToSection(menu.text.toLowerCase())
                   }}
-                  href={menu.link}
                   className={
                     menu.text.toLowerCase() === activeSection.toLowerCase()
                       ? 'active'
@@ -139,10 +139,10 @@ function Navbar() {
             ))}
           </ul>
           <div className="logos">
-            <img src={CodeCell} alt="" />
-            <img src={CSI} alt="" />
-            <img src={SVU} alt="" />
-            <img src={Somaiya} alt="" />
+            <img src={Somaiya} className='trust' alt="Somaiya Trust" />
+            <img src={SVU} className='svu' alt="SVU KJSCE" />
+            <img src={CodeCell} className='codecell' alt="KJSCE CodeCell" />
+            <img src={CSI} className='csi' alt="CSI KJSCE" />
           </div>
         </div>
         <div className="active">

@@ -35,9 +35,9 @@ const ScrollBar = () => {
   const thumbTop = (progress / 100) * trackHeightPixels
 
   // Hide the component on mobile devices
-  if (window.innerWidth <= 768) {
-    return null
-  }
+  // if (window.innerWidth <= 768) {
+  //   return null
+  // }
 
   return (
     <motion.div
