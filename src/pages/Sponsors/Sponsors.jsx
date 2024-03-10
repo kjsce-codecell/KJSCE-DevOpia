@@ -5,10 +5,20 @@ import Polygon from '/polygon.png'
 import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import SettingsIcon from '/settings.svg'
+// import { lazy } from 'react'
+import prevsponsors from '/public/prevsponsors'
 
 function Sponsors() {
   const [option, setOption] = useState('current')
   const sponsorRef = useRef(null)
+
+  const prev = prevsponsors.map(item => 
+    <div className="sponsor-img">
+      <a href="https://devfolio.co/" target="_blank">
+        <img src={item.img} alt="Devfolio" />
+      </a>
+    </div>
+  )
 
   return (
     <section ref={sponsorRef} className="sponsors" id="sponsors">
@@ -59,61 +69,8 @@ function Sponsors() {
               data-aos="fade-up" data-aos-duration="1000"
             >
               <div className="sponsor-box">
-                <h1>Previous Partners</h1>
                 <div className="sponsor-grp">
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                </div>
-                <h1>Previous Gold Sponsors</h1>
-
-                <div className="sponsor-grp">
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                </div>
-                <h1>Previous Silver Sponsors</h1>
-
-                <div className="sponsor-grp">
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
-                  <div className="sponsor-img">
-                    <a href="https://devfolio.co/" target="_blank">
-                      <img src={Polygon} alt="Devfolio" />
-                    </a>
-                  </div>
+                  {prev}
                 </div>
               </div>
             </div>
