@@ -27,7 +27,7 @@ const ScrollBar = () => {
     const clampedY = Math.max(0, Math.min(adjustedY, trackHeightPixels))
     const scrollValue =
       (clampedY / trackHeightPixels) * (docHeight - windowHeight)
-    window.scrollTo({ top: scrollValue, behavior: 'smooth' })
+    window.scrollTo({ top: scrollValue })
 
     setProgress((clampedY / trackHeightPixels) * 100)
   }
@@ -65,11 +65,10 @@ const ScrollBar = () => {
           cursor: 'grab',
         }}
         drag="y"
+        dragElastic={0}
+        dragMomentum={false}
         dragConstraints={{ top: 0, bottom: trackHeightPixels }}
         onDrag={handleDrag}
-        whileTap={{
-          cursor: 'grabbing',
-        }}
       />
     </motion.div>
   )
