@@ -39,7 +39,7 @@ const ScrollBar = () => {
 
       scrollTrigger = ScrollTrigger.create({
         trigger: containerRef.current,
-        start: 0,
+        // start: 0,
         end: () => docHeight - windowHeight,
         scrub: true,
       })
@@ -49,7 +49,9 @@ const ScrollBar = () => {
         bounds: containerRef.current,
         inertia: true,
         onPress() {
+          // TODO: Need to fix this to fix scrollbar issue
           scrollTween.scrollTrigger.disable()
+          scrollTrigger.disable()
         },
         onDrag() {
           const progress = gsap.utils.mapRange(
@@ -61,9 +63,11 @@ const ScrollBar = () => {
           )
           const to = progress * (docHeight - windowHeight)
           window.scrollTo(0, to, { behavior: 'smooth' })
+          // scrollTween.scrollTrigger.disable()
+          // scrollTrigger.disable()
         },
         onRelease() {
-          // scrollTween.scrollTrigger.enable()
+          scrollTween.scrollTrigger.enable()
           scrollTrigger.enable()
         },
       })
