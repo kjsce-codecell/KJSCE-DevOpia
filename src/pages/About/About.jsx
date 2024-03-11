@@ -1,10 +1,8 @@
 import { useState, useRef } from 'react'
 import './About.scss'
 import Sword from '/Sword.svg'
-import Circle from '/circle.png'
 import SubheadingButton from '../../components/About/SubheadingButton'
 import SubheadingContent from '../../components/About/SubheadingContent'
-import { motion } from 'framer-motion'
 
 const About = () => {
   const [activeSubheading, setActiveSubheading] = useState(0)

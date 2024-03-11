@@ -1,9 +1,8 @@
-import { AnimatePresence, motion } from 'framer-motion'
 import './style.scss'
 
 function Loader() {
   return (
-    <AnimatePresence>
+    <>
       <div
         // initial={{
         //   opacity: 0,
@@ -22,7 +21,7 @@ function Loader() {
       >
         <img fetchPriority="high" src="./Loader.gif" alt="Loader" />
       </div>
-    </AnimatePresence>
+    </>
   )
 }
 

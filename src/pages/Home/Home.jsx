@@ -1,5 +1,5 @@
 import './Home.scss'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 // import { motion } from 'framer-motion'
 import Title from '/Logo.gif'
 import {
