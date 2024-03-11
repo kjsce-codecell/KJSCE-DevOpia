@@ -1,17 +1,16 @@
-import React, { lazy } from 'react'
-
-const Home = lazy(() => import('./pages/Home/Home'))
-const About = lazy(() => import('./pages/About/About'))
-const Prizes = lazy(() => import('./pages/Prizes/Prizes'))
-// const Track = lazy(() => import('./pages/Track/Track'));
-const FAQ = lazy(() => import('./pages/FAQ/FAQ'))
-const Navbar = lazy(() => import('./components/shared/Navbar/Navbar'))
-const Footer = lazy(() => import('./components/shared/Footer/Footer'))
-const Sponsors = lazy(() => import('./pages/Sponsors/Sponsors'))
-const Stats = lazy(() => import('./pages/Stats/Stats'))
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Prizes from './pages/Prizes/Prizes'
+// import Track from './pages/Track/Track'
+import FAQ from './pages/FAQ/FAQ'
+import Navbar from './components/shared/Navbar/Navbar'
+import Footer from './components/shared/Footer/Footer'
+import Sponsors from './pages/Sponsors/Sponsors'
+import Stats from './pages/Stats/Stats'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import React from 'react'
 import Loader from './components/Loader'
 import ScrollBar from './components/shared/Scrollbar/Scrollbar'
 
@@ -44,10 +43,9 @@ function App() {
                                                 ╚
 `)
 
-  if (loading) return <Loader />
-
   return (
     <>
+      {loading && <Loader />}
       <ScrollBar />
       <Navbar />
       <Home />
