@@ -78,7 +78,12 @@ const Home = () => {
             height: '100vh',
           }}
         />
-        <img src={Title} alt="KJSCE DevOpia" className="title-img" />
+        <img
+          fetchPriority="high"
+          src={Title}
+          alt="KJSCE DevOpia"
+          className="title-img"
+        />
         <MouseParallaxChild
           className="ships"
           factorX={0.05}

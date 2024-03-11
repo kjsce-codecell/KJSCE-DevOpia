@@ -20,7 +20,7 @@ function Loader() {
         //   ease: 'easeInOut',
         // }}
       >
-        <img src="./Loader.gif" alt="Loader" />
+        <img fetchPriority="high" src="./Loader.gif" alt="Loader" />
       </div>
     </AnimatePresence>
   )
