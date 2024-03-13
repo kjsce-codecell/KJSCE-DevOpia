@@ -50,9 +50,9 @@ const Home = () => {
           width: '100vw',
           height: '100vh',
         }}
-        // globalFactorX={1}
-        // globalFactorY={1}
-        // resetOnLeave
+      // globalFactorX={1}
+      // globalFactorY={1}
+      // resetOnLeave
       >
         <MouseParallaxChild
           className="banda"
@@ -126,7 +126,7 @@ const Home = () => {
           data-hackathon-slug="devopia"
           data-button-theme="dark-inverted"
         ></div>
-        <p className="date">29TH-31ST MARCH</p>
+        <p className="date">12TH-14TH APRIL</p>
       </div>
     </section>
   )
