@@ -75,7 +75,7 @@
           content: '';
         }
 
-        @media (max-width: 720px) {
+        @media (max-width: 768px) {
           font-size: 4rem;
         }
       }
@@ -262,23 +262,25 @@
   .hardware-title {
     margin-top: 5rem;
   }
-}
-
-.prize-img-right,
-.prize-img-left {
-  width: 5rem;
-  height: 5rem;
-  @media (max-width: 900) {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-}
-
-.prize-img-left {
-  @media (min-width: 991) {
+  .prize-img-left {
     display: none;
+    // show image on mobile
+    @media (max-width: 720px) {
+      display: block;
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
+  .prize-img-right {
+    height: 5.5rem;
+    width: 5.5rem;
+    @media (max-width: 720px) {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
   }
 }
+
 // @media (max-width: 991px) {
 //   .prize-image {
 //     // styles for screens smaller than 800px

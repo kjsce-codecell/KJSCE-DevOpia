@@ -66,28 +66,26 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
-    div {
+    .stats-title {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: row;
-      position: relative;
-
-      .left {
-        transform: rotate(-90deg);
-      }
-      .right {
-        transform: rotate(90deg);
+      margin: 3rem auto 1rem;
+      .stats-icon {
+        height: 3.5rem;
+        width: 3.5rem;
       }
       h3 {
         font-size: 6rem;
         position: relative;
         display: block;
-        margin: 3rem auto 1rem;
         font-weight: 700;
         &::before,
         &::after {
           content: '';
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 4rem;
         }
       }
     }

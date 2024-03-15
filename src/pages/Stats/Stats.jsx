@@ -1,14 +1,18 @@
 import './Stats.scss'
- 
+
 function Stats() {
   return (
     <section className="statsContainer" id="stats">
       <div className="background"></div>
       <div className="subheading">
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <img src="./Emblem.svg" className="left" alt="" />
+        <div
+          className="stats-title"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <img src="./Emblem.svg" className="stats-icon" alt="" />
           <h3>Stats</h3>
-          <img src="./Emblem.svg" className="right" alt="" />
+          <img src="./Emblem.svg" className="stats-icon" alt="" />
         </div>
         <p>Stats</p>
       </div>
