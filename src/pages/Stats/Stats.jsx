@@ -25,7 +25,7 @@ function Stats() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img src="./Stats/Image1.png" alt="" />
+              <img src="./Stats/Image1.webp" alt="" />
             </div>
             <div
               className="content"
@@ -40,7 +40,7 @@ function Stats() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img src="./Stats/Image2.png" alt="" />
+              <img src="./Stats/Image2.webp" alt="" />
             </div>
           </div>
           <div className="column">
@@ -49,7 +49,7 @@ function Stats() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img src="./Stats/Image3.jpg" alt="" />
+              <img src="./Stats/Image3.webp" alt="" />
             </div>
             <div
               className="content"
@@ -64,7 +64,7 @@ function Stats() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img src="./Stats/Image4.jpeg" alt="" />
+              <img src="./Stats/Image4.webp" alt="" />
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ function Stats() {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <img src="./Stats/Image5.jpeg" alt="" />
+            <img src="./Stats/Image5.webp" alt="" />
           </div>
           <div
             className="content"
@@ -92,7 +92,7 @@ function Stats() {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <img src="./Stats/Image6.JPG" alt="" />
+            <img src="./Stats/Image6.webp" alt="" />
           </div>
         </div>
         <div className="sideWrapper">
@@ -102,7 +102,7 @@ function Stats() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img src="./Stats/Image7.jpg" alt="" />
+              <img src="./Stats/Image7.webp" alt="" />
             </div>
             <div
               className="content"
@@ -117,7 +117,7 @@ function Stats() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img src="./Stats/Image8.png" alt="" />
+              <img src="./Stats/Image8.webp" alt="" />
             </div>
           </div>
           <div className="column">
@@ -126,7 +126,7 @@ function Stats() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img src="./Stats/Image9.jpg" alt="" />
+              <img src="./Stats/Image9.webp" alt="" />
             </div>
             <div
               className="content"
@@ -141,7 +141,7 @@ function Stats() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img src="./Stats/Image10.jpg" alt="" />
+              <img src="./Stats/Image10.webp" alt="" />
             </div>
           </div>
         </div>
