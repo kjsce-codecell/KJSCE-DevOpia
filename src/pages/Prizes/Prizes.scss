@@ -1,12 +1,12 @@
 .prizes {
-  min-height: 100vh;
+  min-height: 100svh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background-color: #000512;
-  padding-bottom: 2rem;
+  // padding-bottom: 2rem;
   width: 100%;
   overflow: hidden;
   background: linear-gradient(
@@ -126,6 +126,44 @@
     width: 100%;
     scale: 0.8;
     transform: translateY(-10%);
+
+    // ------- COMING SOON ----------------
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: hsl(0, 0%, 65%);
+      font-size: 10rem;
+      line-height: 150%;
+      font-family: 'dunerise';
+      cursor: pointer;
+      text-transform: uppercase;
+      background: linear-gradient(
+        to right,
+        hsl(0, 0%, 30%) 0,
+        hsl(0, 0%, 100%) 10%,
+        hsl(0, 0%, 30%) 20%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 7s infinite linear;
+      @media (max-width: 768px) {
+        font-size: 5rem;
+        animation: shine 5s infinite linear;
+      }
+    }
+
+    @keyframes shine {
+      0% {
+        background-position: 0px; /* Start from off-screen left */
+      }
+      100% {
+        background-position: calc(100% + 700px); /* Move to off-screen right */
+      }
+    }
+    // ------- COMING SOON ----------------
   }
   .prize-section {
     display: flex;

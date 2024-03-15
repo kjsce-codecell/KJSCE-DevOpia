@@ -117,7 +117,7 @@ function Stats() {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img src="./Stats/Image8.jpg" alt="" />
+              <img src="./Stats/Image8.png" alt="" />
             </div>
           </div>
           <div className="column">

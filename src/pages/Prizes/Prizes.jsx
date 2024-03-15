@@ -1,11 +1,11 @@
-import Scrambler from '../../components/shared/Scrambler/Scrambler'
+// import Scrambler from '../../components/shared/Scrambler/Scrambler'
 import './Prizes.scss'
-import First from '/first.png'
-import Second from '/second.png'
-import Third from '/third.png'
-import HardwareFirst from '/hardwareFirst.png'
-import HardwareSecond from '/hardwareSecond.png'
- 
+// import First from '/first.png'
+// import Second from '/second.png'
+// import Third from '/third.png'
+// import HardwareFirst from '/hardwareFirst.png'
+// import HardwareSecond from '/hardwareSecond.png'
+
 const Prizes = () => {
   return (
     <section className="prize" id="prizes">
@@ -29,6 +29,13 @@ const Prizes = () => {
           </div>
         </div>
         <div className="prizes-content">
+          <h1>
+            Coming
+            <br />
+            Soon
+          </h1>
+        </div>
+        {/* <div className="prizes-content">
           <div className="prize-section">
             <h1 data-aos="fade-up" data-aos-duration="1000">
               Software
@@ -53,10 +60,10 @@ const Prizes = () => {
                   <h3>
                     <Scrambler text={'CASH PRIZE'}></Scrambler>
                   </h3>
-                  {/* <h4>
+                  <h4>
                     Exciting Goodies worth
                     <br /> inr 2l & More!
-                  </h4> */}
+                  </h4>
                   <p>
                     <Scrambler text={'WINNER'}></Scrambler>
                   </p>
@@ -78,10 +85,10 @@ const Prizes = () => {
                     <h3>
                       <Scrambler text={'CASH PRIZE'}></Scrambler>
                     </h3>
-                    {/* <h4>
+                    <h4>
                       Exciting Goodies worth
                       <br /> inr 2l & More!
-                    </h4> */}
+                    </h4>
                     <p>
                       <Scrambler text={'RUNNER UP'}></Scrambler>
                     </p>
@@ -102,10 +109,10 @@ const Prizes = () => {
                     <h3>
                       <Scrambler text={'CASH PRIZE'}></Scrambler>
                     </h3>
-                    {/* <h4>
+                    <h4>
                       Exciting Goodies worth
                       <br /> inr 2l & More!
-                    </h4> */}
+                    </h4>
                     <p>
                       <Scrambler text={'2ND RUNNER UP'}></Scrambler>
                     </p>
@@ -160,10 +167,10 @@ const Prizes = () => {
                   <h3>
                     <Scrambler text={'CASH PRIZE'}></Scrambler>
                   </h3>
-                  {/* <h4>
+                  <h4>
                       Exciting Goodies worth
                       <br /> inr 2l & More!
-                    </h4> */}
+                    </h4>
                   <p>
                     <Scrambler text={'RUNNER UP'}></Scrambler>
                   </p>
@@ -171,78 +178,7 @@ const Prizes = () => {
               </div>
             </div>
           </div>
-          {/* <div className="prize">
-            <div className="grid-container">
-              <div
-                className="left-container"
-                style={{
-                  background: `url(${First})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                <div className="container-text">
-                  <div className="sec">
-                    <h2>INR 30,000</h2>
-                    <h3>CASH PRIZE</h3>
-                    <h4>
-                      Exciting Goodies worth
-                      <br /> inr 2l & More!
-                    </h4>
-                  </div>
-                  <div className="spacer"></div>
-                  <p>WINNER</p>
-                </div>
-              </div>
-              <div className="right-container">
-                <div
-                  style={{
-                    background: `url(${Second})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                  className="right-item"
-                >
-                  <div className="container-text">
-                    <div className="sec">
-                      <div className="row">
-                        <h2>INR 30,000</h2>
-                        <h3>CASH PRIZE</h3>
-                      </div>
-
-                      <h4>
-                        Exciting Goodies worth
-                        <br /> inr 2l & More!
-                      </h4>
-                      <div className="spacer"></div>
-                    </div>
-                    <p>RUNNER UP</p>
-                  </div>
-                  <img src={Second} alt="" />
-                </div>
-                <div className="right-item">
-                  <div className="container-text">
-                    <div className="sec">
-                      <div className="row">
-                        <h2>INR 30,000</h2>
-                        <h3>CASH PRIZE</h3>
-                      </div>
-
-                      <h4>
-                        Exciting Goodies worth
-                        <br /> inr 2l & More!
-                      </h4>
-                      <div className="spacer"></div>
-                    </div>
-                    <p>2ND RUNNER UP</p>
-                  </div>
-                  <img src={Third} alt="" />
-                </div>
-              </div>
-            </div>
-           
         </div> */}
-        </div>
       </div>
     </section>
   )
