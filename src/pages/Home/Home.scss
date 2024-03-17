@@ -45,8 +45,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
-    mix-blend-mode: screen;
+    // mix-blend-mode: screen;
+    animation: shinyGlow 3s infinite alternate ease-in-out;
+    // filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
   }
+
+  @keyframes shinyGlow {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+    }
+    100% {
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+    }
+}
 
   .info {
     position: absolute;

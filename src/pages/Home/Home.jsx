@@ -1,7 +1,7 @@
 import './Home.scss'
 import { useEffect } from 'react'
 // import { motion } from 'framer-motion'
-import Title from '/Logo.gif'
+import Title from '/Home/Devopia-Logo.png'
 import {
   MouseParallaxContainer,
   MouseParallaxChild,
