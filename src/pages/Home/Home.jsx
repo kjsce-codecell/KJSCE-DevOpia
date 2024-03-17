@@ -44,7 +44,7 @@ const Home = () => {
       <MouseParallaxContainer
         className="parallax"
         containerStyle={{
-          background: 'url(/Home/website-bg.svg)',
+          background: 'url(/Home/bg.png)',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           width: '100vw',
@@ -59,7 +59,7 @@ const Home = () => {
           factorX={0.01}
           factorY={0.01}
           style={{
-            background: 'url(/Home/banda.svg)',
+            background: 'url(/Home/banda.png)',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             width: '100%',

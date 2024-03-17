@@ -3,7 +3,7 @@
   position: relative;
   padding: 30px;
   bottom: 0;
-  padding: 1rem;
+  padding: 0;
   width: 100%;
   font-weight: 400;
   width: 100vw;
@@ -16,6 +16,8 @@
   );
 
   .footer-content {
+    height: 100%;
+    width: 100%;
     padding: 20px;
     color: white;
     display: flex;
@@ -23,6 +25,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 4rem;
+    background: rgba(26, 26, 29, 0.75);
 
     @media (max-width: 1050px) {
       flex-direction: column;
@@ -57,12 +60,30 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    img {
+      height: 3rem;
+      width: auto;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .codecell {
+    img {
+      &:hover {
+        filter: drop-shadow(0 0 0.5rem rgba(232, 61, 61));
+      }
+    }
   }
 
   .csi {
     @media (max-width: 1050px) {
       flex-direction: column-reverse;
       gap: 1.3rem;
+    }
+    img {
+      &:hover {
+        filter: drop-shadow(0 0 0.5rem #3759ef);
+      }
     }
   }
 
@@ -81,7 +102,7 @@
   .twitter {
     transition: all 0.2s ease-in-out;
     &:hover {
-      background-color: #1da1f2;
+      background-color: rgba(98, 149, 218);
     }
   }
   .instagram {
@@ -96,4 +117,18 @@
       background-color: #1877f2;
     }
   }
+}
+.binary-footer {
+  overflow: hidden;
+  display: flex;
+  max-width: 100vw;
+  color: #a2a4aa;
+  opacity: 0.5;
+  font-size: 10px;
+  left: 0;
+  white-space: nowrap;
+  font-family: 'Roboto Mono', monospace;
+  transition: all 0.3s ease-in-out;
+  padding: 2px;
+  border: 2px solid rgba(255, 255, 255, 0.352);
 }

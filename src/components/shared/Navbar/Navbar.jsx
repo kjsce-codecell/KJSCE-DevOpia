@@ -120,8 +120,18 @@ function Navbar() {
         </div>
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
           <ul className="links">
-            {menuList.map((menu) => (
-              <li className="nav-link" key={menu.text}>
+            {menuList.map((menu, index) => (
+              <li
+                className="nav-link"
+                key={index}
+                style={{
+                  animation: isOpen
+                    ? `0.5s ease ${
+                        index / 6 + 0.3
+                      }s 1 normal forwards running navLinkAnimation`
+                    : 'none',
+                }}
+              >
                 <a
                   onClick={() => {
                     handleClick()
@@ -139,10 +149,10 @@ function Navbar() {
             ))}
           </ul>
           <div className="logos">
-            <img src={Somaiya} className='trust' alt="Somaiya Trust" />
-            <img src={SVU} className='svu' alt="SVU KJSCE" />
-            <img src={CodeCell} className='codecell' alt="KJSCE CodeCell" />
-            <img src={CSI} className='csi' alt="CSI KJSCE" />
+            <img src={Somaiya} className="trust" alt="Somaiya Trust" />
+            <img src={SVU} className="svu" alt="SVU KJSCE" />
+            <img src={CodeCell} className="codecell" alt="KJSCE CodeCell" />
+            <img src={CSI} className="csi" alt="CSI KJSCE" />
           </div>
         </div>
         <div className="active">

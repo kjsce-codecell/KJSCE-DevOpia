@@ -2,10 +2,26 @@ import Logo from '/Logo.png'
 import './Footer.scss'
 import CodeCell from '/CodeCell.png'
 import CSI from '/CSI.png'
+import { useEffect, useState } from 'react'
 
 export default function Footer() {
+  const [binaryIndex, setBinaryIndex] = useState(0)
+  const binaryArray = [
+    '1010011 1100101 1100101 100000 1111001 1101111 1110101 100000 1100001 1110100 100000 1110100 1101000 1100101 100000 1101000 1100001 1100011 1101011 1100001 1110100 1101000 1101111 1101110 100001 1010011 1100101 1100101 100000 1111001 1101111 1110101 100000 1100001 1110100 100000 1110100 1101000 1100101 100000 1101000 1100001 1100011 1101011 1100001 1110100 1101000 1101111 1101110 100001',
+    '1001001 100111 1101101 100000 1100001 1101101 100000 1000010 1100001 1110100 1101101 1100001 1101110 1001001 100111 1101101 100000 1100001 1101101 100000 1000010 1100001 1110100 1101101 1100001 1101110 1001001 100111 1101101 100000 1100001 1101101 100000 1000010 1100001 1110100 1101101 1100001 1101110',
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBinaryIndex((prevIndex) => (prevIndex + 1) % binaryArray.length)
+    }, 500)
+
+    return () => clearInterval(interval)
+  }, [binaryArray.length])
+
   return (
     <section>
+      <p className="binary-footer">{binaryArray[binaryIndex]}</p>
       <footer className="footer">
         <div className="footer-content">
           <div className="codecell">
