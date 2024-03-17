@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: 
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://devopia.kjsce.com/sitemap.xml
