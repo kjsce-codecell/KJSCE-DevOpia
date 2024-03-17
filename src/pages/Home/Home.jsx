@@ -89,7 +89,7 @@ const Home = () => {
           factorX={0.05}
           factorY={0.05}
           style={{
-            background: 'url(/Home/ships.svg)',
+            background: 'url(/Home/ships.png)',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             width: '100%',

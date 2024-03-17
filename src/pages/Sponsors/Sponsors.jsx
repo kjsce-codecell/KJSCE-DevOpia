@@ -1,9 +1,9 @@
 import './Sponsors.scss' // Import your stylesheet here
 // import Devfolio from '/devfolio.png'
 // import Riidl from '/riidl.png';
-import Polygon from '/currentSponsors/polygon.png'
-import Devfolio from '/currentSponsors/Devfolio.png'
-import EthIndia from '/currentSponsors/EthIndia.png'
+// import Polygon from '/currentSponsors/polygon.png'
+// import Devfolio from '/currentSponsors/Devfolio.png'
+// import EthIndia from '/currentSponsors/EthIndia.png'
 import { useRef, useState } from 'react'
 import SettingsIcon from '/settings.svg'
 // import { lazy } from 'react'

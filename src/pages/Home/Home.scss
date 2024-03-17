@@ -76,7 +76,7 @@
       width: 100%;
       text-shadow: 0px 4px 4.6px rgba(0, 0, 0, 0.76);
     }
-    .date{
+    .date {
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       font-size: 1.3rem;
     }
@@ -104,8 +104,12 @@
   .ships {
     position: absolute;
     // scale: 0.8;
-    top: 0%;
+    // top: 0%;
     // right: 0;
+  }
+
+  .stars {
+    position: absolute;
   }
 
   // .date {

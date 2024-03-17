@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types'
 
-const SubheadingContent = ({ content }) => {
+// eslint-disable-next-line react/prop-types
+const SubheadingContent = ({ content, animateBodyText }) => {
   return (
-    <div className="body-text">
+    <div
+      className={`body-text ${animateBodyText ? 'fade-up' : ''}`} // Conditionally apply class for animation
+    >
       {content.split('\n').map((line, index) => (
         <p key={index}>
           {line}
