@@ -9,6 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
   z-index: 99999;
   img {
     width: 70%;
@@ -21,4 +24,7 @@
       height: 100%;
     }
   }
+}
+.loader.show {
+  opacity: 1;
 }

@@ -1,6 +1,17 @@
+import { useEffect, useState } from 'react'
 import './style.scss'
 
 function Loader() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setLoading(false)
+    }, 5000)
+
+    return () => clearInterval(intervalId)
+  }, [])
+
   return (
     <>
       <div
@@ -13,8 +24,8 @@ function Loader() {
         // exit={{
         //   opacity: 0,
         // }}
-        className="loader"
-        // transition={{
+        className={`loader ${loading ? 'show' : ''}`}
+         // transition={{
         //   duration: 1,
         //   ease: 'easeInOut',
         // }}

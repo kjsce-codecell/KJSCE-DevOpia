@@ -19,18 +19,9 @@ import { analytics } from './pages/config/firebase'
 
 function App() {
   logEvent(analytics, 'visit_count')
-
-  const [loading, setLoading] = React.useState(true)
-
   React.useEffect(() => {
     AOS.init({ once: true })
     AOS.refresh()
-
-    const intervalId = setInterval(() => {
-      setLoading(false)
-    }, 5000)
-
-    return () => clearInterval(intervalId)
   }, [])
 
   console.log(`
@@ -45,7 +36,7 @@ function App() {
 
   return (
     <>
-      {loading && <Loader />}
+      <Loader />
       <ScrollBar />
       <Navbar />
       <Home />
