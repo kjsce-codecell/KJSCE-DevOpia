@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Track.scss'
 import First from '/track.png'
-import { motion } from 'framer-motion'
 
 const Track = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -35,25 +34,10 @@ const Track = () => {
     <section id="track" className="track">
       <div className="content">
         <h1 className="title">Track</h1>
-        <motion.p
-          className="subtitle"
-          animate={{
-            opacity: isVisible ? 1 : 0,
-            transition: { duration: 1.5, ease: 'easeIn' },
-          }}
-        >
-          Track
-        </motion.p>
+        <p className="subtitle">Track</p>
       </div>
       <div className="tracks">
-        <motion.div
-          className="prize"
-          animate={{
-            opacity: isVisible ? 1 : 0,
-            y: isVisible ? 0 : 50,
-            transition: { duration: 1.5, ease: 'easeIn' },
-          }}
-        >
+        <div className="prize">
           <div className="desc">
             <h2>
               inr 10,000 for the best hack built on Ethereum
@@ -67,15 +51,8 @@ const Track = () => {
             <p> SPONSOR WINNER</p>
           </div>
           <img src={First} alt="" />
-        </motion.div>
-        <motion.div
-          className="prize"
-          animate={{
-            opacity: isVisible ? 1 : 0,
-            y: isVisible ? 0 : 50,
-            transition: { duration: 1.5, ease: 'easeIn' },
-          }}
-        >
+        </div>
+        <div className="prize">
           <div className="desc">
             <h2>
               inr 10,000 for the best hack built on Ethereum
@@ -89,15 +66,8 @@ const Track = () => {
             <p> SPONSOR WINNER</p>
           </div>
           <img src={First} alt="" />
-        </motion.div>
-        <motion.div
-          className="prize"
-          animate={{
-            opacity: isVisible ? 1 : 0,
-            y: isVisible ? 0 : 50,
-            transition: { duration: 1.5, ease: 'easeIn' },
-          }}
-        >
+        </div>
+        <div className="prize">
           <div className="desc">
             <h2>
               inr 10,000 for the best hack built on Ethereum
@@ -111,7 +81,7 @@ const Track = () => {
             <p> SPONSOR WINNER</p>
           </div>
           <img src={First} alt="" />
-        </motion.div>
+        </div>
       </div>
     </section>
   )

@@ -14,7 +14,6 @@
     "@firebase/analytics": "^0.10.1",
     "aos": "^2.3.4",
     "firebase": "^10.8.1",
-    "framer-motion": "^11.0.8",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-accessible-accordion": "^5.0.0",
