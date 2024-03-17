@@ -11,7 +11,7 @@
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   z-index: 99999;
   img {
     width: 70%;
