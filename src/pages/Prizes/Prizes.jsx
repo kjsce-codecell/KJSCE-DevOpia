@@ -29,7 +29,7 @@ const Prizes = () => {
           </div>
         </div>
         <div className="prizes-content">
-          <h1>
+          <h1 data-aos="fade-up" data-aos-duration="1000">
             Coming
             <br />
             Soon
