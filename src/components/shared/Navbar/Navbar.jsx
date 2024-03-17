@@ -5,6 +5,7 @@ import CodeCell from '/CodeCell.png'
 import CSI from '/CSI.png'
 import SVU from '/svu.png'
 import Somaiya from '/somaiya.png'
+import Song from '/music.mp3'
 
 const menuList = [
   {
@@ -37,9 +38,13 @@ function Navbar() {
   const [binaryIndex, setBinaryIndex] = useState(0)
   const binaryArray = [
     '1010100 1101000 1101001 1110011 100000 1101001 1110011 1101110 11100010 10000000 10011001 1110100 100000 1101010 1110101 1110011 1110100 100000 1010100 1101000 1101001 1110011 100000 1101001 1110011 1101110 11100010 10000000 10011001 1110100 100000 1101010 1110101 1110011 1110100 100000',
-    '1110000 1110101 1110010 1110011 1110101 1101001 1110100 100000 1101111 1100110 100000 1110010 1100101 1110110 1101111 1101100 1110101 1110100 1101001 1101111 1101110 1110000 1110101 1110010 1110011 1110101 1101001 1110100 100000 1101111 1100110 100000 1110010 1100101 1110110 1101111 1101100 1110101 1110100 1101001 1101111 1101110',
+    '1110000 1110101 1110010 1110011 1110101 1101001 1110100 100000 1101111 1100110 100000 1110010 1100101 1110110 1101111 1101101 1110101 1110100 1101001 1101111 1101110 1110000 1110101 1110010 1110011 1110101 1101001 1110100 100000 1101111 1100110 100000 1110010 1100101 1110110 1101111 1101100 1110101 1110100 1101001 1101111 1101110',
   ]
   const [activeSection, setActiveSection] = useState('Home')
+  const [clickCount, setClickCount] = useState(0)
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false)
+  const [audio] = useState(new Audio(Song)) // Create a single Audio object
+
   const [isOpen, setIsOpen] = useState(false)
   const navbarRef = useRef(null)
 
@@ -87,6 +92,22 @@ function Navbar() {
     window.scrollTo({
       top: 0,
     })
+  }
+
+  const handleProngedClick = () => {
+    setClickCount((prevCount) => prevCount + 1)
+    if (isMusicPlaying) {
+      audio.pause()
+      setIsMusicPlaying(!isMusicPlaying)
+    }
+
+    if (clickCount % 3 === 2) {
+      if (!isMusicPlaying) {
+        audio.play() 
+      }
+      setIsMusicPlaying(!isMusicPlaying) 
+    }
+    scrollToTop()
   }
 
   const scrollToSection = (sectionId) => {
@@ -158,7 +179,7 @@ function Navbar() {
         <div className="active">
           <div className="active-link-name">{activeSection}</div>
         </div>
-        <div className="logo" onClick={scrollToTop}>
+        <div className="logo" onClick={handleProngedClick}>
           <img src={Pronged} alt="" />
         </div>
         <p className="binary">{binaryArray[binaryIndex]}</p>
