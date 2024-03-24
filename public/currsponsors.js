@@ -13,7 +13,16 @@ export default [
             {
                 src : "https://polygon.technology",
                 img : "/currentSponsors/polygon.png"
-            }
+            },
+        ] 
+    },
+    {
+        title : "Exclusive Merchandise Partner",
+        sponsors : [
+            {
+                src : "https://rirrhys.com/",
+                img : "/currentSponsors/rirrhys.png"
+            },
         ] 
     }
 ]
