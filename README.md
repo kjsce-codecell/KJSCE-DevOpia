@@ -1,8 +1,13 @@
-# React + Vite
+![Logo](https://github.com/kjsce-codecell/KJSCE-DevOpia/blob/main/public/Home/Devopia-Logo.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# KJSCE DevOpia
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+KJSCE DevOpia is a nationwide hub for tech enthusiasts, showcasing events such as the 24-hour Hackathon, KJSCE CTF, and Bid by Bit. Join us on April 11th, and April 13th-14th for an exhilarating experience!
+
+
+## Event Organizers
+
+- [@kjsce-codecell](https://github.com/kjsce-codecell)
+- [@csi-kjsce](https://github.com/csi-kjsce)
+
