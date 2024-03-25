@@ -1,10 +1,12 @@
 import './Home.scss'
-import { useEffect } from 'react'
 import Title from '/Home/Devopia-Logo.png'
 import {
   MouseParallaxContainer,
   MouseParallaxChild,
 } from 'react-parallax-mouse'
+import SVU from '/svu.png'
+import Somaiya from '/somaiya.png'
+import { useEffect } from 'react'
 
 const Home = () => {
   useEffect(() => {
@@ -49,9 +51,9 @@ const Home = () => {
           width: '100vw',
           height: '100vh',
         }}
-      // globalFactorX={1}
-      // globalFactorY={1}
-      // resetOnLeave
+        // globalFactorX={1}
+        // globalFactorY={1}
+        // resetOnLeave
       >
         <MouseParallaxChild
           className="banda"
@@ -127,6 +129,19 @@ const Home = () => {
         ></div>
         <p className="tagline"> WAR COMES TO EVERY WORLD</p>
       </div>
+      <img
+        src={SVU}
+        className="svu-home"
+        alt="SVU KJSCE"
+        onClick={() => {
+          window.open('https://kjsce.somaiya.edu/en')
+        }}
+      />
+      <img src={Somaiya} className="trust-home" alt="Somaiya Trust"
+        onClick={() => {
+          window.open('https://www.somaiya.edu/en')
+        }}
+      />
     </section>
   )
 }

@@ -25,7 +25,7 @@
   //   // animation: parallax 1s linear infinite;
   // }
   .code {
-    padding: 100px 20px;
+    padding: 95px 10px;
     display: flex;
     font-family: 'dunerise', sans-serif;
     font-size: 0.5rem;
@@ -121,6 +121,31 @@
 
   .stars {
     position: absolute;
+  }
+
+  .svu-home {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .trust-home {
+    position: absolute;
+    top: 85px;
+    right: 0;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      top: 85px;
+      height: 25px;
+    }
   }
 
   // .date {
