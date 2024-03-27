@@ -108,40 +108,17 @@
   }
 
   .prizes {
-    .prize-item {
-      position: relative;
-      text-align: start;
+    .prize-container {
+      display: flex;
+      flex-direction: column;
+      height: auto;
     }
+
     .prize-section .prize-item {
       width: 100%;
       height: 100%;
     }
-
-    .prizes .prize-section .prize-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    .prize-container {
-      display: flex;
-      flex-direction: column;
-    }
-    .title {
-      left: 0;
-    }
-    .content {
-      padding: 10px;
-      .container-text {
-        width: 100%;
-        text-align: center;
-      }
-    }
-    .container-text {
-      width: 100%;
-      text-align: center;
-    }
   }
-
   .track {
     .tracks {
       flex-direction: column;
