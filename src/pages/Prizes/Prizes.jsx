@@ -72,13 +72,15 @@ const Prizes = () => {
                     <img src={Second} alt="" />
                   </div>
                   <div className="prize-text">
-                    <h2>
-                      <Scrambler text={'INR 75,000'}></Scrambler>
-                    </h2>
-                    <h3>
-                      <Scrambler text={'CASH PRIZE'}></Scrambler>
-                    </h3>
-                    <h4>
+                    <div className="prize-text-row">
+                      <h2>
+                        <Scrambler text={'INR 75,000'}></Scrambler>
+                      </h2>
+                      <h3>
+                        <Scrambler text={'CASH PRIZE'}></Scrambler>
+                      </h3>
+                    </div>
+                    <h4 className='small-text'>
                       Exciting Goodies worth
                       <br /> inr 2l & More!
                     </h4>
@@ -96,13 +98,15 @@ const Prizes = () => {
                     <img src={Third} alt="" />
                   </div>
                   <div className="prize-text">
-                    <h2>
-                      <Scrambler text={'INR 50,000'}></Scrambler>
-                    </h2>
-                    <h3>
-                      <Scrambler text={'CASH PRIZE'}></Scrambler>
-                    </h3>
-                    <h4>
+                    <div className='prize-text-row'>
+                      <h2>
+                        <Scrambler text={'INR 50,000'}></Scrambler>
+                      </h2>
+                      <h3>
+                        <Scrambler text={'CASH PRIZE'}></Scrambler>
+                      </h3>
+                    </div>
+                    <h4 className='small-text'>
                       Exciting Goodies worth
                       <br /> inr 2l & More!
                     </h4>
@@ -123,6 +127,30 @@ const Prizes = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
+              <div
+                className="prize-item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div className="prize-image">
+                  <img src={HardwareFirst} alt="" />
+                </div>
+                <div className="prize-text">
+                  <h2>
+                    <Scrambler text={'INR 20,000'}></Scrambler>
+                  </h2>
+                  <h3>
+                    <Scrambler text={'CASH PRIZE'}></Scrambler>
+                  </h3>
+                  <h4>
+                    Exciting Goodies worth
+                    <br /> inr 2l & More!
+                  </h4>
+                  <p>
+                    <Scrambler text={'WINNER'}></Scrambler>
+                  </p>
+                </div>
+              </div>
 
               <div
                 className="prize-item"
@@ -139,7 +167,7 @@ const Prizes = () => {
                   <h3>
                     <Scrambler text={'CASH PRIZE'}></Scrambler>
                   </h3>
-                  <h4>
+                  <h4>f
                     Exciting Goodies worth
                     <br /> inr 2l & More!
                   </h4>

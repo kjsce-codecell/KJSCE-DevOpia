@@ -1,23 +1,33 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
-const SubheadingContent = ({ content, animateBodyText }) => {
+const SubheadingContent = ({ content, animateBodyText, websiteUrl, showButton }) => {
+  const handleButtonClick = () => {
+     window.open(websiteUrl, '_blank');
+  };
+ 
   return (
-    <div
-      className={`body-text ${animateBodyText ? 'fade-up' : ''}`} // Conditionally apply class for animation
-    >
-      {content.split('\n').map((line, index) => (
-        <p key={index}>
-          {line}
-          <br />
-        </p>
-      ))}
-    </div>
-  )
-}
-
-SubheadingContent.propTypes = {
+     <div className={`body-text ${animateBodyText ? 'fade-up' : ''}`}>
+       {content.split('\n').map((line, index) => (
+         <p key={index}>
+           {line}
+           <br />
+         </p>
+       ))}
+       {showButton && (
+        <div className="visit-container-pass">
+         <button className="visit-website-btn-act" onClick={handleButtonClick}>Register</button>
+        </div>
+       )}
+     </div>
+  );
+ };
+ 
+ SubheadingContent.propTypes = {
   content: PropTypes.string.isRequired,
-}
+  animateBodyText: PropTypes.bool.isRequired,
+  websiteUrl: PropTypes.string.isRequired,
+  showButton: PropTypes.bool.isRequired, // New prop for showing the button
+ };
+ 
 
 export default SubheadingContent
