@@ -8,7 +8,12 @@ const About = () => {
   const [activeSubheading, setActiveSubheading] = useState(0)
   const [animateBodyText, setAnimateBodyText] = useState(false) // State to trigger animation
   const aboutRef = useRef(null)
-
+  const websiteUrls = [
+    '',
+    'https://unstop.com/p/kjsce-ctf-kjsce-devopia-k-j-somaiya-college-of-engineering-kjsce-mumbai-943352', // URL for KJSCE-CTF
+    'https://www.google.com/amp/s/unstop.com/hackathons/bid-by-bit-k-j-somaiya-college-of-engineering-kjsce-mumbai-941770/amp', // URL for BID-BY-BIT
+   ];
+   
   const subheadings = [
     {
       label: 'DEVOPIA',
@@ -71,10 +76,13 @@ const About = () => {
               data-aos="fade-up"
               data-aos-duration="500"
             >
-              <SubheadingContent
-                content={subheadings[activeSubheading].content}
-                animateBodyText={animateBodyText}
-              />
+            <SubheadingContent
+            content={subheadings[activeSubheading].content}
+            animateBodyText={animateBodyText}
+            websiteUrl={websiteUrls[activeSubheading]}
+            showButton={subheadings[activeSubheading].label === 'KJSCE-CTF' || subheadings[activeSubheading].label === 'BID-BY-BIT'}
+            />
+
             </div>
           </div>
         </div>
@@ -95,7 +103,7 @@ const About = () => {
             autoplay
             exposure="1"
             disable-zoom
-          ></model-viewer>
+          />
         </div>
       </div>
     </section>
