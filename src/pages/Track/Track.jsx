@@ -1,34 +1,9 @@
-import { useState, useEffect } from 'react'
 import './Track.scss'
-import First from '/track.png' //Change address to /prizes/Track.png
+import First from '/prizes/Track.png' //Change address to /prizes/Track.png
 
 const Track = () => {
-  const [isVisible, setIsVisible] = useState(false)
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.disconnect()
-        }
-      },
-      {
-        rootMargin: '-100px', // Adjust this value as needed
-      }
-    )
 
-    const trackElement = document.getElementById('track')
-    if (trackElement) {
-      observer.observe(trackElement)
-    }
-
-    return () => {
-      if (trackElement) {
-        observer.unobserve(trackElement)
-      }
-    }
-  }, [])
 
   return (
     <section id="track" className="track">
@@ -37,37 +12,34 @@ const Track = () => {
         <p className="subtitle">Track</p>
       </div>
       <div className="tracks">
-        <div className="prize">
+        <div data-aos="fade-up"
+          data-aos-duration="1000" className="prize">
           <div className="desc">
             <h2>
-              inr 10,000 for the best hack built on Ethereum
+              $200 - Best hack built on Polygon
               <br />
               <br />
-              Continuity grant opportunity up to $5,000 for outstanding projects
-              <br />
-              <br />
-              inr 10,000 for the best project made using Arcana
+              Read about the bounty details and find code templates for Polygon here
             </h2>
-            <p> SPONSOR WINNER</p>
+            <p> Polygon track</p>
           </div>
           <img src={First} alt="" />
         </div>
-        <div className="prize">
+        <div data-aos="fade-up"
+          data-aos-duration="1000" className="prize">
           <div className="desc">
             <h2>
-              inr 10,000 for the best hack built on Ethereum
+              $100 - Best hack built on Ethereum
               <br />
               <br />
-              Continuity grant opportunity up to $5,000 for outstanding projects
-              <br />
-              <br />
-              inr 10,000 for the best project made using Arcana
+              Select this track if you're building on Ethereum to be eligible for the prizes!
             </h2>
-            <p> SPONSOR WINNER</p>
+            <p>ETHIndia track</p>
           </div>
           <img src={First} alt="" />
         </div>
-        <div className="prize">
+        <div data-aos="fade-up"
+          data-aos-duration="1000" className="prize">
           <div className="desc">
             <h2>
               inr 10,000 for the best hack built on Ethereum
