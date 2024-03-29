@@ -1,12 +1,34 @@
-import Scrambler from '../../components/shared/Scrambler/Scrambler'
-import './Prizes.scss'
-import First from '/first.png'
-import Second from '/second.png'
-import Third from '/third.png'
-import HardwareFirst from '/hardwareFirst.png'
-import HardwareSecond from '/hardwareSecond.png'
+import Scrambler from '../../components/shared/Scrambler/Scrambler';
+import './Prizes.scss';
+import First from '/first.png';
+import Second from '/second.png';
+import Third from '/third.png';
+import HardwareFirst from '/hardwareFirst.png';
+import HardwareSecond from '/hardwareSecond.png';
+import { useState } from 'react';
 
 const Prizes = () => {
+  const [scramblerFunctions, setScramblerFunctions] = useState({
+    start: () => { },
+    pause: () => { },
+    restart: () => { },
+  });
+
+  const handleScramblerBind = (c) => {
+    console.log('Scrambler binded');
+    setScramblerFunctions({
+      start: c.start,
+      pause: c.pause,
+      restart: c.restart,
+    });
+  };
+
+  const handleHover = () => {
+    console.log('Hovered on prize-item');
+    scramblerFunctions.restart();
+    scramblerFunctions.start();
+  };
+
   return (
     <section className="prize" id="prizes">
       <div className="prizes">
@@ -40,6 +62,7 @@ const Prizes = () => {
             >
               <div
                 className="prize-item"
+                onMouseEnter={handleHover}
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
@@ -48,7 +71,10 @@ const Prizes = () => {
                 </div>
                 <div className="prize-text">
                   <h2>
-                    <Scrambler text={'INR 1,00,000'}></Scrambler>
+                    <Scrambler
+                      bindMethod={handleScramblerBind}
+                      text={'INR 1,00,000'}
+                    ></Scrambler>
                   </h2>
                   <h3>
                     <Scrambler text={'CASH PRIZE'}></Scrambler>
@@ -80,7 +106,7 @@ const Prizes = () => {
                         <Scrambler text={'CASH PRIZE'}></Scrambler>
                       </h3>
                     </div>
-                    <h4 className='small-text'>
+                    <h4 className="small-text">
                       Exciting Goodies worth
                       <br /> inr 2l & More!
                     </h4>
@@ -98,7 +124,7 @@ const Prizes = () => {
                     <img src={Third} alt="" />
                   </div>
                   <div className="prize-text">
-                    <div className='prize-text-row'>
+                    <div className="prize-text-row">
                       <h2>
                         <Scrambler text={'INR 50,000'}></Scrambler>
                       </h2>
@@ -106,7 +132,7 @@ const Prizes = () => {
                         <Scrambler text={'CASH PRIZE'}></Scrambler>
                       </h3>
                     </div>
-                    <h4 className='small-text'>
+                    <h4 className="small-text">
                       Exciting Goodies worth
                       <br /> inr 2l & More!
                     </h4>
@@ -119,7 +145,7 @@ const Prizes = () => {
             </div>
           </div>
           <div className="prize-section">
-            <h1 className='hardware-title' data-aos="fade-up" data-aos-duration="1000" >
+            <h1 className="hardware-title" data-aos="fade-up" data-aos-duration="1000">
               Hardware
             </h1>
             <div
@@ -167,7 +193,7 @@ const Prizes = () => {
                   <h3>
                     <Scrambler text={'CASH PRIZE'}></Scrambler>
                   </h3>
-                  <h4>f
+                  <h4>
                     Exciting Goodies worth
                     <br /> inr 2l & More!
                   </h4>
@@ -181,7 +207,7 @@ const Prizes = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Prizes
+export default Prizes;

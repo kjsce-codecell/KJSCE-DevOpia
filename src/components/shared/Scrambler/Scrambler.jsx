@@ -1,11 +1,31 @@
-import Scramble from 'react-scramble'
+import { useRef, useEffect } from 'react';
+import Scramble from 'react-scramble';
 
-const Scrambler = (
-  // eslint-disable-next-line react/prop-types
-  { text }
-) => {
+// eslint-disable-next-line react/prop-types
+const Scrambler = ({ text, bindMethod }) => {
+  const scrambleRef = useRef(null);
+
+  useEffect(() => {
+    const restart = () => {
+      scrambleRef.current.restart();
+    };
+
+    const pause = () => {
+      scrambleRef.current.pause();
+    };
+
+    const start = () => {
+      scrambleRef.current.start();
+    };
+
+    if (bindMethod) {
+      bindMethod({ restart, pause, start });
+    }
+  },);
+
   return (
     <Scramble
+      ref={scrambleRef}
       text={text}
       mouseEnterTrigger="restart"
       steps={[
@@ -20,7 +40,7 @@ const Scrambler = (
         },
       ]}
     />
-  )
-}
+  );
+};
 
-export default Scrambler
+export default Scrambler;

@@ -154,12 +154,6 @@
     }
   }
 
-
-
-  
-
-
-
   .visit-website-btn-pass {
     border-radius: 0;
     font-family: 'agencyfb';
@@ -175,17 +169,15 @@
     text-align: center;
     cursor: pointer;
     background-color: transparent;
-    
+
     color: white;
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
     &:hover {
-       // add white border
-       border: 1px solid white;
-   }
+      // add white border
+      border: 1px solid white;
+    }
   }
-
-  
 
   .visit-container-pass {
     display: flex;
@@ -193,13 +185,11 @@
     flex-direction: row;
     width: 10em;
     margin: 0 auto;
-    
-    left:0;
+
+    left: 0;
     margin-top: 1rem;
     border: 5px solid white;
   }
-
-
 
   .visit-website-btn-act {
     border-radius: 0;
@@ -211,42 +201,34 @@
     text-transform: uppercase;
     display: flex;
     padding: 5px 25px;
-    
 
     margin: 4px;
     justify-content: center;
     cursor: pointer;
     background-color: white;
-    
-    color: black; 
+
+    color: black;
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
     &:hover {
       // add white border
       background-color: transparent;
-      color: white; 
+      color: white;
       border: 1px solid white;
+    }
   }
-   
-
-  }
-
-  
 
   .visit-container-act {
     justify-content: center;
     display: flex;
     flex-direction: row;
     width: 10em;
-    
+
     margin-top: 10vw;
     margin: 0 auto;
-    
-    
+
     border: 5px solid white;
   }
-
-
 
   .body-text.fade-up {
     animation: fadeUp 1s forwards;
@@ -295,25 +277,18 @@
   }
 }
 
-@media  screen and (min-width: 768px){
-
-  .visit-container-pass {position: absolute;
+@media screen and (min-width: 768px) {
+  .about .visit-container-pass {
+    position: absolute;
   }
-  
-
 }
 
-
-@media  screen and (max-width: 768px){
-
-  .body-text {padding-bottom: 5rem;}
-  
-  
-
+@media screen and (max-width: 768px) {
+  .about .visit-container-pass,
+  .about .visit-website-btn-act {
+    width: 100%;
+  }
+  .body-text {
+    padding-bottom: 5rem;
+  }
 }
-
-  
-
-
-
- 
