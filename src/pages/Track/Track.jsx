@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Track.scss'
-import First from '/track.png'
+import First from '/track.png' //Change address to /prizes/Track.png
 
 const Track = () => {
   const [isVisible, setIsVisible] = useState(false)

@@ -1,10 +1,10 @@
 import Scrambler from '../../components/shared/Scrambler/Scrambler';
 import './Prizes.scss';
-import First from '/first.png';
-import Second from '/second.png';
-import Third from '/third.png';
-import HardwareFirst from '/hardwareFirst.png';
-import HardwareSecond from '/hardwareSecond.png';
+import First from '/prizes/First.png';
+import Second from '/prizes/Second.png';
+import Third from '/prizes/Third.png';
+import HardwareFirst from '/prizes/Hardware1st.png';
+import HardwareSecond from '/prizes/Hardware2nd.png';
 import { useState } from 'react';
 
 const Prizes = () => {
@@ -67,12 +67,12 @@ const Prizes = () => {
                 data-aos-duration="1000"
               >
                 <div className="prize-image">
-                  <img src={First} alt="" />
+                  <img className="winner-software" src={First} alt="" />
                 </div>
                 <div className="prize-text">
                   <h2>
                     <Scrambler
-                      bindMethod={handleScramblerBind}
+                      // bindMethod={handleScramblerBind}
                       text={'INR 1,00,000'}
                     ></Scrambler>
                   </h2>
@@ -108,7 +108,7 @@ const Prizes = () => {
                     </div>
                     <h4 className="small-text">
                       Exciting Goodies worth
-                      <br /> inr 2l & More!
+                      <br /> inr 1.5l & More!
                     </h4>
                     <p>
                       <Scrambler text={'RUNNER UP'}></Scrambler>
@@ -134,7 +134,7 @@ const Prizes = () => {
                     </div>
                     <h4 className="small-text">
                       Exciting Goodies worth
-                      <br /> inr 2l & More!
+                      <br /> inr 1l & More!
                     </h4>
                     <p>
                       <Scrambler text={'2ND RUNNER UP'}></Scrambler>
@@ -170,7 +170,7 @@ const Prizes = () => {
                   </h3>
                   <h4>
                     Exciting Goodies worth
-                    <br /> inr 2l & More!
+                    <br /> inr 50k & More!
                   </h4>
                   <p>
                     <Scrambler text={'WINNER'}></Scrambler>
@@ -195,7 +195,7 @@ const Prizes = () => {
                   </h3>
                   <h4>
                     Exciting Goodies worth
-                    <br /> inr 2l & More!
+                    <br /> inr 25k & More!
                   </h4>
                   <p>
                     <Scrambler text={'RUNNER UP'}></Scrambler>
