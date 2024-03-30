@@ -43,7 +43,7 @@ function App() {
       <About />
       <Stats />
       <Prizes />
-      {/* <Track /> */}
+      <Track />
       <Sponsors />
       <FAQ />
       <Footer />
