@@ -2,9 +2,6 @@ import './Track.scss'
 import First from '/prizes/Track.png' //Change address to /prizes/Track.png
 
 const Track = () => {
-
-
-
   return (
     <section id="track" className="track">
       <div className="content">
@@ -12,34 +9,33 @@ const Track = () => {
         <p className="subtitle">Track</p>
       </div>
       <div className="tracks">
-        <div data-aos="fade-up"
-          data-aos-duration="1000" className="prize">
+        <div data-aos="fade-up" data-aos-duration="1000" className="prize">
           <div className="desc">
             <h2>
               $200 - Best hack built on Polygon
               <br />
               <br />
-              Read about the bounty details and find code templates for Polygon here
+              Read about the bounty details and find code templates for Polygon
+              here
             </h2>
             <p> Polygon track</p>
           </div>
           <img src={First} alt="" />
         </div>
-        <div data-aos="fade-up"
-          data-aos-duration="1000" className="prize">
+        <div data-aos="fade-up" data-aos-duration="1000" className="prize">
           <div className="desc">
             <h2>
               $100 - Best hack built on Ethereum
               <br />
               <br />
-              Select this track if you're building on Ethereum to be eligible for the prizes!
+              Select this track if you're building on Ethereum to be eligible
+              for the prizes!
             </h2>
             <p>ETHIndia track</p>
           </div>
           <img src={First} alt="" />
         </div>
-        <div data-aos="fade-up"
-          data-aos-duration="1000" className="prize">
+        <div data-aos="fade-up" data-aos-duration="1000" className="prize">
           <div className="desc">
             <h2>
               inr 10,000 for the best hack built on Ethereum
