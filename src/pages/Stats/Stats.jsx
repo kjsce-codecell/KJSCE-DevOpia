@@ -66,7 +66,7 @@ function Stats() {
             <div className="imageContainer">
               <img src="./Stats/Image7.jpeg" alt="" />
             </div>
-            <div className="content">
+            <div className="content" style={{ textAlign: 'right' }}>
               <h4 className="highlightNum">150+</h4>
               <p>Hackers</p>
             </div>
@@ -78,7 +78,7 @@ function Stats() {
             <div className="imageContainer">
               <img src="./Stats/Image9.jpeg" alt="" />
             </div>
-            <div className="content">
+            <div className="content" style={{ textAlign: 'right' }}>
               <h4 className="highlightNum">40+</h4>
               <p>Projects</p>
             </div>
