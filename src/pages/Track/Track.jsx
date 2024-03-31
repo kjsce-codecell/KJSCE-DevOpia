@@ -6,7 +6,11 @@ const Track = () => {
     <section id="track" className="track">
       <div className="content">
         <h1 className="title">Track</h1>
-        <p className="subtitle">Track</p>
+        <div className="subtitle">
+          <img className='first' src='/major.svg' />
+          <h3>Track</h3>
+          <img src='/major.svg' />
+        </div>
       </div>
       <div className="tracks">
         <div data-aos="fade-up" data-aos-duration="1000" className="prize">

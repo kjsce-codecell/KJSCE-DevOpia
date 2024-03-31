@@ -5,29 +5,44 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
   .content {
     z-index: 1;
     position: relative;
     .subtitle {
       position: relative;
-      left: 50%;
-      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
       font-family: 'agencyfb';
-      font-size: 4rem;
+      font-size: 6rem;
       font-weight: 700;
       letter-spacing: 13px;
       text-transform: uppercase;
       margin: 0;
-      &::before,
-      &::after {
-        content: url('/major.svg');
+      color: #fff;
+
+      h3 {
+        position: relative;
+        right: -1.5%;
+        font-family: 'agencyfb';
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+
+        @media (max-width: 720px) {
+          font-size: 4rem;
+        }
       }
-      &::after {
-        margin-left: 10px;
-      }
-      &::before {
-        margin-right: 10px;
+      
+      img {
+        height: 6rem;
+
+        @media (max-width: 720px) {
+          height: 4rem;
+        }
       }
     }
   }
@@ -66,30 +81,12 @@
   .tracks {
     position: relative;
     display: flex;
-    top: 10rem;
+    top: 2.5rem;
     padding-bottom: 30px;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
     flex-wrap: wrap;
-  }
-
-  .subtitle {
-    position: absolute;
-    color: #fff;
-    height: auto;
-    left: 50%;
-    top: 4rem;
-    display: flex;
-    flex-direction: row;
-    font-family: 'agencyfb';
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 13px;
-    text-transform: uppercase;
-    margin-top: 10%;
   }
 
   .prize {
