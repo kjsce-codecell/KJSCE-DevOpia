@@ -27,7 +27,7 @@ function Sponsors() {
     <h1>{item.title}</h1>
       <div className="sponsor-grp" key = {i}>
         {item.sponsors.map((sponsor, j) => (
-          <div className="curr-sponsor-img" key = {j}>
+          <div className="sponsor-img" key = {j}>
           <a href={sponsor.src} target="_blank">
             <img src={sponsor.img} alt="Sponsor" />
           </a>
