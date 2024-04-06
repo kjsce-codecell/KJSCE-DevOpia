@@ -17,7 +17,7 @@ function Sponsors() {
   const prev = prevsponsors.map((item, i) => (
     <div className="sponsor-img" key={i}>
       <a href={item.link} target="_blank"> 
-        <img src={item.img} alt="Devfolio" />
+        <img src={item.img} alt="Sponsor" />
       </a>
     </div>
   ))
@@ -27,9 +27,9 @@ function Sponsors() {
     <h1>{item.title}</h1>
       <div className="sponsor-grp" key = {i}>
         {item.sponsors.map((sponsor, j) => (
-          <div className="sponsor-img" key = {j}>
+          <div className="curr-sponsor-img" key = {j}>
           <a href={sponsor.src} target="_blank">
-            <img src={sponsor.img} alt="Devfolio" />
+            <img src={sponsor.img} alt="Sponsor" />
           </a>
         </div>
         ))}

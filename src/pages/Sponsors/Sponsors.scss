@@ -208,6 +208,23 @@
   align-items: center;
   margin: 1rem 0;
   cursor: pointer;
+  -webkit-user-drag: none; 
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+}
+
+.curr-sponsor-img {
+  width: 25%;
+  min-width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.7rem 0.5rem;
+  cursor: pointer;
+  -webkit-user-drag: none; 
+  -moz-user-drag: none;
+  -ms-user-drag: none;
 }
 
 .sponsor-category {
@@ -222,9 +239,24 @@
 
 .sponsor-img img {
   max-height: 120px;
+  height: 100%;
   max-width: 74%;
   display: block;
   margin: auto;
+  -webkit-user-drag: none; 
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+}
+
+.curr-sponsor-img img {
+  max-height: 165px;
+  height: 100%;
+  max-width: 74%;
+  display: block;
+  margin: auto;
+  -webkit-user-drag: none; 
+  -moz-user-drag: none;
+  -ms-user-drag: none;
 }
 
 .sponsor-img svg {

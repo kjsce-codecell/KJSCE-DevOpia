@@ -85,7 +85,7 @@ const Home = () => {
           alt="KJSCE DevOpia"
           className="title-img"
         />
-        <MouseParallaxChild
+        {/* <MouseParallaxChild
           className="ships"
           factorX={0.05}
           factorY={0.05}
@@ -96,7 +96,7 @@ const Home = () => {
             width: '100%',
             height: '100%',
           }}
-        />
+        /> */}
       </MouseParallaxContainer>
       <div className="code">
         <p>
