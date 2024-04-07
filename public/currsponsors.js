@@ -30,7 +30,7 @@ export default [
         sponsors : [
             {
                 src : "https://syntax.spectrallabs.xyz/referral?code=mRUDnuhZ",
-                img : "/currentSponsors/spectral.png"
+                img : "/currentSponsors/spectral-logo.png"
             },
         ] 
     },
