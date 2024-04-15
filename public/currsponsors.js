@@ -3,10 +3,6 @@ export default [
         title : "Our Partners",
         sponsors : [
             {
-                src : "https://devfolio.co/",
-                img : "/currentSponsors/Devfolio.png"
-            },
-            {
                 src : "https://ethindia.co/",
                 img : "/currentSponsors/EthIndia.png"
             },
@@ -34,6 +30,39 @@ export default [
             },
         ] 
     },
+
+    {
+        title : "Gold Partner",
+        sponsors : [
+            {
+                src : "https://atos.net/en/india",
+                img : "/currentSponsors/Atos.png"
+            },
+        ] 
+    },
+
+    {
+        title : "Silver Partner",
+        sponsors : [
+            {
+                src : "https://www.falconx.io/",
+                img : "/currentSponsors/falconx.svg"
+            },
+        ] 
+    },
+    {
+        title : "Platform Partners",
+        sponsors : [
+            {
+                src : "https://devfolio.co/",
+                img : "/currentSponsors/Devfolio.png"//changes
+            },
+            {
+                src : "https://unstop.com/",
+                img : "/currentSponsors/unstop.png"
+            },
+        ] 
+    },
     {
         title : "Exclusive Merchandise Partner",
         sponsors : [
@@ -52,15 +81,7 @@ export default [
             },
         ] 
     },
-    {
-        title : "Silver Partner",
-        sponsors : [
-            {
-                src : "https://www.falconx.io/",
-                img : "/currentSponsors/falconx.svg"
-            },
-        ] 
-    },
+    
     {
         title : "Domain Partner",
         sponsors : [
@@ -80,7 +101,7 @@ export default [
         ] 
     },
     {
-        title : "Certificate Partner",
+        title : "Certificate Partners",
         sponsors : [
             {
                 src : "https://sybgen.com/",
@@ -102,6 +123,15 @@ export default [
         ] 
     },
     {
+        title : "Energy Drink Partner",
+        sponsors : [
+            {
+                src : "https://www.redbull.com/in-en/",
+                img : "/currentSponsors/redbull.svg"
+            },
+        ] 
+    },
+    {
         title : "Snacking Partner",
         sponsors : [
             {
@@ -116,6 +146,34 @@ export default [
             {
                 src : "https://beeceptor.com/",
                 img : "/currentSponsors/beeceptor.svg"
+            },
+        ] 
+    }, 
+    {
+        title : "Education Partner",
+        sponsors : [
+            {
+                src : "https://www.inspiruseducation.com/",
+                img : "/currentSponsors/Inspirus_Logo.webp"
+            },
+        ] 
+    },
+    
+    {
+        title : "Hardware Partner",
+        sponsors : [
+            {
+                src : "https://www.riidl.org/",
+                img : "/currentSponsors/riidllogo1.jpg"
+            },
+        ] 
+    },
+    {
+        title : "Luggage Partner",
+        sponsors : [
+            {
+                src : "https://www.americantourister.in/",
+                img : "/currentSponsors/american_tourister.webp"
             },
         ] 
     },
