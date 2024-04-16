@@ -177,4 +177,13 @@ export default [
             },
         ] 
     },
+    {
+        title : "Ecosystem Partner",
+        sponsors : [
+            {
+                src : "https://learningwhiletravelling.com/",
+                img : "/currentSponsors/learningwhiletraveling.png"
+            },
+        ] 
+    },
 ]
